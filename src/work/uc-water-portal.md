@@ -6,7 +6,7 @@ tags:
     - environment
     - education
     - everything
-image: /assets/images/ucwaterportal/image-1.jpg
+image: /assets/images/ucwaterportal/ucwater-creek.jpg
 dir: ucwaterportal
 images:
     - image-1.jpg

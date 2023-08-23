@@ -18,3 +18,7 @@ a, a:visited {
 .pill-button:hover svg {
     @apply border-red-600 stroke-red-600
 }
+
+.partner a {
+    @apply underline
+}

@@ -17,6 +17,9 @@ images:
 tech: Wordpress, Woocommerce
 year: 2021
 url: https://lightsourcesf.com
+partners:
+    - Paladar
+    - <a href="https://www.amandabuzard.com/" title="Amanda Buzard">Amanda Buzard</a>
 ---
 
 Lightsource, a fine art printer and digital imaging business in San Francisco, needed a new website with an updated look and a custom e-commerce experience that would allow customers to attach image assets directly to their orders, reducing friction for the user and administrative complexity for order fulfillment. This took the form of a fully custom Wordpress theme, and a checkout workflow that integrates Uploadcare’s file uploader api with the Woocommerce e-commerce platform.

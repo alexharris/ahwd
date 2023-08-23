@@ -11,8 +11,19 @@ layout: layout.njk
 </div>
 
 <div class="flex gap-8 mb-16">
-    <div class="w-1/2">
+    <div class="w-1/2 flex flex-col justify-between">
         {{ content | safe }}
+        <div class="flex flex-col text-md">
+            <span>{{ tech }}</span>
+            <span>{{ year }}</span>
+            <div class="flex">
+                {% if partners|length %} With: {% endif %}
+                {% for partner in partners %}   
+                    <span class="partner pl-2">{{partner | safe}}</span>
+                {% endfor %}
+            </div>
+        </div>
+
     </div>
     <div class="w-1/2">
         <img class="rounded-xl" src="{{ image }}" />
