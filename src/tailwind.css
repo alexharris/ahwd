@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a, a:visited {
+    @apply text-gray-900 hover:text-red-600
+}
+
+[aria-current="page"] {
+    @apply bg-gray-200
+}
+
+
+.columns {
+    @apply flex gap-12 justify-between items-center p-4;
+}
+
+.pill-button:hover svg {
+    @apply border-red-600 stroke-red-600
+}
