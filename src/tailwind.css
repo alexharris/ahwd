@@ -3,7 +3,11 @@
 @tailwind utilities;
 
 a, a:visited {
-    @apply text-gray-900 hover:text-red-600
+    @apply text-gray-900 hover:text-red-500
+}
+
+a.logo {
+    @apply text-white
 }
 
 [aria-current="page"] {

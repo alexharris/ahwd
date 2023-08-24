@@ -96,7 +96,6 @@ header  {
 
 .logo {
     font-family: 'socko_regular';
-    color: #000;
     font-size: 60px;
     font-style: normal;
     font-weight: 400;
@@ -112,6 +111,15 @@ header  {
     font-weight: 400;
     line-height: normal;   
     padding-bottom: 26px; 
+}
+
+.socko {
+    font-family: 'socko_regular';
+}
+
+.outline-text {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
 }
 
 

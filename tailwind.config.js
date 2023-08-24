@@ -2,7 +2,15 @@
 module.exports = {
   content: ["./src/**/*.{njk,md}", "./src/**/*.svg",],
   theme: {
-    extend: {},
+    extend: {
+      typography: {
+        DEFAULT: {
+          css: {
+            fontSize: '20px',
+          },
+        },
+      },
+    },
   },
   plugins: [
     require('@tailwindcss/typography'),
