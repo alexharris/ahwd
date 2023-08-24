@@ -5,24 +5,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Grab title from the page data and dump it here -->
-  <title>Kessenick Gamma</title>
+  <title>AHWD - Kessenick Gamma</title>
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="/tailwind-output.css">  
 </head>
 <body class="bg-gray-50">
   <!-- Grab the content from the page data and dump it here, and mark it as safe -->
   <!-- Safe docs: https://mozilla.github.io/nunjucks/templating.html#safe -->
-  <header class="p-8 pb-0">
-    <a href="/" class="logo outline-text">AHWD.</spaan>
-    <nav class="flex items-center gap-8">  
+  <header class="px-4 md:px-8 pt-4 md:pt-8 pb-0 flex flex-col md:flex-row">
+    <a href="/" class="logo outline-text link-white">AHWD.</a>
+    <nav class="flex flex-wrap justify-between items-center gap-8">  
       <a href="/work/everything">Work</a>
       <a href="/about">About</a>
       <svg class="stroke-black stroke-2 fill-none hover:fill-blue-950" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="arcs"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>      
     </nav>
   </header>
-  <main class="p-8">
+  <main class="p-4 md:p-8">
     
-<div class="flex justify-between w-full items-start">
+<div class="flex flex-row mt-12 justify-between w-full items-start">
     <h1 class="text-4xl mb-12">Kessenick Gamma</h1>
     <a class="pill-button text-md px-3 pb-1 rounded-full border border-black hover:border-red-600 cursor-pointer flex gap-4 items-center" href="https://kessenick.com">
         Visit Site
@@ -30,8 +30,8 @@
     </a>
 </div>
 
-<div class="flex gap-8 mb-16">
-    <div class="w-1/2 flex flex-col justify-between">
+<div class="flex flex-col-reverse md:flex-row gap-8 mb-16">
+    <div class="w-full md:w-1/2 flex flex-col justify-between">
         <p>Kessenick Gamma wanted a new look and more sophisticated web presence to highlight their work and appeal to prospective new hires. Working with a designer, we redid their whole visual identity from the ground up, including a new website, branding, photography, content, business cards, even email signatures. The site is built on Wordpress, with a strong and simple foundation that can grow as their business does.</p>
 
         <div class="flex flex-col text-md">
@@ -46,7 +46,7 @@
         </div>
 
     </div>
-    <div class="w-1/2">
+    <div class="w-full md:w-1/2">
         <img class="rounded-xl" src="/assets/images/kg/kg-logo.png" />
     </div>
 </div>
@@ -71,15 +71,16 @@
 
 
   </main>
-  <div class="bg-[#fff6de] p-8 py-24">
-    <form class="flex flex-col items-start w-1/2 mx-auto" name="contact" netlify>
+  <div class="bg-amber-50 p-8 py-24 flex flex-col items-center">
+    <a href="/" class="socko text-5xl pr-1 pb-4 outline-text link-white tracking-wide">Get in touch.</a>    
+    <form class="flex flex-col items-start w-full md:w-1/2 mx-auto" name="contact" netlify>
       <label class="w-full pb-6">
         <span class="pb-4">Email</span>
-        <input class="w-full border border-black h-12 p-2" type="email" name="email" required/>
+        <input class="w-full rounded-xl border border-black h-12 p-2" type="email" name="email" required/>
       </label>
       <label class="w-full pb-6">
         <span class="pb-4">Message</span>
-        <textarea class="w-full border border-black h-24 p-2"name="message" required></textarea>
+        <textarea class="w-full rounded-xl border border-black h-24 p-2"name="message" required></textarea>
       </label>
       <button class="border border-black px-4 py-2 hover:bg-black hover:text-white cursor-pointer rounded-xl" type="submit">Send Message</button>
     </form>    

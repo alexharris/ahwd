@@ -2,7 +2,7 @@
 layout: layout.njk
 ---
 
-<div class="flex justify-between w-full items-start">
+<div class="flex flex-row mt-12 justify-between w-full items-start">
     <h1 class="text-4xl mb-12">{{ title }}</h1>
     <a class="pill-button text-md px-3 pb-1 rounded-full border border-black hover:border-red-600 cursor-pointer flex gap-4 items-center" href="{{url}}">
         Visit Site
@@ -10,8 +10,8 @@ layout: layout.njk
     </a>
 </div>
 
-<div class="flex gap-8 mb-16">
-    <div class="w-1/2 flex flex-col justify-between">
+<div class="flex flex-col-reverse md:flex-row gap-8 mb-16">
+    <div class="w-full md:w-1/2 flex flex-col justify-between">
         {{ content | safe }}
         <div class="flex flex-col text-md">
             <span>{{ tech }}</span>
@@ -25,7 +25,7 @@ layout: layout.njk
         </div>
 
     </div>
-    <div class="w-1/2">
+    <div class="w-full md:w-1/2">
         <img class="rounded-xl" src="{{ image }}" />
     </div>
 </div>

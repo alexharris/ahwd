@@ -5,28 +5,28 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Grab title from the page data and dump it here -->
-  <title>Alex Harris Web Development</title>
+  <title>AHWD - Alex Harris Web Development</title>
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="/tailwind-output.css">  
 </head>
 <body class="bg-gray-50">
   <!-- Grab the content from the page data and dump it here, and mark it as safe -->
   <!-- Safe docs: https://mozilla.github.io/nunjucks/templating.html#safe -->
-  <header class="p-8 pb-0">
-    <a href="/" class="logo outline-text">AHWD.</spaan>
-    <nav class="flex items-center gap-8">  
+  <header class="px-4 md:px-8 pt-4 md:pt-8 pb-0 flex flex-col md:flex-row">
+    <a href="/" class="logo outline-text link-white">AHWD.</a>
+    <nav class="flex flex-wrap justify-between items-center gap-8">  
       <a href="/work/everything">Work</a>
       <a href="/about">About</a>
       <svg class="stroke-black stroke-2 fill-none hover:fill-blue-950" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="arcs"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>      
     </nav>
   </header>
-  <main class="p-8">
-    <div class="flex gap-8 items-center justify-between py-36">
-    <div class="w-1/2">
-        <p class="text-3xl px-8">
+  <main class="p-4 md:p-8">
+    <div class="flex flex-col md:flex-row gap-8 items-center justify-between pt-6 pb-12 md:py-36">
+    <div class="w-full md:w-1/2">
+        <p class="text-3xl md:px-8">
             I am a freelance web developer in Oakland, CA focused on helping arts and environmental organizations, non-profits and small businesses communicate on the web.        </p>
     </div>
-    <div class="w-1/2 flex justify-center">
+    <div class="w-full md:w-1/2 flex justify-center">
         <svg  class="w-4/5" viewBox="0 0 370 276" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="1" y="52" width="199" height="136" fill="#E0C887" stroke="black" stroke-width="3"/>
             <rect x="24" y="36" width="199" height="136" fill="#FFF6DE" stroke="black" stroke-width="3"/>
@@ -38,7 +38,7 @@
         </svg>
     </div>
 </div>
-<div class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-center pb-36">
+<div class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-center pb-16">
     <div>
         <h2 class="header-text">Web Development</h2>
         <p>Each project I undertake is an opportunity to showcase my passion and expertise, and I am dedicated to delivering top-notch solutions that exceed my clients' expectations.</p>        
@@ -52,50 +52,50 @@
         <p>Each project I undertake is an opportunity to showcase my passion and expertise, and I am dedicated to delivering top-notch solutions that exceed my clients' expectations.</p>        
     </div>          
 </div>
-<h2 class="header-text pb-24">Select Work</h2>
+<div class="flex flex-col items-center">
+    <a href="/about" class="inline-block mx-auto  text-xl text-center bg-[#fff6de] hover:bg-black hover:text-white px-6 py-4 border border-black shadow-sm cursor-pointer rounded-xl mb-36">View services</a>
+</div>
 
 
-<div class="mb-32">
-    <div class="flex flex-row items-center justify-between">
-        <div class="w-3/5 pr-16">
-            <p class="text-3xl">
-                <img class="rounded-xl" src="/assets/images/bampfa/bampfa-building.jpg">        
-            </p>
+<h2 class="header-text md:pb-16">Select Work</h2>
+
+
+<div class="mb-16 md:mb-32">
+    <div class="flex flex-col md:flex-row items-center justify-between">
+        <div class="w-full md:w-3/5 md:pr-16">
+            <img class="rounded-xl w-full pb-4" src="/assets/images/bampfa/bampfa-building.jpg">        
         </div>
-        <div class="w-2/5 flex flex-col justify-center">
+        <div class="w-full md:w-2/5 flex flex-col justify-center">
             <h2 class="text-xl uppercase pb-3 font-bold">BAMPFA</h2>
             <p class="text-lg">Each project I undertake is an opportunity to showcase my passion and expertise, and I am dedicated to delivering top-notch solutions that exceed my clients' expectations.</p>        
+            <a class="text-lg" href="/work/bampfa">view project</a>
         </div>
     </div>    
 </div>
-<div class="mb-32">
-    <div class="flex flex-row-reverse items-center justify-between">
-        <div class="w-3/5 pl-16">
-            <p class="text-3xl">
-                <img class="rounded-xl" src="/assets/images/kg/kg-logo.png">        
-            </p>
+<div class="mb-16 md:mb-32">
+    <div class="flex flex-col md:flex-row-reverse items-center justify-between">
+        <div class="w-full md:w-3/5 md:pl-16">
+            <img class="rounded-xl w-full pb-4" src="/assets/images/kg/kg-logo.png">        
         </div>
-        <div class="w-2/5 flex flex-col justify-center">
+        <div class="w-full md:w-2/5 flex flex-col justify-center">
             <h2 class="text-xl uppercase pb-3 font-bold">Kessenick Gamma</h2>
             <p class="text-lg">Each project I undertake is an opportunity to showcase my passion and expertise, and I am dedicated to delivering top-notch solutions that exceed my clients' expectations.</p>        
         </div>
     </div>    
 </div>
-<div class="mb-32">
-    <div class="flex items-center justify-between">
-        <div class="w-3/5 pr-16">
-            <p class="text-3xl">
-                <img class="rounded-xl" src="/assets/images/ringo/ringo-homepage.jpg">        
-            </p>
+<div class="mb-16 md:mb-32">
+    <div class="flex flex-col md:flex-row items-center justify-between">
+        <div class="md:w-3/5 md:pr-16">
+            <img class="rounded-xl w-full pb-4" src="/assets/images/ringo/ringo-homepage.jpg">        
         </div>
-        <div class="w-2/5 flex flex-col justify-center">
+        <div class="md:w-2/5 flex flex-col justify-center">
             <h2 class="text-xl uppercase pb-3 font-bold">Kessenick Gamma</h2>
             <p class="text-lg">Each project I undertake is an opportunity to showcase my passion and expertise, and I am dedicated to delivering top-notch solutions that exceed my clients' expectations.</p>        
         </div>
     </div>    
 </div>
 <div class="flex flex-col p-4 items-center mb-36 py-12 px-4">
-    <a href="/work" class="text-xl text-center bg-[#fff6de] hover:bg-black hover:text-white px-6 py-4 border border-black shadow-sm mb-16 cursor-pointer rounded-xl">View all work</a>
+    <a href="/work/everything/" class="text-xl text-center bg-[#fff6de] hover:bg-black hover:text-white px-6 py-4 border border-black shadow-sm mb-16 cursor-pointer rounded-xl">View all work</a>
     <div class="flex flex-wrap gap-4">
         <a class="text-xl px-4 pt-2 pb-3 rounded-full border border-black cursor-pointer" href="">Arts Organizations</a>
         <a class="text-xl px-4 pt-2 pb-3 rounded-full border border-black cursor-pointer">Small Business</a>
@@ -143,15 +143,16 @@
 </div> -->
 
   </main>
-  <div class="bg-[#fff6de] p-8 py-24">
-    <form class="flex flex-col items-start w-1/2 mx-auto" name="contact" netlify>
+  <div class="bg-amber-50 p-8 py-24 flex flex-col items-center">
+    <a href="/" class="socko text-5xl pr-1 pb-4 outline-text link-white tracking-wide">Get in touch.</a>    
+    <form class="flex flex-col items-start w-full md:w-1/2 mx-auto" name="contact" netlify>
       <label class="w-full pb-6">
         <span class="pb-4">Email</span>
-        <input class="w-full border border-black h-12 p-2" type="email" name="email" required/>
+        <input class="w-full rounded-xl border border-black h-12 p-2" type="email" name="email" required/>
       </label>
       <label class="w-full pb-6">
         <span class="pb-4">Message</span>
-        <textarea class="w-full border border-black h-24 p-2"name="message" required></textarea>
+        <textarea class="w-full rounded-xl border border-black h-24 p-2"name="message" required></textarea>
       </label>
       <button class="border border-black px-4 py-2 hover:bg-black hover:text-white cursor-pointer rounded-xl" type="submit">Send Message</button>
     </form>    

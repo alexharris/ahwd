@@ -5,22 +5,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Grab title from the page data and dump it here -->
-  <title>Work</title>
+  <title>AHWD - Work</title>
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="/tailwind-output.css">  
 </head>
 <body class="bg-gray-50">
   <!-- Grab the content from the page data and dump it here, and mark it as safe -->
   <!-- Safe docs: https://mozilla.github.io/nunjucks/templating.html#safe -->
-  <header class="p-8 pb-0">
-    <a href="/" class="logo outline-text">AHWD.</spaan>
-    <nav class="flex items-center gap-8">  
+  <header class="px-4 md:px-8 pt-4 md:pt-8 pb-0 flex flex-col md:flex-row">
+    <a href="/" class="logo outline-text link-white">AHWD.</a>
+    <nav class="flex flex-wrap justify-between items-center gap-8">  
       <a href="/work/everything">Work</a>
       <a href="/about">About</a>
       <svg class="stroke-black stroke-2 fill-none hover:fill-blue-950" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="arcs"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>      
     </nav>
   </header>
-  <main class="p-8">
+  <main class="p-4 md:p-8">
     
 
 <h1 class="text-5xl mb-12">Work</h1>
@@ -34,13 +34,13 @@
 </div>
     
     
-        <div class="flex gap-8 border-t border-gray-200 py-12">
-            <div class="w-3/5">
+        <div class="flex flex-col md:flex-row gap-4 md:gap-8 border-t border-gray-200 py-6 md:py-12">
+            <div class="w-full md:w-3/5">
                 <a href="/work/picoyune/">
                     <img class="w-full rounded-xl" src="/assets/images/picoyune/image-1.jpg" />
                 </a>
             </div>
-            <div class="flex flex-col relative w-2/5">
+            <div class="flex flex-col relative w-full md:w-2/5">
                 <h2 class="text-2xl"><a href="/work/picoyune/">Picoyune</a></h2>
                 <span class="text-md">Static netlify</span>
                 <span class="text-md">2022</span>
@@ -51,13 +51,13 @@
             
         </div>
     
-        <div class="flex gap-8 border-t border-gray-200 py-12">
-            <div class="w-3/5">
+        <div class="flex flex-col md:flex-row gap-4 md:gap-8 border-t border-gray-200 py-6 md:py-12">
+            <div class="w-full md:w-3/5">
                 <a href="/work/uc-water-portal/">
                     <img class="w-full rounded-xl" src="/assets/images/ucwaterportal/ucwater-creek.jpg" />
                 </a>
             </div>
-            <div class="flex flex-col relative w-2/5">
+            <div class="flex flex-col relative w-full md:w-2/5">
                 <h2 class="text-2xl"><a href="/work/uc-water-portal/">UC Berkeley Water Portal</a></h2>
                 <span class="text-md">Wordpress</span>
                 <span class="text-md">2019</span>
@@ -72,15 +72,16 @@
 
 
   </main>
-  <div class="bg-[#fff6de] p-8 py-24">
-    <form class="flex flex-col items-start w-1/2 mx-auto" name="contact" netlify>
+  <div class="bg-amber-50 p-8 py-24 flex flex-col items-center">
+    <a href="/" class="socko text-5xl pr-1 pb-4 outline-text link-white tracking-wide">Get in touch.</a>    
+    <form class="flex flex-col items-start w-full md:w-1/2 mx-auto" name="contact" netlify>
       <label class="w-full pb-6">
         <span class="pb-4">Email</span>
-        <input class="w-full border border-black h-12 p-2" type="email" name="email" required/>
+        <input class="w-full rounded-xl border border-black h-12 p-2" type="email" name="email" required/>
       </label>
       <label class="w-full pb-6">
         <span class="pb-4">Message</span>
-        <textarea class="w-full border border-black h-24 p-2"name="message" required></textarea>
+        <textarea class="w-full rounded-xl border border-black h-24 p-2"name="message" required></textarea>
       </label>
       <button class="border border-black px-4 py-2 hover:bg-black hover:text-white cursor-pointer rounded-xl" type="submit">Send Message</button>
     </form>    

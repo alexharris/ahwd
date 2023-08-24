@@ -6,7 +6,7 @@ a, a:visited {
     @apply text-gray-900 hover:text-red-500
 }
 
-a.logo {
+a.link-white {
     @apply text-white
 }
 
