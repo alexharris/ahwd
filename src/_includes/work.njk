@@ -14,8 +14,7 @@ layout: layout.njk
     <div class="w-full md:w-1/2 flex flex-col justify-between">
         {{ content | safe }}
         <div class="flex flex-col text-md">
-            <span>{{ tech }}</span>
-            <span>{{ year }}</span>
+            <span>{{ tech }}, {{ year }}</span>
             <div class="flex">
                 {% if partners|length %} With: {% endif %}
                 {% for partner in partners %}   
