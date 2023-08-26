@@ -8,20 +8,23 @@
   <title>AHWD - {{ title }}</title>
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="/tailwind-output.css">  
+  <script src="/script.js"></script>
 </head>
 <body class="bg-gray-50">
   <!-- Grab the content from the page data and dump it here, and mark it as safe -->
   <!-- Safe docs: https://mozilla.github.io/nunjucks/templating.html#safe -->
-  <header class="px-4 md:px-8 pt-4 md:pt-8 pb-0 flex flex-col md:flex-row">
-    
-    {% if title == 'Home' %}
+
+  <header id="header" class="w-full sticky top-0  px-4 md:px-8 py-8 flex flex-col md:flex-row bg-gray-50">
+    <!-- text-4xl -->
+      <a href="/" id="logo" class="socko outline-text link-white transition-all hover:tracking-widest text-9xl">AHWD.</a>
+    <!-- {% if title == 'Home' %}
       <a href="/" class="socko text-6xl outline-text link-white">AHWD.</a>
     {% elseif '/work/' in page.url %}
-      <a href="/" class="socko text-6xl outline-text link-white">AHWD/Work</a>
+      <a href="/" class="socko text-6xl outline-text link-white">AHWD / Work</a>
     {% else %}
-      <span class="socko text-6xl outline-text text-white link-white"><a href="/">AHWD/{{title}} </a></span>
+      <span class="socko text-6xl outline-text text-white link-white"><a href="/">AHWD / {{title}}</a></span>
          
-    {% endif %}
+    {% endif %} -->
     <nav class="flex flex-wrap justify-between items-center gap-8">  
       <a href="/work/everything">Work</a>
       <a href="/projects">Projects</a>
@@ -29,11 +32,11 @@
       <svg class="stroke-black stroke-2 fill-none hover:fill-blue-950" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="arcs"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>      
     </nav>
   </header>
-  <main class="p-4 md:p-8">
+  <main id="main" class="p-4 md:p-8">
     {{ content | safe }}
   </main>
   <div class="bg-amber-50 p-8 py-24 flex flex-col items-center">
-    <a href="/" class="socko text-5xl pr-1 pb-4 outline-text link-white tracking-wide">Get in touch.</a>    
+    <span class="socko transition-all hover:tracking-widest text-5xl pr-1 pb-4 outline-text text-white link-white">Get in touch.</span>    
     <form class="flex flex-col items-start w-full md:w-1/2 mx-auto" name="contact" netlify>
       <label class="w-full pb-6">
         <span class="pb-4">Email</span>
@@ -47,7 +50,7 @@
     </form>    
 </div>  
   <footer class="w-full flex flex-col md:flex-row justify-between bg-gray-800 text-white p-4 md:p-8">
-    <a href="/" class="socko text-5xl outline-text link-white">AHWD.</a>
+    <a href="/" class="socko text-5xl outline-text link-white transition-all hover:tracking-widest">AHWD.</a>
     <nav class="flex flex-wrap justify-between items-center gap-8">  
       <a class="link-white" href="/work/everything">Work</a>
       <a class="link-white" href="/about">About</a>

@@ -5,6 +5,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/tailwind-output.css"); 
     eleventyConfig.addPassthroughCopy("src/assets/fonts/*");
     eleventyConfig.addPassthroughCopy("src/assets/images/**/*");
+    eleventyConfig.addPassthroughCopy("src/script.js"); 
 
     return {
         // When a passthrough file is modified, rebuild the pages:    

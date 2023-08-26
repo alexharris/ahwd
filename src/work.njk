@@ -10,7 +10,7 @@ permalink: /work/{{ tag }}/
 
 
 <h1 class="text-5xl mb-12">{{ title }}</h1>
-<div class="flex flex-wrap gap-4 mb-12">
+<div class="flex flex-wrap gap-4 my-16">
     <a {% if page.url == '/work/everything/' %} aria-current="page" {% endif %} class="text-md px-3 pb-1 rounded-full border border-black cursor-pointer" href="/work/everything">Everything</a>
     <a {% if page.url == '/work/arts/' %} aria-current="page" {% endif %} class="text-md px-3 pb-1 rounded-full border border-black cursor-pointer" href="/work/arts">Arts Organizations</a>
     <a {% if page.url == '/work/business/' %} aria-current="page" {% endif %} class="text-md px-3 pb-1 rounded-full border border-black cursor-pointer" href="/work/business">Small Business</a>

@@ -79,12 +79,12 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-    font-family: 'ibm_plex_sansregular', sans-serif;
+    font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
     margin: 1em;
     color: #000;
     font-size: 20px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 200;
     line-height: normal;     
 }
 
@@ -93,15 +93,7 @@ header  {
     justify-content: space-between;
 }
 
-.header-text {
-    color: #000;
-    font-family: 'ibm_plex_sansregular', sans-serif;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;   
-    padding-bottom: 26px; 
-}
+
 
 .socko {
     font-family: 'socko_regular';
@@ -111,5 +103,4 @@ header  {
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
 }
-
 

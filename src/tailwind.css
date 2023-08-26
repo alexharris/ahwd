@@ -26,3 +26,7 @@ a.link-white, .link-white > a {
 .partner a {
     @apply underline
 }
+
+.logo {
+    @apply transition-all hover:tracking-widest
+}

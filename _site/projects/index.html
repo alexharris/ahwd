@@ -8,16 +8,19 @@
   <title>AHWD - Projects</title>
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="/tailwind-output.css">  
+  <script src="/script.js"></script>
 </head>
 <body class="bg-gray-50">
   <!-- Grab the content from the page data and dump it here, and mark it as safe -->
   <!-- Safe docs: https://mozilla.github.io/nunjucks/templating.html#safe -->
-  <header class="px-4 md:px-8 pt-4 md:pt-8 pb-0 flex flex-col md:flex-row">
-    
-    
-      <span class="socko text-6xl outline-text text-white link-white"><a href="/">AHWD/Projects </a></span>
+
+  <header id="header" class="w-full sticky top-0  px-4 md:px-8 py-8 flex flex-col md:flex-row bg-gray-50">
+    <!-- text-4xl -->
+      <a href="/" id="logo" class="socko outline-text link-white transition-all hover:tracking-widest text-9xl">AHWD.</a>
+    <!-- 
+      <span class="socko text-6xl outline-text text-white link-white"><a href="/">AHWD / Projects</a></span>
          
-    
+     -->
     <nav class="flex flex-wrap justify-between items-center gap-8">  
       <a href="/work/everything">Work</a>
       <a href="/projects">Projects</a>
@@ -25,16 +28,16 @@
       <svg class="stroke-black stroke-2 fill-none hover:fill-blue-950" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="arcs"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>      
     </nav>
   </header>
-  <main class="p-4 md:p-8">
+  <main id="main" class="p-4 md:p-8">
     
 
-<h1 class="sr-only">Projects</h1>
-<p class="text-2xl md:text-3xl w-full md:w-2/3 my-16">
+<h1 class="text-4xl mb-12">Projects</h1>
+<p class="text-xl md:text-2xl w-full md:w-2/3 my-16">
     In addition to client work, I also have a few of my own projects that I work on from time to time.
 </p>
 <div class="flex flex-col md:flex-row gap-4 md:gap-8 border-t border-gray-200 py-6 md:py-12">
     <div class="flex flex-col relative w-full md:w-1/2">
-        <h2 class="text-4xl mb-8">Dither it!</h2>
+        <h2 class="text-2xl mb-8">Dither it!</h2>
         <p>Dither it! is a web application that reduces the number of colors an image uses, using various algorithms, providing a particular "lo-fi" aesthetic and often a reduced file size. Built using Vue.js and tailwind, I have been maintaining and updating Dither it! since 2019. In that time, over 135,000 visitors have dithered images over a million times. </p>
     </div>    
     <div class="w-full md:w-1/2">
@@ -45,12 +48,12 @@
 </div>
 <div class="flex flex-col md:flex-row gap-4 md:gap-8 border-t border-gray-200 py-6 md:py-12">
     <div class="flex flex-col relative w-full md:w-1/2">
-        <h2 class="text-4xl mb-8">Dither it! for Figma</h2>
+        <h2 class="text-2xl mb-8">Dither it! for Figma</h2>
         <p>A plugin for dithering images directly in Figma.</p>
     </div>    
     <div class="w-full md:w-1/2">
         <a href="https://ditherit.com">
-            <img class="w-full rounded-xl" src="/assets/images/dither-it.jpg" />
+            <img class="w-full rounded-xl" src="/assets/images/dither-it-figma.jpg" />
         </a>
     </div>
 </div>
@@ -59,7 +62,7 @@
 
   </main>
   <div class="bg-amber-50 p-8 py-24 flex flex-col items-center">
-    <a href="/" class="socko text-5xl pr-1 pb-4 outline-text link-white tracking-wide">Get in touch.</a>    
+    <span class="socko transition-all hover:tracking-widest text-5xl pr-1 pb-4 outline-text text-white link-white">Get in touch.</span>    
     <form class="flex flex-col items-start w-full md:w-1/2 mx-auto" name="contact" netlify>
       <label class="w-full pb-6">
         <span class="pb-4">Email</span>
@@ -73,7 +76,7 @@
     </form>    
 </div>  
   <footer class="w-full flex flex-col md:flex-row justify-between bg-gray-800 text-white p-4 md:p-8">
-    <a href="/" class="socko text-5xl outline-text link-white">AHWD.</a>
+    <a href="/" class="socko text-5xl outline-text link-white transition-all hover:tracking-widest">AHWD.</a>
     <nav class="flex flex-wrap justify-between items-center gap-8">  
       <a class="link-white" href="/work/everything">Work</a>
       <a class="link-white" href="/about">About</a>
