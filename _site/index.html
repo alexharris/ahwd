@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Grab title from the page data and dump it here -->
   <title>AHWD - Home</title>
-  <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="/tailwind-output.css">  
   <script src="/script.js"></script>
 </head>
@@ -14,13 +13,14 @@
   <!-- Grab the content from the page data and dump it here, and mark it as safe -->
   <!-- Safe docs: https://mozilla.github.io/nunjucks/templating.html#safe -->
 
-  <header id="header" class="w-full sticky top-0  px-4 md:px-8 py-8 flex flex-col md:flex-row bg-gray-50">
+  <header id="header" class="w-full sticky top-0  py-4 px-8 flex flex-col md:flex-row justify-between bg-gray-50 z-50">
     <!-- text-4xl -->
-      <a href="/" id="logo" class="socko outline-text link-white transition-all hover:tracking-widest text-9xl">AHWD.</a>
+      <a href="/" id="logo" class="socko outline-text link-white transition-all duration-700 hover:tracking-widest text-9xl">AHWD.</a>
     <!-- 
       <a href="/" class="socko text-6xl outline-text link-white">AHWD.</a>
      -->
     <nav class="flex flex-wrap justify-between items-center gap-8">  
+      <a href="/services">Services</a>
       <a href="/work/everything">Work</a>
       <a href="/projects">Projects</a>
       <a href="/about">About</a>
@@ -46,7 +46,7 @@
         </svg>
     </div>
 </div>
-<div class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-center pb-16">
+<!-- <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-center pb-16">
     <div>
         <h2 class="header-text">Web Development</h2>
         <p>Each project I undertake is an opportunity to showcase my passion and expertise, and I am dedicated to delivering top-notch solutions that exceed my clients' expectations.</p>        
@@ -59,10 +59,10 @@
         <h2 class="header-text">Project Management</h2>
         <p>Each project I undertake is an opportunity to showcase my passion and expertise, and I am dedicated to delivering top-notch solutions that exceed my clients' expectations.</p>        
     </div>          
-</div>
-<div class="flex flex-col items-center">
+</div> -->
+<!-- <div class="flex flex-col items-center">
     <a href="/about" class="inline-block mx-auto  text-xl text-center bg-[#fff6de] hover:bg-black hover:text-white px-6 py-4 border border-black shadow-sm cursor-pointer rounded-xl mb-16">View services</a>
-</div>
+</div> -->
 
 
 <h2 class="text-xl uppercase md:pb-12">Select Work</h2>
@@ -168,10 +168,12 @@
       <button class="border border-black px-4 py-2 hover:bg-black hover:text-white cursor-pointer rounded-xl" type="submit">Send Message</button>
     </form>    
 </div>  
-  <footer class="w-full flex flex-col md:flex-row justify-between bg-gray-800 text-white p-4 md:p-8">
-    <a href="/" class="socko text-5xl outline-text link-white transition-all hover:tracking-widest">AHWD.</a>
+  <footer class="w-full flex flex-col md:flex-row justify-between bg-gray-800 text-white p-8 ">
+    <span>AHWD.</span>
     <nav class="flex flex-wrap justify-between items-center gap-8">  
+      <a class="link-white" href="/services">Services</a>
       <a class="link-white" href="/work/everything">Work</a>
+      <a class="link-white" href="/projects">Projects</a>
       <a class="link-white" href="/about">About</a>
     </nav>
   </footer>

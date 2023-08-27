@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Grab title from the page data and dump it here -->
   <title>AHWD - Work</title>
-  <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="/tailwind-output.css">  
   <script src="/script.js"></script>
 </head>
@@ -14,13 +13,14 @@
   <!-- Grab the content from the page data and dump it here, and mark it as safe -->
   <!-- Safe docs: https://mozilla.github.io/nunjucks/templating.html#safe -->
 
-  <header id="header" class="w-full sticky top-0  px-4 md:px-8 py-8 flex flex-col md:flex-row bg-gray-50">
+  <header id="header" class="w-full sticky top-0  py-4 px-8 flex flex-col md:flex-row justify-between bg-gray-50 z-50">
     <!-- text-4xl -->
-      <a href="/" id="logo" class="socko outline-text link-white transition-all hover:tracking-widest text-9xl">AHWD.</a>
+      <a href="/" id="logo" class="socko outline-text link-white transition-all duration-700 hover:tracking-widest text-9xl">AHWD.</a>
     <!-- 
       <a href="/" class="socko text-6xl outline-text link-white">AHWD / Work</a>
      -->
     <nav class="flex flex-wrap justify-between items-center gap-8">  
+      <a href="/services">Services</a>
       <a href="/work/everything">Work</a>
       <a href="/projects">Projects</a>
       <a href="/about">About</a>
@@ -129,7 +129,7 @@
         <div class="flex flex-col md:flex-row gap-4 md:gap-8 border-t border-gray-200 py-6 md:py-12">
             <div class="w-full md:w-3/5">
                 <a href="/work/500-capp-street/">
-                    <img class="w-full rounded-xl" src="/assets/images/500cappstreet/image-1.jpg" />
+                    <img class="w-full rounded-xl" src="/assets/images/500cappstreet/500capp-archive.jpg" />
                 </a>
             </div>
             <div class="flex flex-col relative w-full md:w-2/5">
@@ -262,6 +262,23 @@
             
         </div>
     
+        <div class="flex flex-col md:flex-row gap-4 md:gap-8 border-t border-gray-200 py-6 md:py-12">
+            <div class="w-full md:w-3/5">
+                <a href="/services/">
+                    <img class="w-full rounded-xl" src="" />
+                </a>
+            </div>
+            <div class="flex flex-col relative w-full md:w-2/5">
+                <h2 class="text-2xl"><a href="/services/">Services</a></h2>
+                <span class="text-md"></span>
+                <span class="text-md"></span>
+                <a class="absolute top-0 right-0" href="" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="stroke-black hover:stroke-red-600" viewBox="0 0 24 24" fill="none"  stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg>                    
+                </a>
+            </div>
+            
+        </div>
+    
 
 
 
@@ -280,10 +297,12 @@
       <button class="border border-black px-4 py-2 hover:bg-black hover:text-white cursor-pointer rounded-xl" type="submit">Send Message</button>
     </form>    
 </div>  
-  <footer class="w-full flex flex-col md:flex-row justify-between bg-gray-800 text-white p-4 md:p-8">
-    <a href="/" class="socko text-5xl outline-text link-white transition-all hover:tracking-widest">AHWD.</a>
+  <footer class="w-full flex flex-col md:flex-row justify-between bg-gray-800 text-white p-8 ">
+    <span>AHWD.</span>
     <nav class="flex flex-wrap justify-between items-center gap-8">  
+      <a class="link-white" href="/services">Services</a>
       <a class="link-white" href="/work/everything">Work</a>
+      <a class="link-white" href="/projects">Projects</a>
       <a class="link-white" href="/about">About</a>
     </nav>
   </footer>

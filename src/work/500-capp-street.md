@@ -6,7 +6,7 @@ tags:
     - everything
     - arts
     - education
-image: /assets/images/500cappstreet/image-1.jpg
+image: /assets/images/500cappstreet/500capp-archive.jpg
 dir: 500cappstreet
 images:
     - image-2.jpg
