@@ -2,7 +2,12 @@
 layout: layout.njk
 title: Home
 ---
-<div class="flex flex-col md:flex-row gap-8 items-center justify-between pt-6 pb-12 md:py-36">
+
+<p class="text-4xl md:text-5xl w-full md:w-3/5 mb-24">
+    I am a web developer in Oakland, CA focused on helping arts and environmental organizations, non-profits and small businesses communicate on the web.        
+</p>
+
+<!-- <div class="flex flex-col md:flex-row gap-8 items-center justify-between pt-6 pb-12 md:py-36">
     <div class="w-full md:w-1/2">
         <p class="text-2xl md:text-3xl md:px-8">
             I am a freelance web developer in Oakland, CA focused on helping arts and environmental organizations, non-profits and small businesses communicate on the web.        
@@ -17,9 +22,9 @@ title: Home
             <path d="M190.652 74.7354L190.995 76.7563L192.377 75.2418L233.228 30.4536L209.458 86.219L208.654 88.1047L210.635 87.5774L269.215 71.9851L219.069 106.047L217.373 107.198L219.325 107.826L277.036 126.38L216.435 127.923L214.386 127.975L215.689 129.558L254.207 176.368L202.392 144.903L200.64 143.839L200.88 145.875L207.977 206.078L181.399 151.595L180.5 149.753L179.601 151.595L153.023 206.078L160.12 145.875L160.36 143.839L158.608 144.903L106.793 176.368L145.311 129.558L146.614 127.975L144.565 127.923L83.964 126.38L141.675 107.826L143.627 107.198L141.931 106.047L91.7847 71.9851L150.365 87.5774L152.346 88.1047L151.543 86.219L127.772 30.4536L168.623 75.2418L170.005 76.7563L170.348 74.7354L180.5 14.9713L190.652 74.7354Z" fill="#FFFFF5" stroke="black" stroke-width="3"/>
             <path d="M304.316 46.0967L304.659 48.1176L306.041 46.6031L333.468 16.5325L317.509 53.9731L316.705 55.8589L318.686 55.3316L358.017 44.863L324.349 67.7317L322.653 68.8835L324.605 69.511L363.352 81.968L322.665 83.0042L320.615 83.0564L321.918 84.6393L347.779 116.067L312.991 94.9417L311.239 93.8777L311.479 95.9135L316.243 136.334L298.399 99.7541L297.5 97.9117L296.601 99.7541L278.757 136.334L283.521 95.9135L283.761 93.8777L282.009 94.9417L247.221 116.067L273.082 84.6393L274.385 83.0564L272.335 83.0042L231.648 81.968L270.395 69.511L272.347 68.8835L270.651 67.7317L236.983 44.863L276.314 55.3316L278.295 55.8589L277.491 53.9731L261.532 16.5325L288.959 46.6031L290.341 48.1176L290.684 46.0967L297.5 5.97127L304.316 46.0967Z" fill="#FFFFC4" stroke="black" stroke-width="3"/>
             <path d="M287.227 153.023L287.57 155.044L288.951 153.53L299.924 141.5L293.539 156.478L292.735 158.364L294.716 157.837L310.451 153.649L296.982 162.797L295.286 163.949L297.238 164.577L312.738 169.56L296.462 169.975L294.412 170.027L295.715 171.61L306.061 184.182L292.144 175.731L290.391 174.667L290.631 176.703L292.537 192.873L285.399 178.239L284.5 176.397L283.601 178.239L276.463 192.873L278.369 176.703L278.609 174.667L276.856 175.731L262.939 184.182L273.285 171.61L274.588 170.027L272.538 169.975L256.262 169.56L271.762 164.577L273.714 163.949L272.018 162.797L258.549 153.649L274.284 157.837L276.265 158.364L275.461 156.478L269.076 141.5L280.049 153.53L281.43 155.044L281.773 153.023L284.5 136.971L287.227 153.023Z" fill="#FFFF00" stroke="black" stroke-width="3"/>
+        </div>
         </svg>
-    </div>
-</div>
+</div> -->
 <!-- <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-center pb-16">
     <div>
         <h2 class="header-text">Web Development</h2>
@@ -39,54 +44,54 @@ title: Home
 </div> -->
 
 
-<h2 class="text-xl uppercase md:pb-12">Select Work</h2>
+<h2 class="text-xl uppercase md:pb-12 font-bold">Featured Work —</h2>
 
 
 <div class="mb-16 md:mb-32">
     <div class="flex flex-col md:flex-row items-center justify-between">
-        <div class="w-full md:w-3/5 md:pr-16">
-            <img class="rounded-xl w-full mb-4" src="/assets/images/bampfa/bampfa-building.jpg">        
+        <div class="md:w-3/5 md:pr-16">
+            <img class="rounded-xl w-full mb-4" src="/assets/images/ringo/ringo-main.jpg">        
         </div>
-        <div class="w-full md:w-2/5 flex flex-col justify-center">
-            <h2 class="text-xl uppercase pb-3 font-bold">BAMPFA</h2>
+        <div class="md:w-2/5 flex flex-col justify-center items-start">
+            <h2 class="text-xl uppercase pb-3"><a class="cursor-pointer" href="/work/ringo-studio">Ringo Studio</a></h2>
             <p class="text-lg">Each project I undertake is an opportunity to showcase my passion and expertise, and I am dedicated to delivering top-notch solutions that exceed my clients' expectations.</p>        
-            <a class="text-lg mt-4 underline" href="/work/bampfa">View project</a>
+            <a class="text-md px-3 pb-1 rounded-full border border-black dark:border-white cursor-pointer mt-4" href="/work/ringo-studio">View project</a>
         </div>
     </div>    
 </div>
 <div class="mb-16 md:mb-32">
     <div class="flex flex-col md:flex-row-reverse items-center justify-between">
         <div class="w-full md:w-3/5 md:pl-16">
-            <img class="rounded-xl w-full mb-4" src="/assets/images/kg/kg-logo.png">        
+            <img class="rounded-xl w-full mb-4" src="/assets/images/kg/image-2.jpg">        
         </div>
-        <div class="w-full md:w-2/5 flex flex-col justify-center">
-            <h2 class="text-xl uppercase pb-3 font-bold">Kessenick Gamma</h2>
+        <div class="w-full md:w-2/5 flex flex-col justify-center items-start">
+            <h2 class="text-xl uppercase pb-3"><a class="cursor-pointer" href="/work/kessenick-gamma">Kessenick Gamma</a></h2>
             <p class="text-lg">Each project I undertake is an opportunity to showcase my passion and expertise, and I am dedicated to delivering top-notch solutions that exceed my clients' expectations.</p>        
-            <a class="text-lg mt-4 underline" href="/work/kessenick-gamma">View project</a>
+            <a class="text-md px-3 pb-1 rounded-full border border-black dark:border-white cursor-pointer mt-4" href="/work/kessenick-gamma">View project</a>
         </div>
     </div>    
 </div>
 <div class="mb-16 md:mb-32">
     <div class="flex flex-col md:flex-row items-center justify-between">
-        <div class="md:w-3/5 md:pr-16">
-            <img class="rounded-xl w-full mb-4" src="/assets/images/ringo/ringo-homepage.jpg">        
+        <div class="w-full md:w-3/5 md:pr-16">
+            <img class="rounded-xl w-full mb-4" src="/assets/images/bampfa/bampfa-building.jpg">        
         </div>
-        <div class="md:w-2/5 flex flex-col justify-center">
-            <h2 class="text-xl uppercase pb-3 font-bold">Ringo Studio</h2>
+        <div class="w-full md:w-2/5 flex flex-col justify-center items-start">
+            <h2 class="text-xl uppercase pb-3"><a class="cursor-pointer" href="/work/bampfa">BAMPFA</a></h2>
             <p class="text-lg">Each project I undertake is an opportunity to showcase my passion and expertise, and I am dedicated to delivering top-notch solutions that exceed my clients' expectations.</p>        
-            <a class="text-lg mt-4 underline" href="/work/ringo-studio">View project</a>
+            <a class="text-md px-3 pb-1 rounded-full border border-black dark:border-white cursor-pointer mt-4" href="/work/bampfa">View project</a>
         </div>
     </div>    
 </div>
 <div class="flex flex-col p-4 items-center mb-16 md:mb-36 pb-12 px-4">
-    <a href="/work/everything/" class="text-xl text-center bg-[#fff6de] hover:bg-black hover:text-white px-6 py-4 border border-black shadow-sm mb-4 cursor-pointer rounded-xl">View all work</a>
+    <a href="/work/everything/" class="text-xl text-center hover:text-white px-6 py-4 border border-black dark:border-white shadow-sm mb-4 cursor-pointer rounded-xl">View all work</a>
     or select a category
     <div class="flex flex-wrap gap-4 mt-4">
-        <a class="text-xl px-4 pt-2 pb-3 rounded-full border border-black cursor-pointer" href="">Arts Organizations</a>
-        <a class="text-xl px-4 pt-2 pb-3 rounded-full border border-black cursor-pointer">Small Business</a>
-        <a class="text-xl px-4 pt-2 pb-3 rounded-full border border-black cursor-pointer">Education</a>
-        <a class="text-xl px-4 pt-2 pb-3 rounded-full border border-black cursor-pointer">Design</a>
-        <a class="text-xl px-4 pt-2 pb-3 rounded-full border border-black cursor-pointer">The Environment</a>
+        <a class="text-xl px-4 pt-2 pb-3 rounded-full border border-black dark:border-white cursor-pointer" href="">Arts Organizations</a>
+        <a class="text-xl px-4 pt-2 pb-3 rounded-full border border-black dark:border-white cursor-pointer">Small Business</a>
+        <a class="text-xl px-4 pt-2 pb-3 rounded-full border border-black dark:border-white cursor-pointer">Education</a>
+        <!-- <a class="text-xl px-4 pt-2 pb-3 rounded-full border border-black dark:border-white cursor-pointer">Design</a> -->
+        <a class="text-xl px-4 pt-2 pb-3 rounded-full border border-black dark:border-white cursor-pointer">The Environment</a>
     </div>
 </div>
 

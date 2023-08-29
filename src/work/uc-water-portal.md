@@ -6,9 +6,10 @@ tags:
     - environment
     - education
     - everything
-image: /assets/images/ucwaterportal/ucwater-creek.jpg
+image: /assets/images/ucwaterportal/berkeleywater-main.jpg
 dir: ucwaterportal
 images:
+    - ucwater-creek.jpg 
     - image-1.jpg
     - image-2.jpg
     - image-3.jpg

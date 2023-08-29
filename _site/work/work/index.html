@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,171 +7,163 @@
   <!-- Grab title from the page data and dump it here -->
   <title>AHWD - Work</title>
   <link rel="stylesheet" href="/tailwind-output.css">  
-  <script src="/script.js"></script>
+  
 </head>
-<body class="bg-gray-50">
+<body class="dark:bg-blue-900 dark:text-white bg-gray-50">
   <!-- Grab the content from the page data and dump it here, and mark it as safe -->
   <!-- Safe docs: https://mozilla.github.io/nunjucks/templating.html#safe -->
 
-  <header id="header" class="w-full sticky top-0  py-4 px-8 flex flex-col md:flex-row justify-between bg-gray-50 z-50">
+  <header id="header" class="w-full sticky top-0 py-4 px-8 flex flex-col md:flex-row justify-between z-50 bg-gray-50 dark:bg-blue-900">
     <!-- text-4xl -->
       <a href="/" id="logo" class="socko outline-text link-white transition-all duration-700 hover:tracking-widest text-9xl">AHWD.</a>
     <!-- 
       <a href="/" class="socko text-6xl outline-text link-white">AHWD / Work</a>
      -->
     <nav class="flex flex-wrap justify-between items-center gap-8">  
-      <a href="/services">Services</a>
-      <a href="/work/everything">Work</a>
-      <a href="/projects">Projects</a>
-      <a href="/about">About</a>
-      <svg class="stroke-black stroke-2 fill-none hover:fill-blue-950" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="arcs"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>      
+      <a class="hover:underline hover:underline-offset-4" href="/services">Services</a>
+      <a class="hover:underline hover:underline-offset-4" href="/work/everything">Work</a>
+      <a class="hover:underline hover:underline-offset-4" href="/projects">Projects</a>
+      <a class="hover:underline hover:underline-offset-4" href="/about">About</a>
+      <svg id="moon" class="stroke-black stroke-1 fill-none hover:fill-yellow-300 dark:fill-yellow-300" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="arcs"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>      
     </nav>
   </header>
-  <main id="main" class="p-4 md:p-8">
+  <main id="main" class="p-4 md:p-8 relative bg-gray-50 dark:bg-blue-900 z-30 mb-[100vh]">
     
 
 <h1 class="text-5xl mb-12">Work</h1>
 <div class="flex flex-wrap gap-4 my-16">
-    <a  class="text-md px-3 pb-1 rounded-full border border-black cursor-pointer" href="/work/everything">Everything</a>
-    <a  class="text-md px-3 pb-1 rounded-full border border-black cursor-pointer" href="/work/arts">Arts Organizations</a>
-    <a  class="text-md px-3 pb-1 rounded-full border border-black cursor-pointer" href="/work/business">Small Business</a>
-    <a  class="text-md px-3 pb-1 rounded-full border border-black cursor-pointer" href="/work/education">Education</a>
-    <a  class="text-md px-3 pb-1 rounded-full border border-black cursor-pointer" href="/work/design">Design</a>
-    <a  class="text-md px-3 pb-1 rounded-full border border-black cursor-pointer" href="/work/environment">Environment</a>
+    <a  class="text-md px-3 pb-1 rounded-full border border-black dark:border-white cursor-pointer" href="/work/everything">Everything</a>
+    <a  class="text-md px-3 pb-1 rounded-full border border-black dark:border-white cursor-pointer" href="/work/arts">Arts Organizations</a>
+    <a  class="text-md px-3 pb-1 rounded-full border border-black dark:border-white cursor-pointer" href="/work/business">Small Business</a>
+    <a  class="text-md px-3 pb-1 rounded-full border border-black dark:border-white cursor-pointer" href="/work/education">Education</a>
+    <!-- <a  class="text-md px-3 pb-1 rounded-full border border-black dark:border-white cursor-pointer" href="/work/design">Design</a> -->
+    <a  class="text-md px-3 pb-1 rounded-full border border-black dark:border-white cursor-pointer" href="/work/environment">Environment</a>
 </div>
     
     
-        <div class="flex flex-col md:flex-row gap-4 md:gap-8 border-t border-gray-200 py-6 md:py-12">
+        <div class="flex flex-col md:flex-row gap-4 md:gap-8 border-t border-gray-200 dark:border-gray-900 py-6 md:py-12">
             <div class="w-full md:w-3/5">
                 <a href="/work/canal-projects/">
-                    <img class="w-full rounded-xl" src="/assets/images/canalprojects/image-1.jpg" />
+                    <img class="w-full rounded-xl" src="/assets/images/canalprojects/canal-main.jpg" />
                 </a>
             </div>
             <div class="flex flex-col relative w-full md:w-2/5">
-                <h2 class="text-2xl"><a href="/work/canal-projects/">Canal Projects</a></h2>
+                <h2 class="text-3xl pb-4"><a class="hover:text-red-400 dark:hover:text-red-600" href="/work/canal-projects/">Canal Projects</a></h2>
                 <span class="text-md">Kirby</span>
-                <span class="text-md">2022</span>
                 <a class="absolute top-0 right-0" href="https://www.canalprojects.org/" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="stroke-black hover:stroke-red-600" viewBox="0 0 24 24" fill="none"  stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg>                    
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="stroke-black dark:stroke-white hover:stroke-red-600 stroke-width-1" viewBox="0 0 24 24" fill="none" stroke-linecap="butt" stroke-linejoin="arcs"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg>                    
                 </a>
             </div>
             
         </div>
     
-        <div class="flex flex-col md:flex-row gap-4 md:gap-8 border-t border-gray-200 py-6 md:py-12">
+        <div class="flex flex-col md:flex-row gap-4 md:gap-8 border-t border-gray-200 dark:border-gray-900 py-6 md:py-12">
             <div class="w-full md:w-3/5">
                 <a href="/work/500-capp-street/">
-                    <img class="w-full rounded-xl" src="/assets/images/500cappstreet/500capp-archive.jpg" />
+                    <img class="w-full rounded-xl" src="/assets/images/500cappstreet/500capp-main.jpg" />
                 </a>
             </div>
             <div class="flex flex-col relative w-full md:w-2/5">
-                <h2 class="text-2xl"><a href="/work/500-capp-street/">500 Capp Street</a></h2>
+                <h2 class="text-3xl pb-4"><a class="hover:text-red-400 dark:hover:text-red-600" href="/work/500-capp-street/">500 Capp Street</a></h2>
                 <span class="text-md">Wordpress</span>
-                <span class="text-md">2018</span>
                 <a class="absolute top-0 right-0" href="https://500cappstreet.org/" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="stroke-black hover:stroke-red-600" viewBox="0 0 24 24" fill="none"  stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg>                    
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="stroke-black dark:stroke-white hover:stroke-red-600 stroke-width-1" viewBox="0 0 24 24" fill="none" stroke-linecap="butt" stroke-linejoin="arcs"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg>                    
                 </a>
             </div>
             
         </div>
     
-        <div class="flex flex-col md:flex-row gap-4 md:gap-8 border-t border-gray-200 py-6 md:py-12">
+        <div class="flex flex-col md:flex-row gap-4 md:gap-8 border-t border-gray-200 dark:border-gray-900 py-6 md:py-12">
             <div class="w-full md:w-3/5">
                 <a href="/work/ringo-studio/">
-                    <img class="w-full rounded-xl" src="/assets/images/ringo/ringo-homepage.jpg" />
+                    <img class="w-full rounded-xl" src="/assets/images/ringo/ringo-main.jpg" />
                 </a>
             </div>
             <div class="flex flex-col relative w-full md:w-2/5">
-                <h2 class="text-2xl"><a href="/work/ringo-studio/">Ringo Studio</a></h2>
+                <h2 class="text-3xl pb-4"><a class="hover:text-red-400 dark:hover:text-red-600" href="/work/ringo-studio/">Ringo Studio</a></h2>
                 <span class="text-md">Wordpress, Woocommerce</span>
-                <span class="text-md">2021</span>
                 <a class="absolute top-0 right-0" href="https://ringo-studio.com" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="stroke-black hover:stroke-red-600" viewBox="0 0 24 24" fill="none"  stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg>                    
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="stroke-black dark:stroke-white hover:stroke-red-600 stroke-width-1" viewBox="0 0 24 24" fill="none" stroke-linecap="butt" stroke-linejoin="arcs"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg>                    
                 </a>
             </div>
             
         </div>
     
-        <div class="flex flex-col md:flex-row gap-4 md:gap-8 border-t border-gray-200 py-6 md:py-12">
+        <div class="flex flex-col md:flex-row gap-4 md:gap-8 border-t border-gray-200 dark:border-gray-900 py-6 md:py-12">
             <div class="w-full md:w-3/5">
                 <a href="/work/picoyune/">
-                    <img class="w-full rounded-xl" src="/assets/images/picoyune/image-1.jpg" />
+                    <img class="w-full rounded-xl" src="/assets/images/picoyune/picoyune-main.jpg" />
                 </a>
             </div>
             <div class="flex flex-col relative w-full md:w-2/5">
-                <h2 class="text-2xl"><a href="/work/picoyune/">Picoyune</a></h2>
+                <h2 class="text-3xl pb-4"><a class="hover:text-red-400 dark:hover:text-red-600" href="/work/picoyune/">Picoyune</a></h2>
                 <span class="text-md">Static netlify</span>
-                <span class="text-md">2022</span>
                 <a class="absolute top-0 right-0" href="https://picoyune.com" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="stroke-black hover:stroke-red-600" viewBox="0 0 24 24" fill="none"  stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg>                    
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="stroke-black dark:stroke-white hover:stroke-red-600 stroke-width-1" viewBox="0 0 24 24" fill="none" stroke-linecap="butt" stroke-linejoin="arcs"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg>                    
                 </a>
             </div>
             
         </div>
     
-        <div class="flex flex-col md:flex-row gap-4 md:gap-8 border-t border-gray-200 py-6 md:py-12">
+        <div class="flex flex-col md:flex-row gap-4 md:gap-8 border-t border-gray-200 dark:border-gray-900 py-6 md:py-12">
             <div class="w-full md:w-3/5">
                 <a href="/work/kessenick-gamma/">
-                    <img class="w-full rounded-xl" src="/assets/images/kg/kg-logo.png" />
+                    <img class="w-full rounded-xl" src="/assets/images/kg/kg-main.jpg" />
                 </a>
             </div>
             <div class="flex flex-col relative w-full md:w-2/5">
-                <h2 class="text-2xl"><a href="/work/kessenick-gamma/">Kessenick Gamma</a></h2>
+                <h2 class="text-3xl pb-4"><a class="hover:text-red-400 dark:hover:text-red-600" href="/work/kessenick-gamma/">Kessenick Gamma</a></h2>
                 <span class="text-md">Wordpress</span>
-                <span class="text-md">2022</span>
                 <a class="absolute top-0 right-0" href="https://kessenick.com" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="stroke-black hover:stroke-red-600" viewBox="0 0 24 24" fill="none"  stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg>                    
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="stroke-black dark:stroke-white hover:stroke-red-600 stroke-width-1" viewBox="0 0 24 24" fill="none" stroke-linecap="butt" stroke-linejoin="arcs"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg>                    
                 </a>
             </div>
             
         </div>
     
-        <div class="flex flex-col md:flex-row gap-4 md:gap-8 border-t border-gray-200 py-6 md:py-12">
+        <div class="flex flex-col md:flex-row gap-4 md:gap-8 border-t border-gray-200 dark:border-gray-900 py-6 md:py-12">
             <div class="w-full md:w-3/5">
                 <a href="/work/bampfa/">
-                    <img class="w-full rounded-xl" src="/assets/images/bampfa/bampfa-building.jpg" />
+                    <img class="w-full rounded-xl" src="/assets/images/bampfa/bampfa-main.jpg" />
                 </a>
             </div>
             <div class="flex flex-col relative w-full md:w-2/5">
-                <h2 class="text-2xl"><a href="/work/bampfa/">BAMPFA</a></h2>
+                <h2 class="text-3xl pb-4"><a class="hover:text-red-400 dark:hover:text-red-600" href="/work/bampfa/">BAMPFA</a></h2>
                 <span class="text-md">Drupal</span>
-                <span class="text-md">2014 – Present</span>
                 <a class="absolute top-0 right-0" href="https://bampfa.org" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="stroke-black hover:stroke-red-600" viewBox="0 0 24 24" fill="none"  stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg>                    
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="stroke-black dark:stroke-white hover:stroke-red-600 stroke-width-1" viewBox="0 0 24 24" fill="none" stroke-linecap="butt" stroke-linejoin="arcs"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg>                    
                 </a>
             </div>
             
         </div>
     
-        <div class="flex flex-col md:flex-row gap-4 md:gap-8 border-t border-gray-200 py-6 md:py-12">
+        <div class="flex flex-col md:flex-row gap-4 md:gap-8 border-t border-gray-200 dark:border-gray-900 py-6 md:py-12">
             <div class="w-full md:w-3/5">
                 <a href="/work/lightsource/">
-                    <img class="w-full rounded-xl" src="/assets/images/lightsource/image-1.jpg" />
+                    <img class="w-full rounded-xl" src="/assets/images/lightsource/lightsource-main.jpg" />
                 </a>
             </div>
             <div class="flex flex-col relative w-full md:w-2/5">
-                <h2 class="text-2xl"><a href="/work/lightsource/">Lightsource</a></h2>
+                <h2 class="text-3xl pb-4"><a class="hover:text-red-400 dark:hover:text-red-600" href="/work/lightsource/">Lightsource</a></h2>
                 <span class="text-md">Wordpress, Woocommerce</span>
-                <span class="text-md">2021</span>
                 <a class="absolute top-0 right-0" href="https://lightsourcesf.com" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="stroke-black hover:stroke-red-600" viewBox="0 0 24 24" fill="none"  stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg>                    
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="stroke-black dark:stroke-white hover:stroke-red-600 stroke-width-1" viewBox="0 0 24 24" fill="none" stroke-linecap="butt" stroke-linejoin="arcs"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg>                    
                 </a>
             </div>
             
         </div>
     
-        <div class="flex flex-col md:flex-row gap-4 md:gap-8 border-t border-gray-200 py-6 md:py-12">
+        <div class="flex flex-col md:flex-row gap-4 md:gap-8 border-t border-gray-200 dark:border-gray-900 py-6 md:py-12">
             <div class="w-full md:w-3/5">
                 <a href="/work/uc-water-portal/">
-                    <img class="w-full rounded-xl" src="/assets/images/ucwaterportal/ucwater-creek.jpg" />
+                    <img class="w-full rounded-xl" src="/assets/images/ucwaterportal/berkeleywater-main.jpg" />
                 </a>
             </div>
             <div class="flex flex-col relative w-full md:w-2/5">
-                <h2 class="text-2xl"><a href="/work/uc-water-portal/">UC Berkeley Water Portal</a></h2>
+                <h2 class="text-3xl pb-4"><a class="hover:text-red-400 dark:hover:text-red-600" href="/work/uc-water-portal/">UC Berkeley Water Portal</a></h2>
                 <span class="text-md">Wordpress</span>
-                <span class="text-md">2019</span>
                 <a class="absolute top-0 right-0" href="https://waterportal.berkeley.edu/" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="stroke-black hover:stroke-red-600" viewBox="0 0 24 24" fill="none"  stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg>                    
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="stroke-black dark:stroke-white hover:stroke-red-600 stroke-width-1" viewBox="0 0 24 24" fill="none" stroke-linecap="butt" stroke-linejoin="arcs"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg>                    
                 </a>
             </div>
             
@@ -181,28 +173,33 @@
 
 
   </main>
-  <div class="bg-amber-50 p-8 py-24 flex flex-col items-center">
-    <span class="socko transition-all hover:tracking-widest text-5xl pr-1 pb-4 outline-text text-white link-white">Get in touch.</span>    
-    <form class="flex flex-col items-start w-full md:w-1/2 mx-auto" name="contact" netlify>
-      <label class="w-full pb-6">
-        <span class="pb-4">Email</span>
-        <input class="w-full rounded-xl border border-black h-12 p-2" type="email" name="email" required/>
-      </label>
-      <label class="w-full pb-6">
-        <span class="pb-4">Message</span>
-        <textarea class="w-full rounded-xl border border-black h-24 p-2"name="message" required></textarea>
-      </label>
-      <button class="border border-black px-4 py-2 hover:bg-black hover:text-white cursor-pointer rounded-xl" type="submit">Send Message</button>
-    </form>    
-</div>  
-  <footer class="w-full flex flex-col md:flex-row justify-between bg-gray-800 text-white p-8 ">
-    <span>AHWD.</span>
-    <nav class="flex flex-wrap justify-between items-center gap-8">  
-      <a class="link-white" href="/services">Services</a>
-      <a class="link-white" href="/work/everything">Work</a>
-      <a class="link-white" href="/projects">Projects</a>
-      <a class="link-white" href="/about">About</a>
+ 
+  <footer class="fixed inset-0 z-0 w-full flex flex-col bg-gray-100 dark:bg-blue-950 dark:text-white items-center justify-between pb-16">
+    <div class="w-full md:w-3/5 p-8 py-24 flex flex-col items-center">
+      <span class="socko tracking-widest text-5xl pb-10 outline-text text-white link-white">say hello</span>         
+      <p class="text-2xl mb-8">
+        Interested in working together? Want to talk about the internet? Use the form below to say hi, or email me directly at <a class="underline" href="mailto:hello@alexharris.online">hello@alexharris.online</a>
+      </p>       
+      
+      <form class="flex flex-col items-start w-full" name="contact" netlify>
+        <label class="w-full pb-6">
+          <div class="pb-3">Your Email</div>
+          <input class="w-full rounded-xl border border-black h-12 p-2" type="email" name="email" required/>
+        </label>
+        <label class="w-full pb-6">
+          <div class="pb-3">Message</div>
+          <textarea class="w-full rounded-xl border border-black h-24 p-2"name="message" required></textarea>
+        </label>
+        <button class="border border-black dark:border-white px-4 py-2 hover:bg-black hover:text-white cursor-pointer rounded-xl" type="submit">Send Message</button>
+      </form>    
+    </div>     
+    <nav class="flex items-center text-black dark:text-white justify-center gap-8">  
+      <a class="" href="/services">Services</a>
+      <a class="" href="/work/everything">Work</a>
+      <a class="" href="/projects">Projects</a>
+      <a class="" href="/about">About</a>
     </nav>
   </footer>
+  <script src="/script.js"></script>
 </body>
 </html>

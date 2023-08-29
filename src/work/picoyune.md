@@ -6,9 +6,10 @@ tags:
     - business
     - environment
     - everything
-image: /assets/images/picoyune/image-1.jpg
+image: /assets/images/picoyune/picoyune-main.jpg
 dir: picoyune
 images:
+    - image-1.jpg
     - image-2.jpg
     - image-3.jpg
     - image-4.jpg

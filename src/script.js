@@ -1,25 +1,25 @@
-console.log('hello')
+//  dark mode toggle
+document.getElementById('moon').addEventListener('click', (e) => {
+  document.getElementsByTagName('html')[0].classList.toggle('dark')
+})
 
-// window.addEventListener('scroll', () => {
-//   document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
-// }, false);
 
-  window.addEventListener('scroll', () => {
-    console.log(window.scrollY, document.getElementById('header').offsetHeight - 120)
-
-    if(window.scrollY < document.getElementById('header').offsetHeight - 100) {
+//  Watch scroll for logo animation
+window.addEventListener('scroll', () => {
+  
+  if(window.scrollY < document.getElementById('header').offsetHeight - 100) {
+    //  if near the top of the page
+    document.getElementById('logo').classList.remove('text-5xl')  
+    document.getElementById('logo').classList.add('text-9xl')        
+  } else if (window.scrollY == 0) {
+    // if at the top of the page
+    setTimeout(function() {
       document.getElementById('logo').classList.remove('text-5xl')  
-      document.getElementById('logo').classList.add('text-9xl')  
-      // document.getElementById('logo').classList.add('outline-text')  
-       
-    } else {
-      document.getElementById('logo').classList.add('text-5xl')  
-      document.getElementById('logo').classList.remove('text-9xl')  
-      // document.getElementById('logo').classList.remove('outline-text')  
-      // document.getElementById('main').classList.add('fixed')
-      
-    }
-    
-    
-    
-  }, false);
+      document.getElementById('logo').classList.add('text-9xl')          
+    }, 1200);      
+  } else {
+    // if on the page
+    document.getElementById('logo').classList.add('text-5xl')  
+    document.getElementById('logo').classList.remove('text-9xl')      
+  }
+}, false);

@@ -5,9 +5,10 @@ tags:
     - work
     - everything
     - arts
-image: /assets/images/canalprojects/image-1.jpg
+image: /assets/images/canalprojects/canal-main.jpg
 dir: canalprojects
 images:
+    - image-1.jpg
     - image-2.jpg
     - image-3.jpg
     - image-4.jpg

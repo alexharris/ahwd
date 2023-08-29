@@ -6,9 +6,10 @@ tags:
     - arts
     - business
     - everything
-image: /assets/images/lightsource/image-1.jpg
+image: /assets/images/lightsource/lightsource-main.jpg
 dir: lightsource
 images:
+    - image-1.jpg
     - image-2.jpg
     - image-3.jpg
     - image-4.jpg

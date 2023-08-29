@@ -6,9 +6,10 @@ tags:
     - everything
     - arts
     - education
-image: /assets/images/bampfa/bampfa-building.jpg
+image: /assets/images/bampfa/bampfa-main.jpg
 dir: bampfa
 images:
+    - bampfa-building.jpg
     - image-1.jpg
     - image-2.jpg
     - image-3.jpg

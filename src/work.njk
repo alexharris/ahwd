@@ -11,27 +11,26 @@ permalink: /work/{{ tag }}/
 
 <h1 class="text-5xl mb-12">{{ title }}</h1>
 <div class="flex flex-wrap gap-4 my-16">
-    <a {% if page.url == '/work/everything/' %} aria-current="page" {% endif %} class="text-md px-3 pb-1 rounded-full border border-black cursor-pointer" href="/work/everything">Everything</a>
-    <a {% if page.url == '/work/arts/' %} aria-current="page" {% endif %} class="text-md px-3 pb-1 rounded-full border border-black cursor-pointer" href="/work/arts">Arts Organizations</a>
-    <a {% if page.url == '/work/business/' %} aria-current="page" {% endif %} class="text-md px-3 pb-1 rounded-full border border-black cursor-pointer" href="/work/business">Small Business</a>
-    <a {% if page.url == '/work/education/' %} aria-current="page" {% endif %} class="text-md px-3 pb-1 rounded-full border border-black cursor-pointer" href="/work/education">Education</a>
-    <a {% if page.url == '/work/design/' %} aria-current="page" {% endif %} class="text-md px-3 pb-1 rounded-full border border-black cursor-pointer" href="/work/design">Design</a>
-    <a {% if page.url == '/work/environment/' %} aria-current="page" {% endif %} class="text-md px-3 pb-1 rounded-full border border-black cursor-pointer" href="/work/environment">Environment</a>
+    <a {% if page.url == '/work/everything/' %} aria-current="page" {% endif %} class="text-md px-3 pb-1 rounded-full border border-black dark:border-white cursor-pointer" href="/work/everything">Everything</a>
+    <a {% if page.url == '/work/arts/' %} aria-current="page" {% endif %} class="text-md px-3 pb-1 rounded-full border border-black dark:border-white cursor-pointer" href="/work/arts">Arts Organizations</a>
+    <a {% if page.url == '/work/business/' %} aria-current="page" {% endif %} class="text-md px-3 pb-1 rounded-full border border-black dark:border-white cursor-pointer" href="/work/business">Small Business</a>
+    <a {% if page.url == '/work/education/' %} aria-current="page" {% endif %} class="text-md px-3 pb-1 rounded-full border border-black dark:border-white cursor-pointer" href="/work/education">Education</a>
+    <!-- <a {% if page.url == '/work/design/' %} aria-current="page" {% endif %} class="text-md px-3 pb-1 rounded-full border border-black dark:border-white cursor-pointer" href="/work/design">Design</a> -->
+    <a {% if page.url == '/work/environment/' %} aria-current="page" {% endif %} class="text-md px-3 pb-1 rounded-full border border-black dark:border-white cursor-pointer" href="/work/environment">Environment</a>
 </div>
     {% set taglist = collections[ tag ] %}
     {% for post in taglist %}
-        <div class="flex flex-col md:flex-row gap-4 md:gap-8 border-t border-gray-200 py-6 md:py-12">
+        <div class="flex flex-col md:flex-row gap-4 md:gap-8 border-t border-gray-200 dark:border-gray-900 py-6 md:py-12">
             <div class="w-full md:w-3/5">
                 <a href="{{post.url}}">
                     <img class="w-full rounded-xl" src="{{post.data.image}}" />
                 </a>
             </div>
             <div class="flex flex-col relative w-full md:w-2/5">
-                <h2 class="text-2xl"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+                <h2 class="text-3xl pb-4"><a class="hover:text-red-400 dark:hover:text-red-600" href="{{ post.url }}">{{ post.data.title }}</a></h2>
                 <span class="text-md">{{post.data.tech}}</span>
-                <span class="text-md">{{post.data.year}}</span>
                 <a class="absolute top-0 right-0" href="{{post.data.url}}" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="stroke-black hover:stroke-red-600" viewBox="0 0 24 24" fill="none"  stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg>                    
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="stroke-black dark:stroke-white hover:stroke-red-600 stroke-width-1" viewBox="0 0 24 24" fill="none" stroke-linecap="butt" stroke-linejoin="arcs"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg>                    
                 </a>
             </div>
             

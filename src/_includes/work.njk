@@ -4,17 +4,13 @@ layout: layout.njk
 
 <div class="flex flex-row justify-between w-full items-start">
     <h1 class="text-4xl mb-12">{{ title }}</h1>
-    <a class="pill-button text-md px-3 pb-1 rounded-full border border-black hover:border-red-600 cursor-pointer flex gap-4 items-center" href="{{url}}">
-        Visit Site
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="stroke-black" fill="none" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg>
-    </a>
 </div>
 
 <div class="flex flex-col-reverse md:flex-row gap-8 mb-16">
-    <div class="w-full md:w-1/2 flex flex-col justify-between">
+    <div class="w-full md:w-2/5 flex flex-col gap-8 items-start">
+        <span>{{ tech }}<br />{{ year }}</span>
         {{ content | safe }}
         <div class="flex flex-col text-md">
-            <span>{{ tech }}, {{ year }}</span>
             <div class="flex">
                 {% if partners|length %} With: {% endif %}
                 {% for partner in partners %}   
@@ -22,13 +18,17 @@ layout: layout.njk
                 {% endfor %}
             </div>
         </div>
+        <a class="text-md px-3 pb-1 rounded-full border border-black dark:border-white hover:border-red-400 dark:hover:border-red-400 cursor-pointer flex gap-4 items-center" href="{{url}}">
+            Visit Site
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="stroke-black stroke-2 dark:stroke-white" fill="none" stroke-linecap="butt" stroke-linejoin="arcs"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg>
+        </a>        
 
     </div>
-    <div class="w-full md:w-1/2">
+    <div class="w-full md:w-3/5">
         <img class="rounded-xl" src="{{ image }}" />
     </div>
 </div>
-<div class="grid gap-12 grid-cols-2 border-t border-gray-200 py-16">
+<div class="grid gap-12 grid-cols-1 md:grid-cols-2 border-t border-gray-200 dark:border-gray-900 py-16">
     {% for image in images %}
         <img class="rounded-xl" src="/assets/images/{{dir}}/{{image}}" />
     {% endfor %}

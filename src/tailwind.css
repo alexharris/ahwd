@@ -102,7 +102,7 @@ body {
 
 
 a, a:visited {
-    @apply text-gray-900 hover:text-red-500
+    @apply text-gray-900 hover:text-red-500 dark:text-white
 }
 
 a.link-white, .link-white > a {
@@ -110,16 +110,12 @@ a.link-white, .link-white > a {
 }
 
 [aria-current="page"] {
-    @apply bg-gray-200
+    @apply bg-gray-200 dark:bg-gray-900
 }
 
 
 .columns {
     @apply flex gap-12 justify-between items-center p-4;
-}
-
-.pill-button:hover svg {
-    @apply border-red-600 stroke-red-600
 }
 
 .partner a {
