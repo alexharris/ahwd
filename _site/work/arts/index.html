@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,13 +13,13 @@
   <!-- Grab the content from the page data and dump it here, and mark it as safe -->
   <!-- Safe docs: https://mozilla.github.io/nunjucks/templating.html#safe -->
 
-  <header id="header" class="w-full sticky top-0 py-4 px-8 flex flex-col md:flex-row justify-between z-50 bg-gray-50 dark:bg-blue-900">
+  <header id="header" class="w-full sticky top-0 py-4 px-8 flex flex-col md:flex-row justify-between items-start z-50 bg-gray-50 dark:bg-blue-900">
     <!-- text-4xl -->
       <a href="/" id="logo" class="socko outline-text link-white transition-all duration-700 hover:tracking-widest text-9xl">AHWD.</a>
     <!-- 
       <a href="/" class="socko text-6xl outline-text link-white">AHWD / Work</a>
      -->
-    <nav class="flex flex-wrap justify-between items-center gap-8">  
+    <nav class="flex flex-wrap justify-between items-center gap-8 mt-4">  
       <a class="hover:underline hover:underline-offset-4" href="/services">Services</a>
       <a class="hover:underline hover:underline-offset-4" href="/work/everything">Work</a>
       <a class="hover:underline hover:underline-offset-4" href="/projects">Projects</a>
@@ -32,12 +32,11 @@
 
 <h1 class="text-5xl mb-12">Work</h1>
 <div class="flex flex-wrap gap-4 my-16">
-    <a  class="text-md px-3 pb-1 rounded-full border border-black dark:border-white cursor-pointer" href="/work/everything">Everything</a>
-    <a  aria-current="page"  class="text-md px-3 pb-1 rounded-full border border-black dark:border-white cursor-pointer" href="/work/arts">Arts Organizations</a>
-    <a  class="text-md px-3 pb-1 rounded-full border border-black dark:border-white cursor-pointer" href="/work/business">Small Business</a>
-    <a  class="text-md px-3 pb-1 rounded-full border border-black dark:border-white cursor-pointer" href="/work/education">Education</a>
-    <!-- <a  class="text-md px-3 pb-1 rounded-full border border-black dark:border-white cursor-pointer" href="/work/design">Design</a> -->
-    <a  class="text-md px-3 pb-1 rounded-full border border-black dark:border-white cursor-pointer" href="/work/environment">Environment</a>
+    <a  class="pill-button" href="/work/everything">Everything</a>
+    <a  aria-current="page"  class="pill-button" href="/work/arts">Arts Organizations</a>
+    <a  class="pill-button" href="/work/business">Small Business</a>
+    <a  class="pill-button" href="/work/education">Education</a>
+    <a  class="pill-button" href="/work/environment">Environment</a>
 </div>
     
     
@@ -51,7 +50,7 @@
                 <h2 class="text-3xl pb-4"><a class="hover:text-red-400 dark:hover:text-red-600" href="/work/canal-projects/">Canal Projects</a></h2>
                 <span class="text-md">Kirby</span>
                 <a class="absolute top-0 right-0" href="https://www.canalprojects.org/" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="stroke-black dark:stroke-white hover:stroke-red-600 stroke-width-1" viewBox="0 0 24 24" fill="none" stroke-linecap="butt" stroke-linejoin="arcs"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg>                    
+                    <svg class="stroke-black dark:stroke-white hover:stroke-red-500 dark:hover:stroke-red-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="stroke-black dark:stroke-white hover:stroke-red-600 stroke-width-1" viewBox="0 0 24 24" fill="none" stroke-linecap="butt" stroke-linejoin="arcs"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg>                    
                 </a>
             </div>
             
@@ -67,7 +66,7 @@
                 <h2 class="text-3xl pb-4"><a class="hover:text-red-400 dark:hover:text-red-600" href="/work/500-capp-street/">500 Capp Street</a></h2>
                 <span class="text-md">Wordpress</span>
                 <a class="absolute top-0 right-0" href="https://500cappstreet.org/" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="stroke-black dark:stroke-white hover:stroke-red-600 stroke-width-1" viewBox="0 0 24 24" fill="none" stroke-linecap="butt" stroke-linejoin="arcs"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg>                    
+                    <svg class="stroke-black dark:stroke-white hover:stroke-red-500 dark:hover:stroke-red-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="stroke-black dark:stroke-white hover:stroke-red-600 stroke-width-1" viewBox="0 0 24 24" fill="none" stroke-linecap="butt" stroke-linejoin="arcs"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg>                    
                 </a>
             </div>
             
@@ -83,7 +82,7 @@
                 <h2 class="text-3xl pb-4"><a class="hover:text-red-400 dark:hover:text-red-600" href="/work/bampfa/">BAMPFA</a></h2>
                 <span class="text-md">Drupal</span>
                 <a class="absolute top-0 right-0" href="https://bampfa.org" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="stroke-black dark:stroke-white hover:stroke-red-600 stroke-width-1" viewBox="0 0 24 24" fill="none" stroke-linecap="butt" stroke-linejoin="arcs"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg>                    
+                    <svg class="stroke-black dark:stroke-white hover:stroke-red-500 dark:hover:stroke-red-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="stroke-black dark:stroke-white hover:stroke-red-600 stroke-width-1" viewBox="0 0 24 24" fill="none" stroke-linecap="butt" stroke-linejoin="arcs"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg>                    
                 </a>
             </div>
             
@@ -99,7 +98,7 @@
                 <h2 class="text-3xl pb-4"><a class="hover:text-red-400 dark:hover:text-red-600" href="/work/lightsource/">Lightsource</a></h2>
                 <span class="text-md">Wordpress, Woocommerce</span>
                 <a class="absolute top-0 right-0" href="https://lightsourcesf.com" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="stroke-black dark:stroke-white hover:stroke-red-600 stroke-width-1" viewBox="0 0 24 24" fill="none" stroke-linecap="butt" stroke-linejoin="arcs"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg>                    
+                    <svg class="stroke-black dark:stroke-white hover:stroke-red-500 dark:hover:stroke-red-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="stroke-black dark:stroke-white hover:stroke-red-600 stroke-width-1" viewBox="0 0 24 24" fill="none" stroke-linecap="butt" stroke-linejoin="arcs"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg>                    
                 </a>
             </div>
             
@@ -110,7 +109,7 @@
 
   </main>
  
-  <footer class="fixed inset-0 z-0 w-full flex flex-col bg-gray-100 dark:bg-blue-950 dark:text-white items-center justify-between pb-16">
+  <footer class="fixed inset-0 z-0 w-full flex flex-col bg-gray-100 dark:bg-blue-950 dark:text-white items-center justify-end pb-16">
     <div class="w-full md:w-3/5 p-8 py-24 flex flex-col items-center">
       <span class="socko tracking-widest text-5xl pb-10 outline-text text-white link-white">say hello</span>         
       <p class="text-2xl mb-8">

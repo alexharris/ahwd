@@ -102,7 +102,7 @@ body {
 
 
 a, a:visited {
-    @apply text-gray-900 hover:text-red-500 dark:text-white
+    @apply text-gray-900 hover:text-red-500 dark:hover:text-red-500 dark:text-white
 }
 
 a.link-white, .link-white > a {
@@ -119,9 +119,21 @@ a.link-white, .link-white > a {
 }
 
 .partner a {
-    @apply underline
+    @apply underline;
 }
 
 .logo {
-    @apply transition-all hover:tracking-widest
+    @apply transition-all hover:tracking-widest;
+}
+
+.pill-button {
+    @apply px-3 py-1 rounded-full border border-black dark:border-white hover:border-red-500 dark:hover:border-red-500 cursor-pointer mt-4 flex flex-row gap-4; 
+}
+
+.pill-button svg {
+    @apply stroke-black stroke-2 dark:stroke-white 
+}
+
+.pill-button:hover svg {
+    @apply stroke-red-500 dark:stroke-red-500 
 }

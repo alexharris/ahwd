@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,13 +13,13 @@
   <!-- Grab the content from the page data and dump it here, and mark it as safe -->
   <!-- Safe docs: https://mozilla.github.io/nunjucks/templating.html#safe -->
 
-  <header id="header" class="w-full sticky top-0 py-4 px-8 flex flex-col md:flex-row justify-between z-50 bg-gray-50 dark:bg-blue-900">
+  <header id="header" class="w-full sticky top-0 py-4 px-8 flex flex-col md:flex-row justify-between items-start z-50 bg-gray-50 dark:bg-blue-900">
     <!-- text-4xl -->
       <a href="/" id="logo" class="socko outline-text link-white transition-all duration-700 hover:tracking-widest text-9xl">AHWD.</a>
     <!-- 
       <a href="/" class="socko text-6xl outline-text link-white">AHWD.</a>
      -->
-    <nav class="flex flex-wrap justify-between items-center gap-8">  
+    <nav class="flex flex-wrap justify-between items-center gap-8 mt-4">  
       <a class="hover:underline hover:underline-offset-4" href="/services">Services</a>
       <a class="hover:underline hover:underline-offset-4" href="/work/everything">Work</a>
       <a class="hover:underline hover:underline-offset-4" href="/projects">Projects</a>
@@ -81,7 +81,7 @@
         <div class="md:w-2/5 flex flex-col justify-center items-start">
             <h2 class="text-xl uppercase pb-3"><a class="cursor-pointer" href="/work/ringo-studio">Ringo Studio</a></h2>
             <p class="text-lg">Each project I undertake is an opportunity to showcase my passion and expertise, and I am dedicated to delivering top-notch solutions that exceed my clients' expectations.</p>        
-            <a class="text-md px-3 pb-1 rounded-full border border-black dark:border-white cursor-pointer mt-4" href="/work/ringo-studio">View project</a>
+            <a class="pill-button" href="/work/ringo-studio">View project</a>
         </div>
     </div>    
 </div>
@@ -93,7 +93,7 @@
         <div class="w-full md:w-2/5 flex flex-col justify-center items-start">
             <h2 class="text-xl uppercase pb-3"><a class="cursor-pointer" href="/work/kessenick-gamma">Kessenick Gamma</a></h2>
             <p class="text-lg">Each project I undertake is an opportunity to showcase my passion and expertise, and I am dedicated to delivering top-notch solutions that exceed my clients' expectations.</p>        
-            <a class="text-md px-3 pb-1 rounded-full border border-black dark:border-white cursor-pointer mt-4" href="/work/kessenick-gamma">View project</a>
+            <a class="pill-button" href="/work/kessenick-gamma">View project</a>
         </div>
     </div>    
 </div>
@@ -105,7 +105,7 @@
         <div class="w-full md:w-2/5 flex flex-col justify-center items-start">
             <h2 class="text-xl uppercase pb-3"><a class="cursor-pointer" href="/work/bampfa">BAMPFA</a></h2>
             <p class="text-lg">Each project I undertake is an opportunity to showcase my passion and expertise, and I am dedicated to delivering top-notch solutions that exceed my clients' expectations.</p>        
-            <a class="text-md px-3 pb-1 rounded-full border border-black dark:border-white cursor-pointer mt-4" href="/work/bampfa">View project</a>
+            <a class="pill-button" href="/work/bampfa">View project</a>
         </div>
     </div>    
 </div>
@@ -113,11 +113,10 @@
     <a href="/work/everything/" class="text-xl text-center hover:text-white px-6 py-4 border border-black dark:border-white shadow-sm mb-4 cursor-pointer rounded-xl">View all work</a>
     or select a category
     <div class="flex flex-wrap gap-4 mt-4">
-        <a class="text-xl px-4 pt-2 pb-3 rounded-full border border-black dark:border-white cursor-pointer" href="">Arts Organizations</a>
-        <a class="text-xl px-4 pt-2 pb-3 rounded-full border border-black dark:border-white cursor-pointer">Small Business</a>
-        <a class="text-xl px-4 pt-2 pb-3 rounded-full border border-black dark:border-white cursor-pointer">Education</a>
-        <!-- <a class="text-xl px-4 pt-2 pb-3 rounded-full border border-black dark:border-white cursor-pointer">Design</a> -->
-        <a class="text-xl px-4 pt-2 pb-3 rounded-full border border-black dark:border-white cursor-pointer">The Environment</a>
+        <a class="pill-button" href="">Arts Organizations</a>
+        <a class="pill-button">Small Business</a>
+        <a class="pill-button">Education</a>
+        <a class="pill-button">The Environment</a>
     </div>
 </div>
 
@@ -160,7 +159,7 @@
 
   </main>
  
-  <footer class="fixed inset-0 z-0 w-full flex flex-col bg-gray-100 dark:bg-blue-950 dark:text-white items-center justify-between pb-16">
+  <footer class="fixed inset-0 z-0 w-full flex flex-col bg-gray-100 dark:bg-blue-950 dark:text-white items-center justify-end pb-16">
     <div class="w-full md:w-3/5 p-8 py-24 flex flex-col items-center">
       <span class="socko tracking-widest text-5xl pb-10 outline-text text-white link-white">say hello</span>         
       <p class="text-2xl mb-8">
