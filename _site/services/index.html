@@ -23,22 +23,79 @@
     <nav class="flex flex-wrap justify-between items-center gap-8 mt-4">  
       <a class="hover:underline hover:underline-offset-4" href="/services">Services</a>
       <a class="hover:underline hover:underline-offset-4" href="/work/everything">Work</a>
-      <a class="hover:underline hover:underline-offset-4" href="/projects">Projects</a>
+      <!-- <a class="hover:underline hover:underline-offset-4" href="/projects">Projects</a> -->
       <a class="hover:underline hover:underline-offset-4" href="/about">About</a>
       <svg id="moon" class="stroke-black stroke-1 fill-none hover:fill-yellow-300 dark:fill-yellow-300" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="arcs"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>      
     </nav>
   </header>
   <main id="main" class="p-4 md:p-8 relative bg-gray-50 dark:bg-blue-900 z-30 mb-[100vh]">
     
-<h1 class="text-4xl mb-12">Services</h1>
-<div class="w-full md:w-2/3 my-16">
-    <p class="text-xl md:text-2xl">
-        Here are some things I can help with:
+<h1 class="text-4xl mb-12 sr-only">Services</h1>
+<div class="w-full lg:w-5/6 xl:w-3/5">
+    <p class="text-4xl md:text-5xl mb-24">
+        My primary focus is enabling clients to communicate effectively on the web.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-8 mb-24">
+        <div class="w-full md:w-1/2">
+            <h2 class="text-xl uppercase pb-6 font-bold">Services —</h2>
+            <ul class="text-2xl md:text-4xl list-disc pl-8">
+                <li>Websites</li>
+                <li>E-Commerce</li>
+                <li>Consulting</li>
+                <li>Support</li>
+                
+            </ul>            
+        </div>
+        <div class="w-full md:w-1/2">
+            <h2 class="text-xl uppercase pb-6 font-bold">Capabilities —</h2>
+            <ul class="text-2xl md:text-4xl list-disc pl-8">
+                <li>Project Management</li>
+                <li>Research & Strategy</li>
+                <li>Frontend Development</li>
+                <li>Backend Development</li>
+                <li>CMS Implementation</li>
+                <li>Information Architecture</li>
+                <li>Web and UI Design</li>       
+            </ul>            
+        </div>
+    </div>
+    <p class="text-2xl md:text-4xl mb-20">
+        An average project usually costs between $5000 and $25,000, depending on the particulars of what is needed, and take 6-16 weeks. While no two jobs are alike, the process usually goes something like this:
+    </p>
+    <h3 class="text-xl uppercase pb-3 font-bold">Discovery</h3>   
+    <p class="mb-6">
+        Many projects benefit from a robust phase in which we can work together to articulate your goals, research solutions, and create a plan.
+    </p>
+    <h3 class="text-xl uppercase pb-3 font-bold">Design</h3>   
+    <p class="mb-6">
+        Design something something
+    </p>
+    <h3 class="text-xl uppercase pb-3 font-bold">Build</h3>   
+    <p class="mb-6">
+        I use modern development practices to turn the designs into a performant, accessible site. I emphasize simple solutions that are robust and easily maintainable for the long haul.
+    </p>
+    <h3 class="text-xl uppercase pb-3 font-bold">Post-Launch</h3>   
+    <p class="mb-12">
+        I am committed to your projects success and happy to provide post-launch support, training and bug fixes.
+    </p>    
+    <p class="text-xl mb-24">
+        I have also been brought in on many projects just to do the "build" phase, and am happy to be a cog in someone else's machine.
     </p>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 my-12 gap-x-8 gap-y-16 ">
+<div class="w-full md:w-3/5 border-t border-gray-200 dark:border-gray-900 py-16">
+    <h2 class="text-xl uppercase md:pb-6 font-bold">A note on wordpress</h2>
+    <p class="text-xl mb-6">
+        For most clients, especially in the arts and non-profit spaces, I often recommend the popular Wordpress CMS as a solution that allows non-technical users to maintain and update the content on their site. Maybe not a big surprise, seeing as how Wordpress is estimated to power over 40% of the modern web. 
+        
+    </p>
+    <p class="text-xl mb-24">
+        Many people who work with the web already have some experience with Wordpress. Additionally, It is supported by a large community of developers and hosting providers, as well as a wide array of plugins that can add extensive functionality.        
+    </p>
+    
+</div>
+<!-- <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 my-12 gap-x-8 gap-y-16 ">
     <div>
-        <h3 class="text-2xl mb-4">Research</h3>
+        <h3 class="text-2xl mb-8">Research</h3>
         <p class="text-lg">Your website is not the first website, and there is much to be learned from </p>
     </div>
     <div>
@@ -57,10 +114,10 @@
         <h3 class="text-2xl pb-4">Support</h3>
         <p class="text-lg">Many smaller organizations often don't have the expertise or resources to maintenance on their own after launch. I provide ongoing as-needed support to many clients.</p>
     </div>           
-</div>
+</div> -->
   </main>
  
-  <footer class="fixed inset-0 z-0 w-full flex flex-col bg-gray-100 dark:bg-blue-950 dark:text-white items-center justify-end pb-16">
+  <footer class="fixed inset-0 z-0 w-full flex flex-col bg-gray-200 dark:bg-blue-950 dark:text-white items-center justify-end pb-16">
     <div class="w-full md:w-3/5 p-8 py-24 flex flex-col items-center">
       <span class="socko tracking-widest text-5xl pb-10 outline-text text-white link-white">say hello</span>         
       <p class="text-2xl mb-8">
@@ -82,7 +139,7 @@
     <nav class="flex items-center text-black dark:text-white justify-center gap-8">  
       <a class="" href="/services">Services</a>
       <a class="" href="/work/everything">Work</a>
-      <a class="" href="/projects">Projects</a>
+      <!-- <a class="" href="/projects">Projects</a> -->
       <a class="" href="/about">About</a>
     </nav>
   </footer>
