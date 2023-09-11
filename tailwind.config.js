@@ -8,6 +8,12 @@ module.exports = {
         DEFAULT: {
           css: {
             fontSize: '20px',
+            fontWeight: '400',
+          },
+        },
+        DARK: {
+          css: {
+            color: 'white'
           },
         },
       },

@@ -5,7 +5,7 @@ tags:
     - work
     - business
     - everything
-image: /assets/images/kg/image-1.png
+image: /assets/images/kg/image-2.jpg
 dir: kg
 images:
     - kg-logo.png
