@@ -6,7 +6,7 @@ tags:
     - environment
     - everything
 image: /assets/images/ditherit/dither-it.jpg
-dir: picoyune
+dir: ditherit
 images:
     - dither-it.jpg
     - dither-it-figma.jpg

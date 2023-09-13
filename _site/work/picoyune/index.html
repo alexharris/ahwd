@@ -7,35 +7,31 @@
   <!-- Grab title from the page data and dump it here -->
   <title>AHWD - Picoyune</title>
   <link rel="stylesheet" href="/tailwind-output.css">  
-  
+  <!-- Fathom -->
+  <script src="https://cdn.usefathom.com/script.js" data-site="PITQEEMC" defer></script>
+  <!-- / Fathom -->  
 </head>
 <body class="dark:bg-blue-900 dark:text-white bg-gray-50">
-  <!-- Grab the content from the page data and dump it here, and mark it as safe -->
-  <!-- Safe docs: https://mozilla.github.io/nunjucks/templating.html#safe -->
-
-  <header id="header" class="w-full sticky top-0 py-4 px-8 flex flex-col md:flex-row justify-between items-start z-50 bg-gray-50 dark:bg-blue-900">
-    <!-- text-4xl -->
+  <header id="header" class="w-full sticky top-0  p-4 md:p-8 flex flex-col md:flex-row justify-between items-start z-50 bg-gray-50 dark:bg-blue-900">
       <a href="/" id="logo" class="socko outline-text link-white transition-all duration-700 hover:tracking-widest text-9xl">AHWD.</a>
-    <!-- 
-      <a href="/" class="socko text-6xl outline-text link-white">AHWD / Work</a>
-     -->
-    <nav class="flex flex-wrap justify-between items-center gap-8 mt-4">  
-      <a class="hover:underline hover:underline-offset-4" href="/services">Services</a>
-      <a class="hover:underline hover:underline-offset-4" href="/work/everything">Work</a>
-      <!-- <a class="hover:underline hover:underline-offset-4" href="/projects">Projects</a> -->
-      <a class="hover:underline hover:underline-offset-4" href="/about">About</a>
-      <svg id="moon" class="stroke-black stroke-1 fill-none hover:fill-yellow-300 dark:fill-yellow-300" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="arcs"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>      
-    </nav>
+      <nav class="flex flex-wrap justify-between items-center gap-8 mt-4">  
+        <a class="hover:underline hover:underline-offset-4" href="/services">Services</a>
+        <a class="hover:underline hover:underline-offset-4" href="/work/everything">Work</a>
+        <!-- <a class="hover:underline hover:underline-offset-4" href="/projects">Projects</a> -->
+        <a class="hover:underline hover:underline-offset-4" href="/about">About</a>
+        <svg id="moon" class="stroke-black stroke-1 fill-none hover:fill-yellow-300 dark:fill-yellow-300" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="arcs"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>      
+      </nav>
   </header>
   <main id="main" class="p-4 md:p-8 relative bg-gray-50 dark:bg-blue-900 z-30 mb-[100vh]">
+    <!-- Grab the content from the page data and dump it here, and mark it as safe -->
+    <!-- Safe docs: https://mozilla.github.io/nunjucks/templating.html#safe -->    
     
-<div class="flex flex-row justify-between w-full items-start">
-    <h1 class="text-4xl mb-12">Picoyune</h1>
-</div>
+
 
 <div class="flex flex-col-reverse md:flex-row gap-8 mb-16">
-    <div class="w-full md:w-2/5 flex flex-col gap-8 items-start">
-        <span>Static netlify<br />2022</span>
+    <div class="w-full md:w-1/2 flex flex-col gap-4 prose dark:prose-invert items-start">
+        <h1 class="text-5xl font-extralight mb-0">Picoyune</h1>        
+        <span>Static netlify, 2022</span>
         <p>Picoyune is a chemical sensors company in Berkeley, CA, that just launched its next generation handheld mercury monitor, the MA-1. This straight forward and functional website highlights the new product and provides a form to drive sales. The site, which is only two pages, is built with simple HTML and CSS, with the form handled by Netlify's form functionality. This makes it dead simple to update and maintain for now, until the company grows into needing something more complex.</p>
 
         <div class="flex flex-col text-md">
@@ -44,13 +40,13 @@
                 
             </div>
         </div>
-        <a class="pill-button" href="https://picoyune.com">
+        <a class="pill-button no-underline flex items-center" href="https://picoyune.com">
             Visit Site
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-linecap="butt" stroke-linejoin="arcs"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg>
         </a>        
 
     </div>
-    <div class="w-full md:w-3/5">
+    <div class="w-full md:w-1/2">
         <img class="rounded-xl" src="/assets/images/picoyune/picoyune-main.jpg" />
     </div>
 </div>
@@ -69,32 +65,30 @@
 
 
   </main>
- 
-  <footer class="fixed inset-0 z-0 w-full flex flex-col bg-gray-200 dark:bg-blue-950 dark:text-white items-center justify-end pb-16">
-    <div class="w-full md:w-3/5 p-8 py-24 flex flex-col items-center">
-      <span class="socko tracking-widest text-5xl pb-10 outline-text text-white link-white">say hello</span>         
+  <footer class="fixed inset-0 z-0 w-full flex flex-col bg-gray-200 dark:bg-blue-950 dark:text-white items-center justify-end pb-8">
+    <div class="w-full md:w-3/5 p-8 py-8 flex flex-col items-center">
+      <span class="socko tracking-widest text-5xl pb-8 outline-text text-white link-white">say hi</span>         
       <p class="text-2xl mb-8">
         Interested in working together? Want to talk about the internet? Use the form below to say hi, or email me directly at <a class="underline" href="mailto:hello@alexharris.online">hello@alexharris.online</a>
       </p>       
-      
       <form class="flex flex-col items-start w-full" name="contact" netlify>
-        <label class="w-full pb-6">
+        <label class="w-full pb-4">
           <div class="pb-3">Your Email</div>
           <input class="w-full rounded-xl border border-black h-12 p-2" type="email" name="email" required/>
         </label>
-        <label class="w-full pb-6">
+        <label class="w-full pb-4">
           <div class="pb-3">Message</div>
           <textarea class="w-full rounded-xl border border-black h-24 p-2"name="message" required></textarea>
         </label>
         <button class="border border-black dark:border-white px-4 py-2 hover:bg-black hover:text-white cursor-pointer rounded-xl" type="submit">Send Message</button>
       </form>    
     </div>     
-    <nav class="flex items-center text-black dark:text-white justify-center gap-8">  
+    <!-- <nav class="flex items-center text-black dark:text-white justify-center gap-8">  
       <a class="" href="/services">Services</a>
       <a class="" href="/work/everything">Work</a>
-      <!-- <a class="" href="/projects">Projects</a> -->
+      <a class="" href="/projects">Projects</a>
       <a class="" href="/about">About</a>
-    </nav>
+    </nav> -->
   </footer>
   <script src="/script.js"></script>
 </body>

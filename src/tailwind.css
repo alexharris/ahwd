@@ -127,7 +127,7 @@ a.link-white, .link-white > a {
 }
 
 .big-text {
-    @apply text-4xl md:text-5xl md:leading-tight mb-24;
+    @apply text-4xl md:text-5xl md:leading-tight mb-16 md:mb-24;
 }
 
 .pill-button {
