@@ -12,7 +12,7 @@ images:
     - image-2.jpg
     - image-3.jpg
     - image-4.jpg 
-tech: vuejs, tailwind
+tech: Vuejs, Tailwind
 year: 2019
 url: https://ditherit.com
 ---

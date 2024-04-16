@@ -16,6 +16,7 @@ body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
 }
+
 img, picture, video, canvas, svg {
     display: block;
     max-width: 100%;
@@ -83,16 +84,23 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-    font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
-    color: #000;
+    font-family:  "ibm_plex_sansregular", "Helvetica Neue",sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 200;
     line-height: normal;     
 }
 
+#main > *:not(.full-width) {
+    @apply p-4 md:p-8;
+}
+
 .socko {
     font-family: 'socko_regular';
+}
+
+.font-bold {
+    font-family:  "ibm_plex_sansbold"
 }
 
 .outline-text {
@@ -127,19 +135,36 @@ a.link-white, .link-white > a {
 }
 
 .big-text {
-    @apply text-4xl md:text-5xl md:leading-tight mb-16 md:mb-24;
+    @apply text-3xl md:text-4xl md:leading-tight mb-16 md:mb-24;
 }
 
 .pill-button {
-    @apply px-3 py-1 rounded-full border border-black dark:border-white hover:border-red-500 dark:hover:border-red-500 cursor-pointer mt-4 flex flex-row gap-4; 
+    @apply px-2 md:px-6 pt-1 pb-2 text-center rounded-full border-2 text-white bg-blue-600 border-blue-600 hover:border-black hover:bg-black cursor-pointer gap-2 no-underline leading-8;
+}
+
+.pill-button.pill-button-outline {
+    @apply bg-transparent;
+}
+
+a.pill-button {
+    @apply text-white hover:text-white;
+}
+
+a.pill-button.pill-button-outline {
+    @apply text-blue-600 hover:text-black text-xl;
 }
 
 .pill-button svg {
-    @apply stroke-black stroke-2 dark:stroke-white ;
+    @apply stroke-white stroke-2 dark:stroke-white;
 }
 
-.pill-button:hover svg {
-    @apply stroke-red-500 dark:stroke-red-500;
+.pill-button.pill-button-outline svg {
+    @apply stroke-blue-600 stroke-2 dark:stroke-blue-600;
+}
+
+
+.pill-button.pill-button-outline:hover svg {
+    @apply stroke-black dark:stroke-black;
 }
 
 .star:after {

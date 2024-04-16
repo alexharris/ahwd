@@ -13,7 +13,7 @@ images:
     - image-2.jpg
     - image-3.jpg
     - image-4.jpg
-tech: Static netlify
+tech: Static, Netlify
 year: 2022
 url: https://picoyune.com
 ---

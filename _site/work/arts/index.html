@@ -22,119 +22,110 @@
         <svg id="moon" class="stroke-black stroke-1 fill-none hover:fill-yellow-300 dark:fill-yellow-300" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="arcs"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>      
       </nav>
   </header>
-  <main id="main" class="p-4 md:p-8 relative bg-gray-50 dark:bg-blue-900 z-30 mb-[100vh]">
+  <main id="main" class="relative bg-gray-50 dark:bg-blue-900 z-30 mb-[100vh] min-h-screen">
     <!-- Grab the content from the page data and dump it here, and mark it as safe -->
     <!-- Safe docs: https://mozilla.github.io/nunjucks/templating.html#safe -->    
     
 
-<h1 class="text-5xl mb-12">Work</h1>
-<div class="flex flex-wrap gap-4 my-16">
+<h1 class="text-5xl mb-6">Work</h1>
+<div class="flex flex-wrap gap-4 my-6">
     <a  class="pill-button" href="/work/everything">Everything</a>
     <a  aria-current="page"  class="pill-button" href="/work/arts">Arts Organizations</a>
     <a  class="pill-button" href="/work/business">Small Business</a>
     <a  class="pill-button" href="/work/education">Education</a>
-    <a  class="pill-button" href="/work/environment">Environment</a>
 </div>
+<div class="w-full full-width">
     
     
-        <div class="flex flex-col md:flex-row gap-4 md:gap-8 border-t border-gray-200 dark:border-gray-900 py-6 md:py-12">
-            <div class="w-full md:w-3/5">
-                <a href="/work/500-capp-street/">
-                    <img class="w-full rounded-xl" src="/assets/images/500cappstreet/image-1.jpg" />
-                </a>
-            </div>
-            <div class="flex flex-col items-start relative w-full md:w-2/5">
-                <h2 class="text-2xl md:text-3xl pb-2 md:pb-3"><a class="hover:text-red-400 dark:hover:text-red-600" href="/work/500-capp-street/">500 Capp Street</a></h2>
-                <span class="text-md mb-6">Wordpress</span>
-                <a class="pill-button" href="/work/500-capp-street/">Learn More</a>
-                <a class="absolute top-0 right-0" href="https://500cappstreet.org/" target="_blank">
-                    <svg class="stroke-black dark:stroke-white hover:stroke-red-500 dark:hover:stroke-red-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="stroke-black dark:stroke-white hover:stroke-red-600 stroke-width-1" viewBox="0 0 24 24" fill="none" stroke-linecap="butt" stroke-linejoin="arcs"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg>                    
-                </a>
-            </div>
-            
+    <div class="flex flex-row space-between px-4 md:px-8 py-4 items-center gap-4 md:gap-8 w-full block border-t border-gray-200 hover:bg-gray-100 dark:border-gray-900 text-xl md:text-2xl">
+        <div class="w-2/12 md:w-1/12">
+            2023
+        </div>            
+        <div class="w-7/12 md:w-4/12 text-left">
+            <a href="/work/cwr/">Camp Winnarainbow</a>
         </div>
+        
+        <div class="w-4/12 hidden md:block">
+            Wordpress
+        </div>     
+        <a href="/work/cwr/" class="w-3/12 md:w-2/12 pill-button pill-button-outline">
+            Details
+        </a>
+    </div>
     
-        <div class="flex flex-col md:flex-row gap-4 md:gap-8 border-t border-gray-200 dark:border-gray-900 py-6 md:py-12">
-            <div class="w-full md:w-3/5">
-                <a href="/work/bampfa/">
-                    <img class="w-full rounded-xl" src="/assets/images/bampfa/image-6.jpg" />
-                </a>
-            </div>
-            <div class="flex flex-col items-start relative w-full md:w-2/5">
-                <h2 class="text-2xl md:text-3xl pb-2 md:pb-3"><a class="hover:text-red-400 dark:hover:text-red-600" href="/work/bampfa/">BAMPFA</a></h2>
-                <span class="text-md mb-6">Drupal</span>
-                <a class="pill-button" href="/work/bampfa/">Learn More</a>
-                <a class="absolute top-0 right-0" href="https://bampfa.org" target="_blank">
-                    <svg class="stroke-black dark:stroke-white hover:stroke-red-500 dark:hover:stroke-red-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="stroke-black dark:stroke-white hover:stroke-red-600 stroke-width-1" viewBox="0 0 24 24" fill="none" stroke-linecap="butt" stroke-linejoin="arcs"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg>                    
-                </a>
-            </div>
-            
+    <div class="flex flex-row space-between px-4 md:px-8 py-4 items-center gap-4 md:gap-8 w-full block border-t border-gray-200 hover:bg-gray-100 dark:border-gray-900 text-xl md:text-2xl">
+        <div class="w-2/12 md:w-1/12">
+            2023
+        </div>            
+        <div class="w-7/12 md:w-4/12 text-left">
+            <a href="/work/bampfa/">BAMPFA</a>
         </div>
+        
+        <div class="w-4/12 hidden md:block">
+            Drupal
+        </div>     
+        <a href="/work/bampfa/" class="w-3/12 md:w-2/12 pill-button pill-button-outline">
+            Details
+        </a>
+    </div>
     
-        <div class="flex flex-col md:flex-row gap-4 md:gap-8 border-t border-gray-200 dark:border-gray-900 py-6 md:py-12">
-            <div class="w-full md:w-3/5">
-                <a href="/work/canal-projects/">
-                    <img class="w-full rounded-xl" src="/assets/images/canalprojects/image-2.jpg" />
-                </a>
-            </div>
-            <div class="flex flex-col items-start relative w-full md:w-2/5">
-                <h2 class="text-2xl md:text-3xl pb-2 md:pb-3"><a class="hover:text-red-400 dark:hover:text-red-600" href="/work/canal-projects/">Canal Projects</a></h2>
-                <span class="text-md mb-6">Kirby</span>
-                <a class="pill-button" href="/work/canal-projects/">Learn More</a>
-                <a class="absolute top-0 right-0" href="https://www.canalprojects.org/" target="_blank">
-                    <svg class="stroke-black dark:stroke-white hover:stroke-red-500 dark:hover:stroke-red-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="stroke-black dark:stroke-white hover:stroke-red-600 stroke-width-1" viewBox="0 0 24 24" fill="none" stroke-linecap="butt" stroke-linejoin="arcs"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg>                    
-                </a>
-            </div>
-            
+    <div class="flex flex-row space-between px-4 md:px-8 py-4 items-center gap-4 md:gap-8 w-full block border-t border-gray-200 hover:bg-gray-100 dark:border-gray-900 text-xl md:text-2xl">
+        <div class="w-2/12 md:w-1/12">
+            2022
+        </div>            
+        <div class="w-7/12 md:w-4/12 text-left">
+            <a href="/work/canal-projects/">Canal Projects</a>
         </div>
+        
+        <div class="w-4/12 hidden md:block">
+            Kirby
+        </div>     
+        <a href="/work/canal-projects/" class="w-3/12 md:w-2/12 pill-button pill-button-outline">
+            Details
+        </a>
+    </div>
     
-        <div class="flex flex-col md:flex-row gap-4 md:gap-8 border-t border-gray-200 dark:border-gray-900 py-6 md:py-12">
-            <div class="w-full md:w-3/5">
-                <a href="/work/lightsource/">
-                    <img class="w-full rounded-xl" src="/assets/images/lightsource/image-3.jpg" />
-                </a>
-            </div>
-            <div class="flex flex-col items-start relative w-full md:w-2/5">
-                <h2 class="text-2xl md:text-3xl pb-2 md:pb-3"><a class="hover:text-red-400 dark:hover:text-red-600" href="/work/lightsource/">Lightsource</a></h2>
-                <span class="text-md mb-6">Wordpress, Woocommerce</span>
-                <a class="pill-button" href="/work/lightsource/">Learn More</a>
-                <a class="absolute top-0 right-0" href="https://lightsourcesf.com" target="_blank">
-                    <svg class="stroke-black dark:stroke-white hover:stroke-red-500 dark:hover:stroke-red-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="stroke-black dark:stroke-white hover:stroke-red-600 stroke-width-1" viewBox="0 0 24 24" fill="none" stroke-linecap="butt" stroke-linejoin="arcs"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg>                    
-                </a>
-            </div>
-            
+    <div class="flex flex-row space-between px-4 md:px-8 py-4 items-center gap-4 md:gap-8 w-full block border-t border-gray-200 hover:bg-gray-100 dark:border-gray-900 text-xl md:text-2xl">
+        <div class="w-2/12 md:w-1/12">
+            2021
+        </div>            
+        <div class="w-7/12 md:w-4/12 text-left">
+            <a href="/work/lightsource/">Lightsource</a>
         </div>
+        
+        <div class="w-4/12 hidden md:block">
+            Wordpress, Woocommerce
+        </div>     
+        <a href="/work/lightsource/" class="w-3/12 md:w-2/12 pill-button pill-button-outline">
+            Details
+        </a>
+    </div>
     
-        <div class="flex flex-col md:flex-row gap-4 md:gap-8 border-t border-gray-200 dark:border-gray-900 py-6 md:py-12">
-            <div class="w-full md:w-3/5">
-                <a href="/work/cwr/">
-                    <img class="w-full rounded-xl" src="/assets/images/cwr/logo.jpg" />
-                </a>
-            </div>
-            <div class="flex flex-col items-start relative w-full md:w-2/5">
-                <h2 class="text-2xl md:text-3xl pb-2 md:pb-3"><a class="hover:text-red-400 dark:hover:text-red-600" href="/work/cwr/">Camp Winnarainbow</a></h2>
-                <span class="text-md mb-6">Wordpress</span>
-                <a class="pill-button" href="/work/cwr/">Learn More</a>
-                <a class="absolute top-0 right-0" href="https://campwinnarainbow.org" target="_blank">
-                    <svg class="stroke-black dark:stroke-white hover:stroke-red-500 dark:hover:stroke-red-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="stroke-black dark:stroke-white hover:stroke-red-600 stroke-width-1" viewBox="0 0 24 24" fill="none" stroke-linecap="butt" stroke-linejoin="arcs"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg>                    
-                </a>
-            </div>
-            
+    <div class="flex flex-row space-between px-4 md:px-8 py-4 items-center gap-4 md:gap-8 w-full block border-t border-gray-200 hover:bg-gray-100 dark:border-gray-900 text-xl md:text-2xl">
+        <div class="w-2/12 md:w-1/12">
+            2018
+        </div>            
+        <div class="w-7/12 md:w-4/12 text-left">
+            <a href="/work/500-capp-street/">500 Capp Street</a>
         </div>
+        
+        <div class="w-4/12 hidden md:block">
+            Wordpress
+        </div>     
+        <a href="/work/500-capp-street/" class="w-3/12 md:w-2/12 pill-button pill-button-outline">
+            Details
+        </a>
+    </div>
     
 
+</div>
 
-
-    <svg class="mx-auto" width="59" height="49" viewBox="0 0 59 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M39.4145 31.4941C40.7436 31.1995 41.7855 30.1518 42.0637 28.8142C42.3878 27.2566 44.6122 27.2566 44.9363 28.8142C45.2145 30.1518 46.2564 31.1995 47.5855 31.4941C49.1882 31.8494 49.1882 34.1506 47.5855 34.5059C46.2564 34.8005 45.2145 35.8482 44.9363 37.1858C44.6122 38.7434 42.3878 38.7434 42.0637 37.1858C41.7855 35.8482 40.7436 34.8005 39.4145 34.5059C37.8118 34.1506 37.8118 31.8494 39.4145 31.4941Z" fill="white" stroke="black" stroke-width="2"/>
-      <path d="M23.9573 14.1887L24.512 16.8302C24.8353 18.3703 26.0316 19.5777 27.5686 19.9152L30.4434 20.5466C32.538 21.0066 32.538 23.9934 30.4434 24.4534L27.5686 25.0848C26.0316 25.4223 24.8353 26.6297 24.512 28.1698L23.9573 30.8113C23.5125 32.9301 20.4875 32.9301 20.0427 30.8113L19.488 28.1698C19.1647 26.6297 17.9684 25.4223 16.4314 25.0848L13.5566 24.4534C11.462 23.9934 11.462 21.0066 13.5566 20.5466L16.4314 19.9152C17.9684 19.5777 19.1647 18.3703 19.488 16.8302L20.0427 14.1887C20.4875 12.0699 23.5125 12.0699 23.9573 14.1887Z" fill="white" stroke="black" stroke-width="2"/>
-      </svg>
   </main>
-  <footer class="fixed inset-0 z-0 w-full flex flex-col bg-gray-200 dark:bg-blue-950 dark:text-white items-center justify-end pb-8">
+  <footer class="fixed inset-0 z-0 w-full flex flex-col bg-gray-200 dark:bg-blue-950 dark:text-white items-center justify-center pb-8">
     <div class="w-full md:w-3/5 p-8 py-8 flex flex-col items-center">
-      <span class="socko tracking-widest text-5xl pb-8 outline-text text-white link-white">say hi</span>         
+      <span class="socko tracking-widest text-5xl pb-8 outline-text text-white link-white">get in touch</span>         
       <p class="text-2xl mb-8">
-        Interested in working together? Want to talk about the internet? Use the form below to say hi, or email me directly at <a class="underline" href="mailto:hello@alexharris.online">hello@alexharris.online</a>
+        Interested in working together? Want to talk about the internet? Use the form below to contact me, or email me directly at <a class="underline" href="mailto:hello@alexharris.online">hello@alexharris.online</a>
       </p>       
       <form class="flex flex-col items-start w-full text-black" name="contact" netlify>
         <label class="w-full pb-4">
