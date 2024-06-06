@@ -1,0 +1,82 @@
+---
+layout: layout.njk
+---
+
+
+<div class="flex flex-col gap-8 mb-16">
+    <div class="mt-4">
+        <h1 class="text-4xl font-extraligh mb-4">{{ title }}</h1>      
+        <span>{{ tech }}, {{ year }}</span>    
+    </div>
+
+    <img class="rounded-xl" src="{{ image }}" />
+    <div class="w-full flex flex-col gap-4 items-start my-4 md:my-12">
+        <div class="flex flex-col md:flex-row gap-8 w-full">
+
+            <div class="w-full md:w-3/5">
+                <div class="text-2xl mx-auto md:px-8">
+                    {{ content | safe }}
+                </div>                
+            </div>
+            <div class="w-full md:w-2/5">
+                <h3 class="font-bold star">Roles</h3>
+                <ul class="list-none">
+                    {% for role in roles %}
+                        <li>{{role}}</li>
+                    {% endfor %}         
+                </ul>         
+            </div>            
+        </div>
+    </div>
+    <div class="w-full">
+        {% slideshow images, dir %}        
+    </div>
+    <div class="w-full flex flex-row mt-10">
+        <div class="w-1/2">
+            <div class="flex flex-col text-md">
+                <div class="flex">
+                    {% if partners|length %} With: {% endif %}
+                    {% for partner in partners %}   
+                        <span class="partner pl-2">{{partner | safe}}</span>
+                    {% endfor %}
+                </div>                
+            </div>
+        </div>
+        <div class="w-1/2 text-right">
+            {% pillbutton page, 'Visit Site', url %} 
+            <!-- <a class="pill-button no-underline flex items-center" href="{{url}}">
+                Visit Site
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-linecap="butt" stroke-linejoin="arcs"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg>
+            </a>   -->
+        </div>
+    </div>
+</div>
+
+<div class="flex flex-row w-full border-t dark:border-white border-blue-900">
+    {% set currentIndex = collections.work | map('inputPath') | indexOf(page.inputPath) %}
+    {% set prevItem = collections.work[currentIndex - 1] %}
+    {% set nextItem = collections.work[currentIndex + 1] %}
+    
+    <div class="w-full py-8 flex flex-row justify-between">
+        <div>
+            {% if nextItem %}
+            <div class="text-sm">PREVIOUS</div>
+            <a href="{{ nextItem.url }}">{{ nextItem.data.title }}</a>
+            {% endif %}
+        </div>
+        <div>
+            {% if prevItem %}
+                <div class="text-sm">NEXT</div>
+                <a class="text-right" href="{{ prevItem.url }}">{{ prevItem.data.title }}</a>
+            {% endif %}
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+
+

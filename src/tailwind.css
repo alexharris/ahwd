@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
 /*
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
@@ -15,6 +18,7 @@
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    @apply text-blue-900;
 }
 
 img, picture, video, canvas, svg {
@@ -92,7 +96,7 @@ body {
 }
 
 #main > *:not(.full-width) {
-    @apply p-4 md:p-8;
+    @apply p-4;
 }
 
 .socko {
@@ -110,15 +114,15 @@ body {
 
 
 a, a:visited {
-    @apply text-gray-900 hover:text-red-500 dark:hover:text-red-500 dark:text-white
+    @apply text-blue-900 hover:text-red-500 dark:hover:text-red-500 dark:text-white
 }
 
 a.link-white, .link-white > a {
     @apply text-white
 }
 
-[aria-current="page"] {
-    @apply bg-gray-200 dark:bg-gray-900
+[aria-current="page"].pill-button {
+    @apply border-blue-900 bg-blue-900 dark:border-white
 }
 
 
@@ -135,26 +139,121 @@ a.link-white, .link-white > a {
 }
 
 .big-text {
-    @apply text-3xl md:text-4xl md:leading-tight mb-16 md:mb-24;
+    @apply text-3xl md:text-4xl md:leading-tight mb-16 md:mb-24 md:w-3/5;
 }
 
-.pill-button {
-    @apply px-2 md:px-6 pt-1 pb-2 text-center rounded-full border-2 text-white bg-blue-600 border-blue-600 hover:border-black hover:bg-black cursor-pointer gap-2 no-underline leading-8;
+
+
+.star:after {
+    /* content: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 53 54' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M21.9633 4.04897C23.1554 -1.11944 30.5155 -1.11945 31.7075 4.04896L34.5243 16.2621C34.9804 18.2396 36.5866 19.7453 38.5894 20.0729L48.579 21.7067C54.1696 22.6211 54.1696 30.6612 48.579 31.5756L38.5894 33.2095C36.5866 33.537 34.9804 35.0427 34.5244 37.0202L31.7075 49.2334C30.5155 54.4018 23.1554 54.4018 21.9633 49.2334L19.1465 37.0202C18.6904 35.0427 17.0843 33.537 15.0815 33.2095L5.09182 31.5756C-0.498777 30.6613 -0.498792 22.6211 5.0918 21.7067L15.0815 20.0729C17.0843 19.7453 18.6904 18.2396 19.1465 16.2621L21.9633 4.04897Z' fill='black'/></svg%3E "); */
+    padding-left: 6px;
+    content: '—'
 }
 
-.pill-button.pill-button-outline {
-    @apply bg-transparent;
+figcaption {
+    @apply text-sm text-gray-500 dark:text-gray-400;
 }
+
+#logo:hover .logo-fill {
+    @apply fill-red-500 dark:fill-red-500;
+}
+
+
+.logo-fill {
+    @apply fill-blue-900 dark:fill-white;
+}
+
+/* slideshow styles */
+
+.slideshow-container {
+    position: relative;
+    margin: auto;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  .arrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    z-index: 2;
+  }
+  
+  .arrow.left {
+    left: 0;
+    /* cursor: url('assets/images/left-arrow.svg'), auto; */
+  }
+
+  /* .arrow.left:hover {
+    cursor: url('assets/images/left-arrow.svg'), auto;
+
+  } */
+  
+  .arrow.right {
+    right: 0;
+  }
+
+  /* .arrow.right:hover {
+    cursor: url('assets/images/right-arrow.svg'), auto;
+
+  } */
+
+
 
 a.pill-button {
-    @apply text-white hover:text-white;
+    @apply 
+    px-2 
+    md:px-6 
+    pt-1 
+    pb-2 
+    text-center 
+    rounded-full 
+    border-2 
+    text-white 
+    dark:text-white 
+    dark:hover:text-white
+    dark:hover:bg-blue-950
+    dark:hover:border-blue-950
+    bg-blue-600 
+    border-blue-600 
+    hover:border-blue-900 
+    hover:bg-transparent
+    hover:text-blue-900
+    cursor-pointer 
+    gap-2 
+    no-underline 
+    leading-8;
 }
 
-a.pill-button.pill-button-outline {
-    @apply text-blue-600 hover:text-black text-xl;
-}
 
-.pill-button svg {
+/* .pill-button svg {
     @apply stroke-white stroke-2 dark:stroke-white;
 }
 
@@ -163,12 +262,7 @@ a.pill-button.pill-button-outline {
 }
 
 
+
 .pill-button.pill-button-outline:hover svg {
     @apply stroke-black dark:stroke-black;
-}
-
-.star:after {
-    /* content: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 53 54' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M21.9633 4.04897C23.1554 -1.11944 30.5155 -1.11945 31.7075 4.04896L34.5243 16.2621C34.9804 18.2396 36.5866 19.7453 38.5894 20.0729L48.579 21.7067C54.1696 22.6211 54.1696 30.6612 48.579 31.5756L38.5894 33.2095C36.5866 33.537 34.9804 35.0427 34.5244 37.0202L31.7075 49.2334C30.5155 54.4018 23.1554 54.4018 21.9633 49.2334L19.1465 37.0202C18.6904 35.0427 17.0843 33.537 15.0815 33.2095L5.09182 31.5756C-0.498777 30.6613 -0.498792 22.6211 5.0918 21.7067L15.0815 20.0729C17.0843 19.7453 18.6904 18.2396 19.1465 16.2621L21.9633 4.04897Z' fill='black'/></svg%3E "); */
-    padding-left: 6px;
-    content: '—'
-}
+} */

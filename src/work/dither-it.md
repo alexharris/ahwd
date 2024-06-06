@@ -1,5 +1,5 @@
 ---
-layout: work.njk
+layout: job.njk
 title: Dither it!
 tags: 
     - work
@@ -12,7 +12,7 @@ images:
     - image-2.jpg
     - image-3.jpg
     - image-4.jpg 
-tech: Vuejs, Tailwind
+tech: Vuejs
 year: 2019
 url: https://ditherit.com
 ---

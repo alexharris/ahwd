@@ -1,5 +1,5 @@
 ---
-layout: work.njk
+layout: job.njk
 title: Camp Winnarainbow
 tags: 
     - work

@@ -1,5 +1,5 @@
 ---
-layout: work.njk
+layout: job.njk
 title: Distributional
 tags: 
     - work
@@ -13,7 +13,7 @@ images:
     - image-3.jpg
     - image-4.jpg 
     - image-5.jpg 
-tech: Wordpress, Tailwind
+tech: Wordpress
 year: 2023
 url: https://distributional.com
 partners:

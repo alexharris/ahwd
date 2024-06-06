@@ -1,22 +1,22 @@
 ---
-layout: work.njk
+layout: job.njk
 title: BAMPFA
 tags: 
     - work
     - everything
     - arts
     - education
-image: /assets/images/bampfa/image-6.jpg
+image: /assets/images/bampfa/bampfa-building.jpg
 dir: bampfa
 images:
-    - bampfa-building.jpg
+    - image-1.jpg
     - image-2.jpg
     - image-3.jpg
     - image-4.jpg
     - image-5.jpg
-    - image-1.jpg
+    
 tech: Drupal
-year: 2023
+year: 2023  
 url: https://bampfa.org
 ---
 

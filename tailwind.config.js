@@ -1,7 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: 'class',
-  content: ["./src/**/*.{njk,md}", "./src/**/*.svg",],
+  content: [
+    "./src/**/*.{njk,md,html}", 
+    "./src/**/*.svg",
+    "./.eleventy.js",
+  ],
   theme: {
     extend: {
       typography: {
@@ -9,11 +13,31 @@ module.exports = {
           css: {
             fontSize: '20px',
             fontWeight: '400',
+            maxWidth: '1100px',
+            color: '#1e3a8a',
+            a: {
+              color: '#1e3a8a',
+            },
+            h2: {
+              color: '#1e3a8a',
+            },
+            h3: {
+              color: '#1e3a8a',
+            },
           },
         },
-        DARK: {
+        dark: {
           css: {
-            color: 'white'
+            color: '#ffffff',
+            a: {
+              color: '#ffffff',
+            },
+            h2: {
+              color: '#ffffff',
+            },
+            h3: {
+              color: '#ffffff',
+            },            
           },
         },
       },

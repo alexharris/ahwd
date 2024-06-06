@@ -1,4 +1,8 @@
-#BAMPFA Soup
+---
+layout: post.njk
+title: BAMPFA Soup Post
+tags: post
+---
 
 - history of working with bampfa, three seperate times
 - this time, migrating data. ship metaphor? 

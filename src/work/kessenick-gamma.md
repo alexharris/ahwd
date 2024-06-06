@@ -1,5 +1,5 @@
 ---
-layout: work.njk
+layout: job.njk
 title: Kessenick Gamma
 tags: 
     - work

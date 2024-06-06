@@ -4,7 +4,7 @@ title: Home
 ---
 
 <p class="big-text w-full lg:w-3/5">
-    I am a web developer in Oakland, CA, focused on helping arts and environmental organizations, non-profits and small businesses communicate on the web.        
+    Web development in Oakland, CA, with a focus on helping arts and environmental organizations, non-profits and small businesses communicate online.        
 </p>
 
 <h2 class="text-xl uppercase pb-12 font-bold star">Featured Work</h2>
@@ -14,10 +14,10 @@ title: Home
         <div class="md:w-3/5 md:pr-16 pb-4">
             <img class="rounded-xl w-full mb-4" src="/assets/images/ringo/ringo-main.jpg">        
         </div>
-        <div class="md:w-2/5 flex flex-col justify-center items-start prose dark:prose-invert">
+        <div class="md:w-2/5 flex flex-col justify-center items-start prose dark:prose-dark">
             <h2 class="text-2xl"><a class="cursor-pointer no-underline" href="/work/ringo-studio">Ringo Studio</a></h2>
             <p>A beautiful, immersive Wordpress site and web store built for an architecural design firm in New York.</p>        
-            <a class="pill-button no-underline" href="/work/ringo-studio">View project</a>
+            {% pillbutton page, 'View project', '/work/ringo-studio/' %} 
         </div>
     </div>    
 </div>
@@ -26,10 +26,10 @@ title: Home
         <div class="w-full md:w-3/5 md:pl-16 pb-4">
             <img class="rounded-xl w-full mb-4" src="/assets/images/lightsource/image-3.jpg">        
         </div>
-        <div class="w-full md:w-2/5 flex flex-col justify-center items-start prose dark:prose-invert">
+        <div class="w-full md:w-2/5 flex flex-col justify-center items-start prose dark:prose-dark">
             <h2 class="text-2xl"><a class="cursor-pointer no-underline" href="/work/lightsource">Lightsource</a></h2>
-            <p>A custom Wordpress theme for a small SF arts business, with bespoke ecommerce functionality.</p>        
-            <a class="pill-button no-underline" href="/work/lightsource">View project</a>
+            <p>A custom Wordpress theme for a small SF arts business, with bespoke ecommerce functionality.</p>  
+            {% pillbutton page, 'View Project', '/work/lightsource/' %}       
         </div>
     </div>    
 </div>
@@ -38,20 +38,19 @@ title: Home
         <div class="w-full md:w-3/5 md:pr-16 pb-4">
             <img class="rounded-xl w-full mb-4" src="/assets/images/ucwaterportal/image-1.jpg">        
         </div>
-        <div class="w-full md:w-2/5 flex flex-col justify-center items-start prose dark:prose-invert">
+        <div class="w-full md:w-2/5 flex flex-col justify-center items-start prose dark:prose-dark">
             <h2 class="text-2xl"><a class="cursor-pointer no-underline" href="/work/uc-water-portal">UC Berkeley Water Research and Opportunities Portal</a></h2>
             <p class="text-lg">A directory for UC Berkeley students interested in finding water-related research, classes and opportunities.</p>        
-            <a class="pill-button no-underline" href="/work/uc-water-portal">View project</a>
-        </div>
+            {% pillbutton page, 'View project', '/work/uc-water-portal/' %}         </div>
     </div>    
 </div>
-<div class="flex flex-col items-start md:items-center py-16 md:py-36 full-width">
-    <a href="/work/everything/" class="pill-button mb-6 text-2xl">View all work</a>
-    or select a category
-    <div class="flex flex-wrap gap-4 mt-8">
-        <a class="pill-button" href="/work/arts">Arts Organizations</a>
-        <a class="pill-button" href="/work/business">Small Business</a>
-        <a class="pill-button" href="/work/education">Education</a>
+<div class="flex flex-col items-start md:items-center py-16 md:py-18 full-width">
+    {% pillbutton page, 'View All Work', '/work/everything/' %} 
+    <div class="pt-4">— or —</div>
+    <div class="flex flex-wrap gap-4 mt-4">
+        <a class="" href="/work/arts">Arts Organizations</a>
+        <a class="" href="/work/business">Small Business</a>
+        <a class="" href="/work/education">Education</a>
     </div>
 </div>
 
