@@ -17,6 +17,9 @@ images:
 tech: Wordpress, Shopify
 year: 2024
 url: https://cckw.us
+roles:
+    - Web Development
+    - E-commerce
 partners:
     - <a href="https://riaroberts.net/">Ria Roberts</a>
 ---

@@ -18,6 +18,10 @@ images:
     - support.jpg
 tech: Wordpress
 year: 2023
+roles:
+    - Web Development
+    - Web Design
+    - Visual Identity
 url: https://campwinnarainbow.org
 ---
 

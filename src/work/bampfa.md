@@ -14,7 +14,9 @@ images:
     - image-3.jpg
     - image-4.jpg
     - image-5.jpg
-    
+roles:
+    - Web Development
+    - User Interface Design   
 tech: Drupal
 year: 2023  
 url: https://bampfa.org

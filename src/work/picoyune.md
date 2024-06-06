@@ -15,6 +15,10 @@ images:
     - image-4.jpg
 tech: Static, Netlify
 year: 2022
+roles:
+    - Web Development
+    - Web Design
+    - Ongoing Maintenance
 url: https://picoyune.com
 ---
 

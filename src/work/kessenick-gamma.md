@@ -19,6 +19,10 @@ images:
 tech: Wordpress
 year: 2022
 url: https://kessenick.com
+roles:
+    - Web Development
+    - Project Management
+    - Ongoing Maintenance
 partners:
     - Emma Mitchell
 ---

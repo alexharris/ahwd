@@ -18,6 +18,9 @@ images:
 tech: Wordpress
 year: 2024
 url: https://elmostudios.com
+roles:
+    - Web Development
+    - E-commerce
 partners:
     - <a href="https://meehanspinat.com/">Meehan Spinat</a>
 ---

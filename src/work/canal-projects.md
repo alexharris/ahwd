@@ -17,6 +17,8 @@ images:
 tech: Kirby
 year: 2022
 url: https://www.canalprojects.org/
+roles:
+    - Web Development
 partners: 
     - <a class="font-normal" href="https://alexmahan.com/">Alex Mahan</a>
     - <a class="font-normal" href="http://www.pobzeznik.net/">Scott Ponik</a>

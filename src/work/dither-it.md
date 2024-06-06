@@ -14,6 +14,10 @@ images:
     - image-4.jpg 
 tech: Vuejs
 year: 2019
+roles:
+    - Web Development
+    - Design
+    - Ongoing Maintenance
 url: https://ditherit.com
 ---
 

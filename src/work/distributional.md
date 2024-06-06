@@ -16,6 +16,9 @@ images:
 tech: Wordpress
 year: 2023
 url: https://distributional.com
+roles:
+    - Web Development
+    - Ongoing Maintenance
 partners:
     - <a class="font-normal" href="https://aiya.haus/" title="Aiya Haus">Aiya Haus</a>
     - <a class="font-normal" href="https://elenaloras.com/" title="Elena Loras">Elena Loras</a>

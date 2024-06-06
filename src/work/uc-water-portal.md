@@ -15,6 +15,10 @@ images:
     - image-4.jpg
 tech: Wordpress
 year: 2019
+roles:
+    - Web Development
+    - Design
+    - Training
 url: https://waterportal.berkeley.edu/
 ---
 

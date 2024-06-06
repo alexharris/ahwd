@@ -18,6 +18,9 @@ images:
 tech: Wordpress, Woocommerce
 year: 2021
 url: https://lightsourcesf.com
+roles:
+    - Web Development
+    - E-commerce
 partners:
     - Paladar
     - <a class="font-normal" href="https://www.amandabuzard.com/" title="Amanda Buzard">Amanda Buzard</a>

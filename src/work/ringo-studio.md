@@ -20,6 +20,9 @@ images:
 tech: Wordpress, Woocommerce
 year: 2021
 url: https://ringo-studio.com
+roles:
+    - Web Development
+    - E-commerce
 partners:
     - <a href="https://meehanspinat.com/">Meehan Spinat</a>
 ---
