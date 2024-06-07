@@ -6,17 +6,15 @@ tags:
     - design
     - business
     - everything
-image: /assets/images/ringo/ringo-main.jpg
+image: /assets/images/ringo/image-1.jpg
 dir: ringo
 images:
-    - ringo-homepage.jpg
     - image-2.jpg
     - image-3.jpg
     - image-4.jpg
     - image-5.jpg
     - image-6.jpg
     - image-7.jpg
-    - image-8.jpg
 tech: Wordpress, Woocommerce
 year: 2021
 url: https://ringo-studio.com

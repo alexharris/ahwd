@@ -5,17 +5,16 @@ tags:
     - work
     - business
     - everything
-image: /assets/images/kg/image-2.jpg
+image: /assets/images/kg/image-1.jpg
 dir: kg
 images:
-    - kg-logo.png
-    - image-1.png
     - image-2.jpg
     - image-3.jpg
     - image-4.jpg
     - image-5.jpg
     - image-6.jpg
     - image-7.jpg
+    - image-8.jpg
 tech: Wordpress
 year: 2022
 url: https://kessenick.com

@@ -6,13 +6,13 @@ tags:
     - business
     - environment
     - everything
-image: /assets/images/picoyune/picoyune-main.jpg
+image: /assets/images/picoyune/image-1.jpg
 dir: picoyune
 images:
-    - image-1.jpg
     - image-2.jpg
     - image-3.jpg
     - image-4.jpg
+    - image-5.jpg
 tech: Static, Netlify
 year: 2022
 roles:

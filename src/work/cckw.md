@@ -24,4 +24,4 @@ partners:
     - <a href="https://riaroberts.net/">Ria Roberts</a>
 ---
 
-blah blah blah 
+coming soon!
