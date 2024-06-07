@@ -9,7 +9,6 @@ tags:
 image: /assets/images/ucwaterportal/image-1.jpg
 dir: ucwaterportal
 images:
-    - ucwater-creek.jpg 
     - image-2.jpg
     - image-3.jpg
     - image-4.jpg

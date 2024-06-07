@@ -1,10 +1,6 @@
 ---
 layout: job.njk
 title: Dither it!
-tags: 
-    - work
-    - environment
-    - everything
 image: /assets/images/ditherit/image-1.jpg
 dir: ditherit
 images:
