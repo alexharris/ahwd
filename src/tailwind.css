@@ -263,3 +263,11 @@ a.pill-button {
 .prose > .full-width {
     @apply max-w-6xl;
 }
+
+.prose.prose-page > *:not(.full-width) {
+    @apply max-w-5xl;
+}
+
+.prose.prose-page > .full-width {
+    @apply max-w-7xl;
+}
