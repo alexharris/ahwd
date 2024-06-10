@@ -47,14 +47,17 @@
         <svg id="moon" class="stroke-black stroke-1 fill-none hover:fill-yellow-300 dark:fill-yellow-300" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="arcs"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>      
       </nav>
   </header>
-  <main id="main" class="relative bg-gray-50 dark:bg-blue-900 z-30 mb-[100vh] min-h-screen pb-28">
+  <main id="main" class="relative bg-gray-50 dark:bg-blue-900 z-30 mb-[100vh] min-h-screen pt-12 pb-28">
     <!-- Grab the content from the page data and dump it here, and mark it as safe -->
     <!-- Safe docs: https://mozilla.github.io/nunjucks/templating.html#safe -->    
     
-<article>
-    <h1 class="text-5xl mb-12">CCKW Post</h1>
-    <div class="prose dark:prose-dark mb-24">
-        <p>In early 2024, I was hired to build a new site for New York design studio Chen Chen and Kai Williams. They were launching a new line of furniture and lighting and wanted a new site to go along with the launch. Their current site was old and slightly convoluted in how it listed and organized the various categories of CCKW’s work. Designer Ria Roberts had a site design pretty much finished and a clear vision of how the site would function.</p>
+<article class="prose dark:prose-dark mb-24 mx-auto">
+    <h1>The process and decison-making that went into making cckw.us</h1>
+<p><figure class="full-width">
+<img class="shadow-md rounded-lg" src="/assets/images/cckw/figma-grid.jpg" alt="alt text">
+<figcaption>caption</figcaption>
+</figure></p>
+<p>In early 2024, I was hired to build a new site for New York design studio Chen Chen and Kai Williams. They were launching a new line of furniture and lighting and wanted a new site to go along with the launch. Their current site was old and slightly convoluted in how it listed and organized the various categories of CCKW’s work. Designer Ria Roberts had a site design pretty much finished and a clear vision of how the site would function.</p>
 <p>The initial pitch had a few general requirements:</p>
 <blockquote>
 <p>A primary consideration is that I’d like to have a pretty robust and modular CMS.</p>
@@ -70,13 +73,13 @@
 <h2>Hosting</h2>
 <p>I have recently been a big fan of hosting Wordpress sites with WPEngine. In my mind it fits right in the goldilocks zone in terms of price, support, developer functionality, etc. Easy.</p>
 <h2>The Front End</h2>
-<p><figure >
+<p><figure class="full-width">
 <img class="shadow-md rounded-lg" src="/assets/images/cckw/image-7.jpg" alt="Screenshot of McMaster Carr homepage">
 <figcaption>The McMaster Carr homepage</figcaption>
 </figure></p>
 <p>Visually, the new design was fairly simple, inspired by both the CCKW wiki and the holy grail of functional websites, McMaster Carr. For some sites with more “UI elements” I like to use Tailwind, which makes it easier to build a wide variety of components, but for a frontend where most of the complexity is just structural, I find that simple SCSS works well, especially with the advent of “new” css features like grids, flexbox, container queries, etc.</p>
 <h2>A Flexible Content Model</h2>
-<p><figure >
+<p><figure class="full-width">
 <img class="shadow-md rounded-lg" src="/assets/images/cckw/content-fields.jpg" alt="Wordpress Admin screenshot">
 <figcaption>The content fields on each object</figcaption>
 </figure></p>
@@ -92,7 +95,6 @@
 <h2>Shopify Integration</h2>
 <p>One instance where plugins can be helpful is implementing complicated things like shopify integration. In this case, IO</p>
 
-    </div>
 </article>
   </main>
   <footer class="fixed inset-0 z-0 w-full flex flex-col bg-gray-200 dark:bg-blue-950 dark:text-white items-center justify-center pb-8">

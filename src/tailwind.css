@@ -252,17 +252,14 @@ a.pill-button {
     leading-8;
 }
 
-
-/* .pill-button svg {
-    @apply stroke-white stroke-2 dark:stroke-white;
+.prose {
+    @apply max-w-none;
 }
 
-.pill-button.pill-button-outline svg {
-    @apply stroke-blue-600 stroke-2 dark:stroke-blue-600;
+.prose > *:not(.full-width) {
+    @apply w-full max-w-3xl mx-auto;
 }
 
-
-
-.pill-button.pill-button-outline:hover svg {
-    @apply stroke-black dark:stroke-black;
-} */
+.prose > .full-width {
+    @apply max-w-6xl;
+}

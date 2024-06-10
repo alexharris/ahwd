@@ -6,6 +6,9 @@ tags:
     - post
 ---
 
+# The process and decison-making that went into making cckw.us
+
+{% bigImage '/assets/images/cckw/figma-grid.jpg' 'alt text' 'caption' %}
 
 In early 2024, I was hired to build a new site for New York design studio Chen Chen and Kai Williams. They were launching a new line of furniture and lighting and wanted a new site to go along with the launch. Their current site was old and slightly convoluted in how it listed and organized the various categories of CCKW’s work. Designer Ria Roberts had a site design pretty much finished and a clear vision of how the site would function.
 
