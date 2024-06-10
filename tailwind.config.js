@@ -54,10 +54,10 @@ module.exports = {
         },
         dark: {
           css: {
+            fontSize: '20px',
+            fontWeight: '400',
+            // maxWidth: '900px',
             color: '#ffffff',
-            a: {
-              color: '#ffffff',
-            },
             h1: {
               color: '#ffffff',
             },
@@ -66,6 +66,30 @@ module.exports = {
             },
             h3: {
               color: '#ffffff',
+            },
+            h4: {
+              color: '#ffffff',
+            },
+            strong: {
+              color: '#ffffff',
+            },
+            blockquote: {
+              color: '#ffffff',
+            },
+            'li::marker': {
+              color: '#ffffff',
+            },
+            th: {
+              color: '#ffffff',
+            },
+            code: { 
+              color: '#ffffff',
+            },
+            a: {            
+              color: '#ffffff',
+              '&:hover': {
+                textDecoration: 'underline',
+              },
             },            
           },
         },
