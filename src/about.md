@@ -1,5 +1,5 @@
 ---
-layout: post.njk
+layout: page.njk
 title: About
 ---
 
