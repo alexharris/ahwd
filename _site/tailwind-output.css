@@ -1224,8 +1224,16 @@ select {
   position: relative;
 }
 
+.sticky {
+  position: sticky;
+}
+
 .inset-0 {
   inset: 0px;
+}
+
+.top-0 {
+  top: 0px;
 }
 
 .z-0 {
@@ -1305,20 +1313,16 @@ select {
   margin-top: 2.5rem;
 }
 
+.mt-12 {
+  margin-top: 3rem;
+}
+
 .mt-16 {
   margin-top: 4rem;
 }
 
-.mt-24 {
-  margin-top: 6rem;
-}
-
 .mt-4 {
   margin-top: 1rem;
-}
-
-.mt-12 {
-  margin-top: 3rem;
 }
 
 .block {
@@ -1381,6 +1385,14 @@ select {
   width: 100%;
 }
 
+.w-10\/12 {
+  width: 83.333333%;
+}
+
+.w-1\/12 {
+  width: 8.333333%;
+}
+
 .grow {
   flex-grow: 1;
 }
@@ -1421,10 +1433,6 @@ select {
   align-items: flex-start;
 }
 
-.items-end {
-  align-items: flex-end;
-}
-
 .items-center {
   align-items: center;
 }
@@ -1437,12 +1445,20 @@ select {
   justify-content: space-between;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .gap-4 {
   gap: 1rem;
 }
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
 }
 
 .rounded-lg {
@@ -1508,6 +1524,10 @@ select {
   fill: #fff;
 }
 
+.fill-transparent {
+  fill: transparent;
+}
+
 .stroke-black {
   stroke: #000;
 }
@@ -1520,8 +1540,16 @@ select {
   stroke: #1e3a8a;
 }
 
+.stroke-blue-800 {
+  stroke: #1e40af;
+}
+
 .stroke-1 {
   stroke-width: 1;
+}
+
+.stroke-2 {
+  stroke-width: 2;
 }
 
 .p-2 {
@@ -1568,10 +1596,6 @@ select {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.pb-12 {
-  padding-bottom: 3rem;
 }
 
 .pb-28 {
@@ -2023,6 +2047,30 @@ figcaption {
 
   } */
 
+.dot {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 9999px;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
+}
+
+:is(.dark .dot) {
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
+}
+
+.dot.active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
+:is(.dark .dot.active) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
 a.pill-button {
   cursor: pointer;
   gap: 0.5rem;
@@ -2163,8 +2211,20 @@ a.pill-button:hover {
   fill: #fde047;
 }
 
+.hover\:fill-blue-800:hover {
+  fill: #1e40af;
+}
+
 .hover\:stroke-red-400:hover {
   stroke: #f87171;
+}
+
+.hover\:stroke-red-800:hover {
+  stroke: #991b1b;
+}
+
+.hover\:stroke-red-600:hover {
+  stroke: #dc2626;
 }
 
 .hover\:text-white:hover {
@@ -2214,6 +2274,10 @@ a.pill-button:hover {
   fill: #fde047;
 }
 
+:is(.dark .dark\:stroke-white) {
+  stroke: #fff;
+}
+
 :is(.dark .dark\:text-white) {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -2222,6 +2286,10 @@ a.pill-button:hover {
 :is(.dark .dark\:hover\:bg-blue-950:hover) {
   --tw-bg-opacity: 1;
   background-color: rgb(23 37 84 / var(--tw-bg-opacity));
+}
+
+:is(.dark .dark\:hover\:fill-white:hover) {
+  fill: #fff;
 }
 
 @media (min-width: 640px) {
@@ -2234,10 +2302,6 @@ a.pill-button:hover {
   .md\:my-12 {
     margin-top: 3rem;
     margin-bottom: 3rem;
-  }
-
-  .md\:mb-32 {
-    margin-bottom: 8rem;
   }
 
   .md\:mb-24 {
@@ -2294,10 +2358,6 @@ a.pill-button:hover {
 
   .md\:gap-8 {
     gap: 2rem;
-  }
-
-  .md\:p-2 {
-    padding: 0.5rem;
   }
 
   .md\:p-8 {

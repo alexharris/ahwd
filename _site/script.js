@@ -66,35 +66,71 @@ document.getElementById('moon').addEventListener("click", function() {
 // END SCROLL ANIMATION STUFF
 
 // SLIDESHOW STUFF
-
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+
   if (n > slides.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";  
   }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+}
   slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+
 }
 
-let slideshowContainer = document.querySelector('.slideshow-container');
-slideshowContainer.addEventListener('click', function(event) {
-  let rect = event.target.getBoundingClientRect();
-  let x = event.clientX - rect.left; //x position within the element.
-  let width = rect.right - rect.left;
-  if (x < width / 2) {
-    plusSlides(-1); // left half was clicked
-  } else {
-    plusSlides(1); // right half was clicked
-  }
-});
+let slideIndex = 1;
+let slides = document.getElementsByClassName("mySlides");
+let dotsContainer = document.querySelector('.dots-container');
+
+for (let i = 0; i < slides.length; i++) {
+  let dot = document.createElement('span');
+  dot.classList.add('dot');
+  dotsContainer.appendChild(dot);
+}
+
+if (slides.length > 0) {
+  showSlides(slideIndex);
+
+
+  let prevArrow = document.querySelector('.left'); // replace '.prev' with the actual selector for your left arrow
+  let nextArrow = document.querySelector('.right'); // replace '.next' with the actual selector for your right arrow
+
+  prevArrow.addEventListener('click', function(event) {
+    plusSlides(-1);
+  });
+
+  nextArrow.addEventListener('click', function(event) {
+    plusSlides(1);
+  });
+
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'ArrowLeft') {
+      plusSlides(-1);
+    } else if (event.key === 'ArrowRight') {
+      plusSlides(1);
+    }
+  });
+}
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+
+
 
 // END SLIDESHOW STUFF
+
+
+let contactMenuItem = document.querySelector('#contact-button');
+contactMenuItem.addEventListener('click', function(event) {
+  console.log('hello');
+  event.preventDefault(); // prevent the default action
+  window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+});
