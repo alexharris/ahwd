@@ -22,7 +22,7 @@ module.exports = function(eleventyConfig) {
     // });
 
     eleventyConfig.addPairedShortcode('bigtext', function(content) {
-        return `<div class="text-3xl md:text-4xl font-extrabold">${content}</div>`;
+        return `<div class="text-3xl md:text-4xl md:leading-relaxed mb-12">${content}</div>`;
     });
   
 

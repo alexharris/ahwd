@@ -139,7 +139,7 @@ a.link-white, .link-white > a {
 }
 
 .big-text {
-    @apply text-3xl md:text-4xl md:leading-tight mb-16 md:mb-24 md:w-3/5;
+    @apply text-3xl md:text-4xl md:leading-loose mb-16 md:mb-24 md:w-3/5;
 }
 
 
