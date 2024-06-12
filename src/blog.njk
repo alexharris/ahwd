@@ -1,10 +1,11 @@
 ---
-layout: layout.njk
+layout: page.njk
 title: Blog
 ---
-    {{title}}
     <ul>
     {% for post in collections.post %}
-        <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+        {% if post.data.status != 'draft' %}
+            <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+        {% endif %}
     {% endfor %}
     </ul>

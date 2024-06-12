@@ -24,4 +24,7 @@ partners:
     - <a href="https://riaroberts.net/">Ria Roberts</a>
 ---
 
-coming soon!
+Chen Chen & Kai Williams is a wordpress site that implements a flexible content model that allows for the owners to easily implement their content in a wide variety of configurations.
+
+
+Read more about the process in this [in-depth case study](/blog/cckw).

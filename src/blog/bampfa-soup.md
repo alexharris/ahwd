@@ -2,6 +2,7 @@
 layout: post.njk
 title: BAMPFA Soup Post
 tags: post
+status: draft
 ---
 
 - history of working with bampfa, three seperate times

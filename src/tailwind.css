@@ -270,7 +270,7 @@ a.pill-button {
 }
 
 .prose > .full-width {
-    @apply max-w-6xl;
+    @apply max-w-6xl mx-auto;
 }
 
 .prose.prose-page > *:not(.full-width) {
