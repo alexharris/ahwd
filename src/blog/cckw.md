@@ -1,16 +1,33 @@
 ---
 layout: post.njk
-title: CCKW Post
+title: The making of cckw.us
 image: /assets/images/cckw/image-1.jpg
 tags:
     - post
 ---
 
-{% bigtext %}The process and decision-making that went into making cckw.us{% endbigtext %}
+{% bigtext %}An in-depth look at the decision making process that went into making cckw.us.{% endbigtext %}
+
+{% bigImage "/assets/images/cckw/image-1.jpg", "A screenshot of a website homepage", "The CCKW homepage" %}
+
+In early 2024, I was hired to build a new site for New York design studio [Chen Chen and Kai Williams](https://cckw.us). They were launching a new line of furniture and lighting and wanted a new site to go along with the launch. Their current site was old and slightly convoluted in how it listed and organized the various categories of CCKW’s work. Designer Ria Roberts had a site design pretty much finished and a clear vision of how the site would function.
+
+This article includes a run down of the decisions made in a variety of aspects that made this project a success:
+
+<ul class="flex flex-col text-2xl list-none px-0">
+<li><a href="#project-req">Project Requirements</a></li>
+<li><a href="#hosting">Hosting</a></li>
+<li><a href="#frontend">The Front End</a></li>
+<li><a href="#backend">The Back End</a></li>
+<li><a href="#plugins">Wordpress Plugins</a></li>
+<li><a href="#launch">Launch</a></li>
+</ul>
 
 {% bigImage '/assets/images/cckw/figma-grid.jpg' 'An image of the CCKW website design with a grid overlay' 'An initial cckw.us design' %}
 
-In early 2024, I was hired to build a new site for New York design studio [Chen Chen and Kai Williams](https://cckw.us). They were launching a new line of furniture and lighting and wanted a new site to go along with the launch. Their current site was old and slightly convoluted in how it listed and organized the various categories of CCKW’s work. Designer Ria Roberts had a site design pretty much finished and a clear vision of how the site would function.
+<span id="project-req" class="scroll-mt-32"></span>
+
+## Project Requirements
 
 The initial pitch had a few general requirements:
 
@@ -28,18 +45,23 @@ CCKW already had a full shopify setup, but wanted to embed that process into the
 
 With the basic architectural decisions made, it was now a matter of implementing them. The following is a rundown of some of the various pieces of the puzzle, and my thoughts that went into making each decision.
 
+<span id="hosting" class="scroll-mt-32"></span>
+
 ## Hosting
 
 I have recently been a big fan of hosting Wordpress sites with WPEngine. In my mind it fits right in the goldilocks zone in terms of price, support, developer functionality, etc. Easy.
 
-## The Front End
+<span id="frontend" class="scroll-mt-32"></span>
+
+## The Front End: Tailwind or Not
 
 {% bigImage "/assets/images/cckw/image-7.jpg", "Screenshot of McMaster Carr homepage", "The McMaster Carr homepage" %}
 
 Visually, the new design was fairly simple, inspired by both the CCKW wiki and the holy grail of functional websites, McMaster Carr. For some sites with more “UI elements” I like to use Tailwind, which makes it easy to build a wide variety of components, but for a frontend where most of the complexity is just structural, I find that simple SCSS works well, especially with the advent of “new” css features like grids, flexbox, container queries, etc.
 
+<span id="backend" class="scroll-mt-32"></span>
 
-## A Flexible Content Model
+## The Back End: A Flexible Content Model
 
 {% bigImage "/assets/images/cckw/content-fields.jpg", "Wordpress Admin screenshot", "The content fields on each object" %}
 
@@ -52,6 +74,8 @@ Another aspect of the design is that there is custom data associated with the ob
 With all objects being a single post type, there is the potential for clutter and confusion with an object showing fields that aren’t relevant. For instance, a Furniture object does not need a “buy now” button, even though it currently shows up in the admin interface. There are ways to mitigate this such as using ACF to hide fields based on which categories are selected, or checking at the template level and only displaying fields that are relevant. 
 
 In this instance I opted for maximum flexibility at the cost of a slightly busier administrative interface. All fields are visible, and any field that is filled out will show up on the front end. First of all, there aren’t *that* many fields, and secondly it seems like, at least for the time being, the folks entering site content will only be people who are intimately familiar with the subject matter and will know exactly what information is relevant for each object (and also when, if ever, they want to break their own rules). If it was a site that had more people editing it, it might make sense to add more guard rails to help the user not enter the wrong stuff, but for the time being it seemed reasonable to prioritize flexibility.
+
+<span id="plugins" class="scroll-mt-32"></span>
 
 ## Wordpress Plugins
 
@@ -67,8 +91,9 @@ Of course, some plugins are always needed, especially ones that provide complica
 
 In the case of the CCKW website, I did opt to use a paid shopify plugin([ShopWP](https://wordpress.org/plugins/wpshopify/)) which allowed me to easily include shopify checkout functionality directly on product pages.
 
-## Browser testing, QA, and polish
+<span id="launch" class="scroll-mt-32"></span>
 
 ## Launch
+With the site built, CCKW succesfully entered all of the content. A few bugs came up, as they always do, which were fixed and tested with thorough cross browser QA (quality assurance). With everything in place, the site was launched in time for the release party of their new furniture line. Hopefully the site will continue to serve CCKW well for many many years.
 
-## Post-Launch
+{% pillbutton page, 'View the site', 'https://cckw.us' %} 
