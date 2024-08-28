@@ -80,9 +80,15 @@ An average project usually costs between $5000 and $25,000, depending on the par
 </ul> -->
 
 
-## About Me
-
-I have been making websites professionally for over 10 years, and have been working exclusively as a freelancer and consultant for the past 4. Before setting out on my own, I experienced both sides of the client/contractor relationship. As a developer at Cast Iron Coding in Portland, OR, I helped build sites for clients, then trained and supported them in their ongoing use. As the Web Editor and Electronic Communications Manager at UC Berkeley’s BAMPFA I hired and worked with contractors to achieve BAMPFA'S strategic and technical communications goals. These dual experiences helped me understand how to make compelling websites come to life and effectively serve my clients.
+<h2>About Me</h2>
+<div class="flex flex-col-reverse md:flex-row-reverse md:gap-10 mt-2">
+    <div class="w-full md:w-2/3">
+        <p class="mt-0">I have been making websites professionally for over 10 years, and have been working exclusively as a freelancer and consultant for the past 4. Before setting out on my own, I experienced both sides of the client/contractor relationship. As a developer at Cast Iron Coding in Portland, OR, I helped build sites for clients, then trained and supported them in their ongoing use. As the Web Editor and Electronic Communications Manager at UC Berkeley’s BAMPFA I hired and worked with contractors to achieve BAMPFA'S strategic and technical communications goals. These dual experiences helped me understand how to make compelling websites come to life and effectively serve my clients.</p>
+    </div>
+    <div class="w-full md:w-1/3">
+        <img class="w-full mt-0" src="/assets/images/ah.jpg" />
+    </div>
+</div>
 
 ## About This Site
 
