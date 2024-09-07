@@ -3,13 +3,15 @@ layout: page.njk
 title: Home
 ---
 
-<div class="w-3/5">
-    {% bigtext %}Web development focused on helping arts and environmental organizations, non-profits and small businesses communicate online.{% endbigtext %}
+<div class="full-width flex flex-col md:flex-row gap-8 items-center md:px-12">
+    <div class="w-full md:w-1/2">
+        {% bigtext %}Web development in Oakland, CA, focused on helping arts and environmental organizations, non-profits and small businesses communicate online.{% endbigtext %}
+    </div>        
+    <img class="w-full md:w-1/2" src="/assets/images/blockhead-1.png">
+    
 </div>
 
-
-
-<h2 class="text-3xl uppercase pt-12 font-semibold mx-auto text-center">Featured Work</h2>
+<h2 class="text-3xl uppercase pt-12 pb-12 font-semibold mx-auto text-center">Featured Work</h2>
 
 <div class="mt-12 mb-16 md:mb-24 full-width mx-auto">
     <div class="flex flex-col md:flex-row items-start justify-between">
@@ -21,7 +23,7 @@ title: Home
             <p>A simple, thoughtful site for a New York design agency, built to be easy to use and long lasting.</p>        
             {% pillbutton page, 'View project', '/work/cckw/' %} 
             <div class="border border-blue-800 dark:border-blue-400 rounded-xl p-4 my-12 flex flex-col items-start gap-2">
-                <div class="bg-red-500 text-white inline-block text-sm rounded-full py-1 px-2 uppercase">Case Study</div>
+                <div class="text-red-500 inline-block text-sm rounded-full pt-1 uppercase">Case Study</div>
                 <a href="/blog/cckw">Read a case study about the making of the CCKW site.</a>
             </div>            
         </div>

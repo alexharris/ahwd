@@ -13,7 +13,6 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/script.js"); 
     
 
-
     // This collects all of the jobs into a collection
     eleventyConfig.addCollection("jobs", function(collection) {
       return collection.getFilteredByGlob("work/*.md");

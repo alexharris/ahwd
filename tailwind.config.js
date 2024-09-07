@@ -8,7 +8,7 @@ module.exports = {
     "./.eleventy.js",
   ],
   theme: {
-    extend: {
+    extend: {  
       typography: {
         DEFAULT: {
           css: {

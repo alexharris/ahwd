@@ -92,4 +92,4 @@ An average project usually costs between $5000 and $25,000, depending on the par
 
 ## About This Site
 
-This site was built using the <a href="https://www.11ty.dev/">Eleventy</a> static site generator and also uses <a href="tailwindcss.com/">Tailwind CSS</a>. The logo uses the <a href="https://store.overlaptype.com/fonts/socko">Socko</a> font.
+This site was built using the <a href="https://www.11ty.dev/">Eleventy</a> static site generator and also uses <a href="tailwindcss.com/">Tailwind CSS</a>. The logo uses the <a href="https://store.overlaptype.com/fonts/socko">Socko</a> font. Body copy is <a href="https://nationalparktypeface.com/">National Park Typeface</a>.
