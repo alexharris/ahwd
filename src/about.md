@@ -58,26 +58,7 @@ While no two jobs are alike, a typical process might go something like this:
     </div>                         
 </div>
 
-An average project usually costs between $5000 and $25,000, depending on the particulars of what is needed, and takes 6-16 weeks. Check out this [case study](/blog/cckw) to get an in-depth sense of how I think through solving client needs during a project
-
-
-
-
-<!-- ## Select Clients -->
-<!-- 
-<ul class="text-2xl md:text-3xl list-disc pl-8 my-0">
-    <li class="leading-snug my-0">BAMPFA</li>
-    <li class="leading-snug my-0">Berkeley Water Center</li>
-    <li class="leading-snug my-0">Lightsource</li>
-    <li class="leading-snug my-0">500 Capp Street</li>
-    <li class="leading-snug my-0">Canal Projects</li>
-    <li class="leading-snug my-0">Ringo Studio</li>
-    <li class="leading-snug my-0">Kessenick Gamma</li>
-    <li class="leading-snug my-0">Picoyune</li>
-    <li class="leading-snug my-0">Other Brother Beer</li>
-    <li class="leading-snug my-0">Draw Together</li>
-    <li class="leading-snug my-0">Asian Art Museum</li>
-</ul> -->
+An average project might costs between $5000 and $25,000, depending on the particulars of what is needed, and takes 6-16 weeks. Check out this [case study](/blog/cckw) to get an in-depth sense of how I think through solving client needs during a project
 
 
 <h2>About Me</h2>
@@ -92,4 +73,4 @@ An average project usually costs between $5000 and $25,000, depending on the par
 
 ## About This Site
 
-This site was built using the <a href="https://www.11ty.dev/">Eleventy</a> static site generator and also uses <a href="tailwindcss.com/">Tailwind CSS</a>. The logo uses the <a href="https://store.overlaptype.com/fonts/socko">Socko</a> font. Body copy is <a href="https://nationalparktypeface.com/">National Park Typeface</a>.
+This site was built using the <a href="https://www.11ty.dev/">Eleventy</a> static site generator and also uses <a href="tailwindcss.com/">Tailwind CSS</a>. The logo uses the <a href="https://store.overlaptype.com/fonts/socko">Socko</a> font. Body copy is <a href="https://fonts.google.com/specimen/Instrument+Sans">Instrument</a>.

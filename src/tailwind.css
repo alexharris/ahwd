@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
 
 
 /*
@@ -36,6 +37,29 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 /* END RESET */
+
+@font-face {
+    font-family: 'instrument-serif';
+    src: url('/assets/fonts/instrumentserif-regular.woff2') format('woff2'),
+         url('/assets/fonts/instrumentserif-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'instrument-serif';
+    src: url('/assets/fonts/instrumentserif-italic.woff2') format('woff2'),
+         url('/assets/fonts/instrumentserif-italic.woff') format('woff');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'instrument-sans';
+    src: url('/assets/fonts/instrumentsans-variablefont_wdthwght.woff2') format('woff2'),
+         url('/assets/fonts/instrumentsans-variablefont_wdthwght.woff') format('woff');
+}
+
+
 
 @font-face {
     font-family: 'nationalpark';
@@ -97,7 +121,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-    font-family:  "nationalpark", "Helvetica Neue",sans-serif;
+    font-family: "instrument-sans", sans;
     font-size: 20px;
     font-style: normal;
     font-weight: 200;
@@ -106,6 +130,10 @@ body {
 
 #main > *:not(.full-width) {
     @apply p-4;
+}
+
+.instrument-serif {
+    font-family: 'instrument-serif';
 }
 
 .socko {
