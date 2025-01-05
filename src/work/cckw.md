@@ -5,6 +5,7 @@ tags:
     - work
     - everything
     - business
+    - featured
 image: /assets/images/cckw/image-1.jpg
 dir: cckw
 images:
@@ -22,6 +23,7 @@ roles:
     - E-commerce
 partners:
     - <a href="https://riaroberts.net/">Ria Roberts</a>
+summary: A New York design studio rooted in curiosity and innovation, redefining the possibilities of material and form.
 ---
 
 Chen Chen & Kai Williams is a wordpress site that implements a flexible content model that allows for the owners to easily implement their content in a wide variety of configurations.

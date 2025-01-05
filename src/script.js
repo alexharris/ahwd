@@ -122,15 +122,65 @@ function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-
-
-
 // END SLIDESHOW STUFF
 
+// Scroll to contact form
 
 let contactMenuItem = document.querySelector('#contact-button');
 contactMenuItem.addEventListener('click', function(event) {
-  console.log('hello');
   event.preventDefault(); // prevent the default action
   window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
 });
+
+// FEATURED WORK SLIDER
+
+let featuredIndex = 0;
+const featuredWorks = document.querySelectorAll('.featured-work');
+const featuredPrev = document.querySelectorAll('.featured-prev');
+const featuredNext = document.querySelectorAll('.featured-next');
+
+
+function showFeaturedWork(n) {
+  featuredWorks.forEach((work, index) => {
+    const image = work.querySelector('.featured-image');
+    const content = work.querySelector('.featured-content');
+    
+    if (index === n) {
+      work.style.display = 'grid';
+      image.classList.add('fade-in');
+      image.classList.remove('fade-out');
+      content.classList.add('fade-in');
+      content.classList.remove('fade-out');
+    } else {
+      work.style.display = 'none';
+      image.classList.remove('fade-in');
+      image.classList.add('fade-out');
+      content.classList.remove('fade-in');
+      content.classList.add('fade-out');
+    }
+  });
+}
+
+function changeFeaturedWork(n) {
+  featuredIndex += n;
+  if (featuredIndex >= featuredWorks.length) {
+    featuredIndex = 0;
+  } else if (featuredIndex < 0) {
+    featuredIndex = featuredWorks.length - 1;
+  }
+  showFeaturedWork(featuredIndex);
+}
+
+featuredPrev.forEach(button => button.addEventListener('click', () => changeFeaturedWork(-1)));
+featuredNext.forEach(button => button.addEventListener('click', () => changeFeaturedWork(1)));
+
+
+// Initialize the first featured work
+showFeaturedWork(featuredIndex);
+
+// END FEATURED WORK SLIDER
+
+
+
+
+

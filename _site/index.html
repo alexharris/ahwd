@@ -27,10 +27,10 @@
 
   <!-- / META TAGS -->
 </head>
-<body class="dark:bg-blue-900 dark:text-white bg-gray-50">
-  <header id="header" class="sticky w-full top-0 z-50 p-4 flex flex-col md:flex-row justify-between items-start bg-gray-50 dark:bg-blue-900">
+<body class="dark:bg-gray-900 dark:text-white bg-gray-50">
+  <header id="header" class="sticky w-full top-0 z-50 p-4 flex flex-col md:flex-row justify-between items-start bg-gray-50 dark:bg-gray-800">
       <a href="/" id="logo" class="socko outline-text link-white text-4xl">
-        <svg  width="91" height="62" viewBox="0 0 91 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="w-16" viewBox="0 0 91 62" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_682_3)">
           <mask id="path-1-outside-1_682_3" maskUnits="userSpaceOnUse" x="65" y="37" width="23" height="24" fill="black">
           <rect class="fill-white" x="65" y="37" width="23" height="24"/>
@@ -64,20 +64,111 @@
         <svg id="moon" class="stroke-black stroke-1 fill-none hover:fill-yellow-300 dark:fill-yellow-300" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="arcs"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>      
       </nav>
   </header>
-  <main id="main" class="relative bg-gray-50 dark:bg-blue-900 z-30 mb-[100vh] min-h-screen pt-12 pb-8">
+  <main id="main" class="relative bg-gray-50 dark:bg-gray-800 z-30 mb-[100vh] min-h-screen pt-12 pb-8">
     <!-- Grab the content from the page data and dump it here, and mark it as safe -->
     <!-- Safe docs: https://mozilla.github.io/nunjucks/templating.html#safe -->    
     
 <div class="full-width flex flex-col md:flex-row gap-8 items-center my-12 p-4">
-    <div class="w-full md:w-1/2">
+    <div class="w-full md:w-7/12">
         <div class="text-3xl lg:text-5xl/tight instrument-serif">Web development in Oakland, CA, focused on helping arts and environmental organizations, non-profits and small businesses communicate online.</div>
     </div>        
-    
 </div>
-<div class="w-full full-width border-b border-blue-950">
+
+
+
+<div class="featured-work full-width mb-16 relative">
+    <div class="border-r top-fade max-sm:hidden"></div>
+    <div class="w-1/2 md:w-full border-r-0 md:border-r pl-4 p-2  text-2xl top-fade h-full relative float-left">
+        <div class="md:absolute left-4 bottom-2 instrument-serif">❋ Featured Work</div>
+        <div class="md:absolute right-4 bottom-2">
+            <span class="featured-prev cursor-pointer"><-</span>
+            <span class="featured-next cursor-pointer">-></span>
+        </div>        
+    </div>
+    <div class="w-1/3 md:w-full border-r-0 md:border-r pr-4 p-2 top-fade absolute right-0 text-end md:relative">
+    </div>
+    <div class="top-fade max-sm:hidden"></div>
+    <div class="border-t md:border-y border-r max-md:hidden"></div>
+    <div class="border-t md:border-y border-r p-4 featured-content flex flex-col">
+        <span class="instrument-serif text">1/3</span>        
+        <h3 class="font-bold pb-2 "><a href="/work/cckw/">Chen Chen &amp; Kai Williams</a></h3>
+        <p>A New York design studio rooted in curiosity and innovation, redefining the possibilities of material and form.</p>
+        <a class=" mt-12 underline" href="/work/cckw/">view</a>
+    </div>
+    <div class="md:border-y md:border-r featured-image hello">
+        <img src="/assets/images/cckw/image-1.jpg" alt="Chen Chen and Kai Williams">
+    </div>
+    <div class="border-t md:border-y max-sm:hidden"></div>
+    <div class="border-r bottom-fade max-sm:hidden"></div>
+    <div class="border-r bottom-fade max-sm:hidden"></div>
+    <div class="border-r bottom-fade max-sm:hidden"></div>
+    <div class="bottom-fade max-sm:hidden"></div>        
+</div>
+
+<div class="featured-work full-width mb-16 relative">
+    <div class="border-r top-fade max-sm:hidden"></div>
+    <div class="w-1/2 md:w-full border-r-0 md:border-r pl-4 p-2  text-2xl top-fade h-full relative float-left">
+        <div class="md:absolute left-4 bottom-2 instrument-serif">❋ Featured Work</div>
+        <div class="md:absolute right-4 bottom-2">
+            <span class="featured-prev cursor-pointer"><-</span>
+            <span class="featured-next cursor-pointer">-></span>
+        </div>        
+    </div>
+    <div class="w-1/3 md:w-full border-r-0 md:border-r pr-4 p-2 top-fade absolute right-0 text-end md:relative">
+    </div>
+    <div class="top-fade max-sm:hidden"></div>
+    <div class="border-t md:border-y border-r max-md:hidden"></div>
+    <div class="border-t md:border-y border-r p-4 featured-content flex flex-col">
+        <span class="instrument-serif text">2/3</span>        
+        <h3 class="font-bold pb-2 "><a href="/work/kessenick-gamma/">Kessenick Gamma</a></h3>
+        <p>A San Francisco lawfirm navigating complex legal issues in healthcare, technology, and beyond.</p>
+        <a class=" mt-12 underline" href="/work/kessenick-gamma/">view</a>
+    </div>
+    <div class="md:border-y md:border-r featured-image hello">
+        <img src="/assets/images/kg/image-1.jpg" alt="Chen Chen and Kai Williams">
+    </div>
+    <div class="border-t md:border-y max-sm:hidden"></div>
+    <div class="border-r bottom-fade max-sm:hidden"></div>
+    <div class="border-r bottom-fade max-sm:hidden"></div>
+    <div class="border-r bottom-fade max-sm:hidden"></div>
+    <div class="bottom-fade max-sm:hidden"></div>        
+</div>
+
+<div class="featured-work full-width mb-16 relative">
+    <div class="border-r top-fade max-sm:hidden"></div>
+    <div class="w-1/2 md:w-full border-r-0 md:border-r pl-4 p-2  text-2xl top-fade h-full relative float-left">
+        <div class="md:absolute left-4 bottom-2 instrument-serif">❋ Featured Work</div>
+        <div class="md:absolute right-4 bottom-2">
+            <span class="featured-prev cursor-pointer"><-</span>
+            <span class="featured-next cursor-pointer">-></span>
+        </div>        
+    </div>
+    <div class="w-1/3 md:w-full border-r-0 md:border-r pr-4 p-2 top-fade absolute right-0 text-end md:relative">
+    </div>
+    <div class="top-fade max-sm:hidden"></div>
+    <div class="border-t md:border-y border-r max-md:hidden"></div>
+    <div class="border-t md:border-y border-r p-4 featured-content flex flex-col">
+        <span class="instrument-serif text">3/3</span>        
+        <h3 class="font-bold pb-2 "><a href="/work/canal-projects/">Canal Projects</a></h3>
+        <p>A non-profit contemporary art institution in New York dedicated to supporting international artists at pivotal moments in their careers.</p>
+        <a class=" mt-12 underline" href="/work/canal-projects/">view</a>
+    </div>
+    <div class="md:border-y md:border-r featured-image hello">
+        <img src="/assets/images/canalprojects/image-1.jpg" alt="Chen Chen and Kai Williams">
+    </div>
+    <div class="border-t md:border-y max-sm:hidden"></div>
+    <div class="border-r bottom-fade max-sm:hidden"></div>
+    <div class="border-r bottom-fade max-sm:hidden"></div>
+    <div class="border-r bottom-fade max-sm:hidden"></div>
+    <div class="bottom-fade max-sm:hidden"></div>        
+</div>
+
+
+<div class="text-3xl lg:text-5xl/tight instrument-serif"><h1>All work</h1></div>
+<div class="w-full full-width border-b border-gray-300">
     
     
-    <a href="/work/elmo-studios/" class="flex flex-row justify-between px-4 md:px-8 py-4 items-center gap-4 md:gap-8 w-full block border-t border-blue-950 hover:bg-gray-100 dark:hover:bg-blue-950 dark:border-gray-900 text-lg md:text-xl stroke-blue-900 hover:stroke-red-600 ">
+    <a href="/work/elmo-studios/" class="flex flex-row justify-between px-4 md:px-8 py-4 items-center gap-4 md:gap-8 w-full block border-t border-gray-200 hover:bg-gray-100 dark:hover:bg-blue-950 dark:border-gray-300 text-lg md:text-xl stroke-blue-900 hover:stroke-red-600 ">
         
         <div class="w-2/12 md:w-1/12">
             2024
@@ -95,7 +186,7 @@
 
     </a>
     
-    <a href="/work/cckw/" class="flex flex-row justify-between px-4 md:px-8 py-4 items-center gap-4 md:gap-8 w-full block border-t border-blue-950 hover:bg-gray-100 dark:hover:bg-blue-950 dark:border-gray-900 text-lg md:text-xl stroke-blue-900 hover:stroke-red-600 ">
+    <a href="/work/cckw/" class="flex flex-row justify-between px-4 md:px-8 py-4 items-center gap-4 md:gap-8 w-full block border-t border-gray-200 hover:bg-gray-100 dark:hover:bg-blue-950 dark:border-gray-300 text-lg md:text-xl stroke-blue-900 hover:stroke-red-600 ">
         
         <div class="w-2/12 md:w-1/12">
             2024
@@ -113,7 +204,7 @@
 
     </a>
     
-    <a href="/work/distributional/" class="flex flex-row justify-between px-4 md:px-8 py-4 items-center gap-4 md:gap-8 w-full block border-t border-blue-950 hover:bg-gray-100 dark:hover:bg-blue-950 dark:border-gray-900 text-lg md:text-xl stroke-blue-900 hover:stroke-red-600 ">
+    <a href="/work/distributional/" class="flex flex-row justify-between px-4 md:px-8 py-4 items-center gap-4 md:gap-8 w-full block border-t border-gray-200 hover:bg-gray-100 dark:hover:bg-blue-950 dark:border-gray-300 text-lg md:text-xl stroke-blue-900 hover:stroke-red-600 ">
         
         <div class="w-2/12 md:w-1/12">
             2023
@@ -131,7 +222,7 @@
 
     </a>
     
-    <a href="/work/cwr/" class="flex flex-row justify-between px-4 md:px-8 py-4 items-center gap-4 md:gap-8 w-full block border-t border-blue-950 hover:bg-gray-100 dark:hover:bg-blue-950 dark:border-gray-900 text-lg md:text-xl stroke-blue-900 hover:stroke-red-600 ">
+    <a href="/work/cwr/" class="flex flex-row justify-between px-4 md:px-8 py-4 items-center gap-4 md:gap-8 w-full block border-t border-gray-200 hover:bg-gray-100 dark:hover:bg-blue-950 dark:border-gray-300 text-lg md:text-xl stroke-blue-900 hover:stroke-red-600 ">
         
         <div class="w-2/12 md:w-1/12">
             2023
@@ -149,7 +240,7 @@
 
     </a>
     
-    <a href="/work/bampfa/" class="flex flex-row justify-between px-4 md:px-8 py-4 items-center gap-4 md:gap-8 w-full block border-t border-blue-950 hover:bg-gray-100 dark:hover:bg-blue-950 dark:border-gray-900 text-lg md:text-xl stroke-blue-900 hover:stroke-red-600 ">
+    <a href="/work/bampfa/" class="flex flex-row justify-between px-4 md:px-8 py-4 items-center gap-4 md:gap-8 w-full block border-t border-gray-200 hover:bg-gray-100 dark:hover:bg-blue-950 dark:border-gray-300 text-lg md:text-xl stroke-blue-900 hover:stroke-red-600 ">
         
         <div class="w-2/12 md:w-1/12">
             2023
@@ -167,7 +258,7 @@
 
     </a>
     
-    <a href="/work/picoyune/" class="flex flex-row justify-between px-4 md:px-8 py-4 items-center gap-4 md:gap-8 w-full block border-t border-blue-950 hover:bg-gray-100 dark:hover:bg-blue-950 dark:border-gray-900 text-lg md:text-xl stroke-blue-900 hover:stroke-red-600 ">
+    <a href="/work/picoyune/" class="flex flex-row justify-between px-4 md:px-8 py-4 items-center gap-4 md:gap-8 w-full block border-t border-gray-200 hover:bg-gray-100 dark:hover:bg-blue-950 dark:border-gray-300 text-lg md:text-xl stroke-blue-900 hover:stroke-red-600 ">
         
         <div class="w-2/12 md:w-1/12">
             2022
@@ -185,7 +276,7 @@
 
     </a>
     
-    <a href="/work/kessenick-gamma/" class="flex flex-row justify-between px-4 md:px-8 py-4 items-center gap-4 md:gap-8 w-full block border-t border-blue-950 hover:bg-gray-100 dark:hover:bg-blue-950 dark:border-gray-900 text-lg md:text-xl stroke-blue-900 hover:stroke-red-600 ">
+    <a href="/work/kessenick-gamma/" class="flex flex-row justify-between px-4 md:px-8 py-4 items-center gap-4 md:gap-8 w-full block border-t border-gray-200 hover:bg-gray-100 dark:hover:bg-blue-950 dark:border-gray-300 text-lg md:text-xl stroke-blue-900 hover:stroke-red-600 ">
         
         <div class="w-2/12 md:w-1/12">
             2022
@@ -203,7 +294,7 @@
 
     </a>
     
-    <a href="/work/canal-projects/" class="flex flex-row justify-between px-4 md:px-8 py-4 items-center gap-4 md:gap-8 w-full block border-t border-blue-950 hover:bg-gray-100 dark:hover:bg-blue-950 dark:border-gray-900 text-lg md:text-xl stroke-blue-900 hover:stroke-red-600 ">
+    <a href="/work/canal-projects/" class="flex flex-row justify-between px-4 md:px-8 py-4 items-center gap-4 md:gap-8 w-full block border-t border-gray-200 hover:bg-gray-100 dark:hover:bg-blue-950 dark:border-gray-300 text-lg md:text-xl stroke-blue-900 hover:stroke-red-600 ">
         
         <div class="w-2/12 md:w-1/12">
             2022
@@ -221,7 +312,7 @@
 
     </a>
     
-    <a href="/work/ringo-studio/" class="flex flex-row justify-between px-4 md:px-8 py-4 items-center gap-4 md:gap-8 w-full block border-t border-blue-950 hover:bg-gray-100 dark:hover:bg-blue-950 dark:border-gray-900 text-lg md:text-xl stroke-blue-900 hover:stroke-red-600 ">
+    <a href="/work/ringo-studio/" class="flex flex-row justify-between px-4 md:px-8 py-4 items-center gap-4 md:gap-8 w-full block border-t border-gray-200 hover:bg-gray-100 dark:hover:bg-blue-950 dark:border-gray-300 text-lg md:text-xl stroke-blue-900 hover:stroke-red-600 ">
         
         <div class="w-2/12 md:w-1/12">
             2021
@@ -239,7 +330,7 @@
 
     </a>
     
-    <a href="/work/lightsource/" class="flex flex-row justify-between px-4 md:px-8 py-4 items-center gap-4 md:gap-8 w-full block border-t border-blue-950 hover:bg-gray-100 dark:hover:bg-blue-950 dark:border-gray-900 text-lg md:text-xl stroke-blue-900 hover:stroke-red-600 ">
+    <a href="/work/lightsource/" class="flex flex-row justify-between px-4 md:px-8 py-4 items-center gap-4 md:gap-8 w-full block border-t border-gray-200 hover:bg-gray-100 dark:hover:bg-blue-950 dark:border-gray-300 text-lg md:text-xl stroke-blue-900 hover:stroke-red-600 ">
         
         <div class="w-2/12 md:w-1/12">
             2021
@@ -257,7 +348,7 @@
 
     </a>
     
-    <a href="/work/uc-water-portal/" class="flex flex-row justify-between px-4 md:px-8 py-4 items-center gap-4 md:gap-8 w-full block border-t border-blue-950 hover:bg-gray-100 dark:hover:bg-blue-950 dark:border-gray-900 text-lg md:text-xl stroke-blue-900 hover:stroke-red-600 ">
+    <a href="/work/uc-water-portal/" class="flex flex-row justify-between px-4 md:px-8 py-4 items-center gap-4 md:gap-8 w-full block border-t border-gray-200 hover:bg-gray-100 dark:hover:bg-blue-950 dark:border-gray-300 text-lg md:text-xl stroke-blue-900 hover:stroke-red-600 ">
         
         <div class="w-2/12 md:w-1/12">
             2019
@@ -275,7 +366,7 @@
 
     </a>
     
-    <a href="/work/500-capp-street/" class="flex flex-row justify-between px-4 md:px-8 py-4 items-center gap-4 md:gap-8 w-full block border-t border-blue-950 hover:bg-gray-100 dark:hover:bg-blue-950 dark:border-gray-900 text-lg md:text-xl stroke-blue-900 hover:stroke-red-600 ">
+    <a href="/work/500-capp-street/" class="flex flex-row justify-between px-4 md:px-8 py-4 items-center gap-4 md:gap-8 w-full block border-t border-gray-200 hover:bg-gray-100 dark:hover:bg-blue-950 dark:border-gray-300 text-lg md:text-xl stroke-blue-900 hover:stroke-red-600 ">
         
         <div class="w-2/12 md:w-1/12">
             2018
@@ -295,6 +386,8 @@
     
 
 </div>
+
+
 
 <!-- 
 <h2 class="text-3xl uppercase pt-12 pb-12 font-semibold mx-auto text-center">Featured Work</h2>
@@ -409,8 +502,8 @@
   <footer id="footer" class="fixed left-0 right-0 bottom-0 top-0 md:top-24 pt-4 md:pt-8 z-0 w-full flex flex-col bg-gray-200 dark:bg-blue-950 dark:text-white items-center justify-center gap-12">
     <div class="w-full px-12 flex flex-col md:flex-row items-center gap-8">
       <!-- <span class="socko tracking-widest text-5xl pb-8 outline-text text-white link-white">get in touch</span>          -->
-      <div class="w-full md:w-2/5 text-md lg:text-2xl prose">
-        <h2>Get in touch</h2>
+      <div class="w-full md:w-2/5 text-md lg:text-2xl prose dark:text-white">
+        <h2 class="dark:text-white">Get in touch</h2>
         <p class="hidden md:block">
           Interested in working together? Want to talk about the internet?
         </p>  
