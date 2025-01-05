@@ -1315,16 +1315,8 @@ select {
   position: sticky;
 }
 
-.bottom-0 {
-  bottom: 0px;
-}
-
 .bottom-2 {
   bottom: 0.5rem;
-}
-
-.left-0 {
-  left: 0px;
 }
 
 .left-4 {
@@ -1345,10 +1337,6 @@ select {
 
 .z-0 {
   z-index: 0;
-}
-
-.z-30 {
-  z-index: 30;
 }
 
 .z-50 {
@@ -1417,10 +1405,6 @@ select {
   margin-bottom: 2rem;
 }
 
-.mb-\[100vh\] {
-  margin-bottom: 100vh;
-}
-
 .mt-0 {
   margin-top: 0px;
 }
@@ -1477,12 +1461,12 @@ select {
   height: 100%;
 }
 
-.max-h-\[80vh\] {
-  max-height: 80vh;
+.h-screen {
+  height: 100vh;
 }
 
-.min-h-screen {
-  min-height: 100vh;
+.max-h-\[80vh\] {
+  max-height: 80vh;
 }
 
 .w-1\/12 {
@@ -1501,8 +1485,8 @@ select {
   width: 83.333333%;
 }
 
-.w-16 {
-  width: 4rem;
+.w-12 {
+  width: 3rem;
 }
 
 .w-2\/12 {
@@ -1575,10 +1559,6 @@ select {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.gap-12 {
-  gap: 3rem;
 }
 
 .gap-2 {
@@ -2435,11 +2415,11 @@ a.pill-button:hover {
 }
 
 .fade-in {
-  animation: fade-in 0.5s forwards;
+  animation: fade-in 0.3s forwards;
 }
 
 .fade-out {
-  animation: fade-out 0.5s forwards;
+  animation: fade-out 0.1s forwards;
 }
 
 :is(.dark .dark\:prose-dark) {
@@ -2552,19 +2532,14 @@ a.pill-button:hover {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-:is(.dark .dark\:bg-blue-900) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 58 138 / var(--tw-bg-opacity));
-}
-
 :is(.dark .dark\:bg-blue-950) {
   --tw-bg-opacity: 1;
   background-color: rgb(23 37 84 / var(--tw-bg-opacity));
 }
 
-:is(.dark .dark\:bg-yellow-800) {
+:is(.dark .dark\:bg-gray-800) {
   --tw-bg-opacity: 1;
-  background-color: rgb(133 77 14 / var(--tw-bg-opacity));
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
 }
 
 :is(.dark .dark\:bg-gray-900) {
@@ -2572,9 +2547,9 @@ a.pill-button:hover {
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
-:is(.dark .dark\:bg-gray-800) {
+:is(.dark .dark\:bg-yellow-800) {
   --tw-bg-opacity: 1;
-  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+  background-color: rgb(133 77 14 / var(--tw-bg-opacity));
 }
 
 :is(.dark .dark\:fill-yellow-300) {
@@ -2600,6 +2575,10 @@ a.pill-button:hover {
 }
 
 @media not all and (min-width: 768px) {
+  .max-md\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
   .max-md\:hidden {
     display: none;
   }
@@ -2624,10 +2603,6 @@ a.pill-button:hover {
 
   .md\:relative {
     position: relative;
-  }
-
-  .md\:top-24 {
-    top: 6rem;
   }
 
   .md\:my-12 {
@@ -2697,6 +2672,10 @@ a.pill-button:hover {
 
   .md\:flex-row-reverse {
     flex-direction: row-reverse;
+  }
+
+  .md\:items-center {
+    align-items: center;
   }
 
   .md\:gap-10 {

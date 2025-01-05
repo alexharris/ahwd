@@ -126,11 +126,11 @@ function plusSlides(n) {
 
 // Scroll to contact form
 
-let contactMenuItem = document.querySelector('#contact-button');
-contactMenuItem.addEventListener('click', function(event) {
-  event.preventDefault(); // prevent the default action
-  window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
-});
+// let contactMenuItem = document.querySelector('#contact-button');
+// contactMenuItem.addEventListener('click', function(event) {
+//   event.preventDefault(); // prevent the default action
+//   window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+// });
 
 // FEATURED WORK SLIDER
 
