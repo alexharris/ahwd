@@ -19,7 +19,7 @@
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-    @apply text-blue-900;
+    @apply text-gray-900;
 }
 
 img, picture, video, canvas, svg {
@@ -151,7 +151,7 @@ body {
 
 
 a, a:visited {
-    @apply text-blue-900 hover:text-red-500 dark:hover:text-red-500 dark:text-white
+    @apply text-blue-600 dark:text-green-400 hover:text-red-500 dark:hover:text-red-400
 }
 
 a.link-white, .link-white > a {
@@ -159,7 +159,7 @@ a.link-white, .link-white > a {
 }
 
 [aria-current="page"].pill-button {
-    @apply border-blue-900 bg-blue-900 dark:border-white
+    @apply  bg-gray-300 dark:bg-gray-800
 }
 
 
@@ -197,7 +197,7 @@ figcaption {
 
 
 .logo-fill {
-    @apply fill-blue-900 dark:fill-white;
+    @apply fill-gray-900 dark:fill-white;
 }
 
 /* slideshow styles */
@@ -275,23 +275,14 @@ figcaption {
 
 a.pill-button {
     @apply 
-    px-2 
-    md:px-6 
-    pt-1 
-    pb-2 
-    text-center 
+    p-1 
+    md:px-4 
+    text-center
+    text-lg
     rounded-full 
-    border-2 
-    text-white 
-    dark:text-white 
-    dark:hover:text-white
-    dark:hover:bg-blue-950
-    dark:hover:border-blue-950
-    bg-blue-600 
-    border-blue-600 
-    hover:border-blue-900 
-    hover:bg-transparent
-    hover:text-blue-900
+    border
+    text-gray-600 
+    border-gray-600 
     cursor-pointer 
     gap-2 
     no-underline 
@@ -299,7 +290,7 @@ a.pill-button {
 }
 
 .prose {
-    @apply max-w-none;
+    @apply max-w-none text-gray-900;
 }
 
 .prose > *:not(.full-width) {
@@ -320,7 +311,6 @@ a.pill-button {
 
 .featured-work {
     @apply flex flex-col md:grid;
-  
 }
 
 @media (min-width: 768px) {
@@ -328,18 +318,29 @@ a.pill-button {
         grid-template-columns: 20px 350px auto 20px;    
         grid-template-rows: 70px auto 70px;
     }
-    
-    
 }  
 
-
-
 .featured-work div {
-    @apply border-gray-200;
-
+    @apply border-gray-200 dark:border-gray-700;
 }
 
-.featured-work .top-fade {
+.offerings-grid {
+    @apply flex flex-col md:grid ;
+}
+
+@media (min-width: 768px) {
+    .prose .offerings-grid {
+        @apply max-w-4xl;
+        grid-template-columns: 20px auto auto 20px;    
+        grid-template-rows: 70px auto 70px;
+    }
+}  
+
+.offerings-grid div {
+    @apply border-gray-200 dark:border-gray-700;
+}
+
+.top-fade {
     border-image: 
     linear-gradient(
       to top, 
@@ -348,7 +349,7 @@ a.pill-button {
     ) 1 100%;    
 }
 
-.featured-work .bottom-fade {
+.bottom-fade {
     border-image: 
     linear-gradient(
       to bottom, 
@@ -356,6 +357,26 @@ a.pill-button {
     rgba(0, 0, 0, 0)
     ) 1 100%;    
 }
+
+
+    .dark .top-fade {
+        border-image: 
+        linear-gradient(
+          to top, 
+          rgb(55 65 81), 
+        rgba(0, 0, 0, 0)
+        ) 1 100%;    
+    }
+    
+    .dark .bottom-fade {
+        border-image: 
+        linear-gradient(
+          to bottom, 
+          rgb(55 65 81), 
+        rgba(0, 0, 0, 0)
+        ) 1 100%;    
+    }
+
 
 @keyframes fade-in {
   from {
@@ -381,5 +402,17 @@ a.pill-button {
 
 .fade-out {
   animation: fade-out 0.1s forwards;
+}
+
+.card {
+    @apply border border-gray-300 dark:border-white p-4 rounded-xl prose dark:prose-dark dark:border-gray-700;
+}
+
+.card h3 {
+    @apply mt-0 instrument-serif leading-tight;
+}
+
+.card p {
+    @apply pl-6 text-2xl pr-6 mb-4;
 }
 

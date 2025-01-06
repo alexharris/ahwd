@@ -15,36 +15,36 @@ module.exports = {
             fontSize: '20px',
             fontWeight: '400',
             // maxWidth: '900px',
-            color: '#1E3A8A',
+            color: '#111827',
             h1: {
-              color: '#1E3A8A',
+              color: '#111827',
             },
             h2: {
-              color: '#1E3A8A',
+              color: '#111827',
             },
             h3: {
-              color: '#1E3A8A',
+              color: '#111827',
             },
             h4: {
-              color: '#1E3A8A',
+              color: '#111827',
             },
             strong: {
-              color: '#1E3A8A',
+              color: '#111827',
             },
             blockquote: {
-              color: '#1E3A8A',
+              color: '#111827',
             },
             'li::marker': {
-              color: '#1E3A8A',
+              color: '#111827',
             },
             th: {
-              color: '#1E3A8A',
+              color: '#111827',
             },
             code: { 
-              color: '#1E3A8A',
+              color: '#111827',
             },
             a: {            
-              color: '#1E3A8A',
+              color: '#111827',
               '&:hover': {
                 textDecoration: 'underline',
               },
