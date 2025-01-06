@@ -413,6 +413,6 @@ a.pill-button {
 }
 
 .card p {
-    @apply pl-6 text-2xl pr-6 mb-4;
+    @apply pl-6 pr-6 mb-4;
 }
 

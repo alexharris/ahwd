@@ -20,7 +20,7 @@ title: About
     <div class="top-fade max-sm:hidden max-md:border-0"></div>
     <div class="border-t md:border-y border-r max-md:border-0"></div>
     <div class="border-t md:border-y border-r max-md:border-0">
-        <div class="text-2xl instrument-serif md:hidden">❋ Services</div>   
+        <div class="instrument-serif md:hidden">❋ Services</div>   
         <ul class="pl-10 leading-snug">
             <li>Web Development</li>
             <li>E-Commerce</li>
@@ -32,7 +32,7 @@ title: About
         </ul>
     </div>
     <div class="md:border-y md:border-r max-md:border-0">
-        <div class="text-2xl instrument-serif md:hidden">❋ Solutions</div>   
+        <div class="instrument-serif md:hidden">❋ Solutions</div>   
         <ul class="pl-10 leading-snug">
             <li>Wordpress</li>
             <li>Woocommerce</li>
