@@ -15,7 +15,7 @@ title: About
         <div class="md:absolute left-4 bottom-2 instrument-serif">❋ Services</div>      
     </div>
     <div class="w-full border-r-0 md:border-r pr-4 p-2 text-2xl top-fade relative max-md:hidden">
-        <div class="instrument-serif">❋ Solutions</div>  
+        <div class="md:absolute left-4 bottom-2 instrument-serif">❋ Solutions</div>  
     </div>
     <div class="top-fade max-sm:hidden max-md:border-0"></div>
     <div class="border-t md:border-y border-r max-md:border-0"></div>
@@ -83,10 +83,10 @@ title: About
 An average project might costs between $5000 and $25,000, depending on the particulars of what is needed, and takes 6-16 weeks. Check out this [case study](/blog/cckw) to get an in-depth sense of how I think through solving client needs during a project
 
 
-## About Me
+<h2 class="instrument-serif" >About Me</h2>
 
 I have been making websites professionally for over 10 years, and have been working exclusively as a freelancer and consultant for the past 4. Before setting out on my own, I experienced both sides of the client/contractor relationship. As a developer at Cast Iron Coding in Portland, OR, I helped build sites for clients, then trained and supported them in their ongoing use. As the Web Editor and Electronic Communications Manager at UC Berkeley’s BAMPFA I hired and worked with contractors to achieve BAMPFA'S strategic and technical communications goals. These dual experiences helped me understand how to make compelling websites come to life and effectively serve my clients.
 
-## About This Site
+<h2 class="instrument-serif" >About This Site</h2>
 
 This site was built using the <a href="https://www.11ty.dev/">Eleventy</a> static site generator and also uses <a href="https://tailwindcss.com/">Tailwind CSS</a>. The logo uses the <a href="https://store.overlaptype.com/fonts/socko">Socko</a> font. Body copy is <a href="https://fonts.google.com/specimen/Instrument+Sans">Instrument</a>.
