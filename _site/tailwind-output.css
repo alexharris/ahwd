@@ -1453,10 +1453,6 @@ select {
   max-height: 80vh;
 }
 
-.w-1\/12 {
-  width: 8.333333%;
-}
-
 .w-1\/2 {
   width: 50%;
 }
@@ -1475,6 +1471,10 @@ select {
 
 .w-2\/12 {
   width: 16.666667%;
+}
+
+.w-2\/3 {
+  width: 66.666667%;
 }
 
 .w-7\/12 {
@@ -1561,6 +1561,14 @@ select {
   justify-self: end;
 }
 
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -1593,11 +1601,6 @@ select {
   border-top-width: 1px;
 }
 
-.border-black {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
-
 .border-blue-800 {
   --tw-border-opacity: 1;
   border-color: rgb(30 64 175 / var(--tw-border-opacity));
@@ -1608,19 +1611,19 @@ select {
   border-color: rgb(30 58 138 / var(--tw-border-opacity));
 }
 
-.border-gray-200 {
-  --tw-border-opacity: 1;
-  border-color: rgb(229 231 235 / var(--tw-border-opacity));
-}
-
 .border-gray-100 {
   --tw-border-opacity: 1;
   border-color: rgb(243 244 246 / var(--tw-border-opacity));
 }
 
-.border-gray-50 {
+.border-gray-200 {
   --tw-border-opacity: 1;
-  border-color: rgb(249 250 251 / var(--tw-border-opacity));
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+}
+
+.border-gray-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
 .bg-neutral-50 {
@@ -1642,24 +1645,12 @@ select {
   fill: none;
 }
 
-.fill-transparent {
-  fill: transparent;
-}
-
 .fill-white {
   fill: #fff;
 }
 
 .stroke-black {
   stroke: #000;
-}
-
-.stroke-blue-800 {
-  stroke: #1e40af;
-}
-
-.stroke-blue-900 {
-  stroke: #1e3a8a;
 }
 
 .stroke-1 {
@@ -1871,6 +1862,11 @@ select {
   color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
+.text-gray-900 {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
 .text-red-500 {
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity));
@@ -1879,11 +1875,6 @@ select {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-gray-900 {
-  --tw-text-opacity: 1;
-  color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -2250,8 +2241,8 @@ figcaption {
   } */
 
 .dot {
-  height: 2rem;
-  width: 2rem;
+  height: 1rem;
+  width: 1rem;
   border-radius: 9999px;
   border-width: 1px;
   --tw-border-opacity: 1;
@@ -2359,7 +2350,7 @@ a.pill-button {
   .prose .offerings-grid {
     max-width: 56rem;
     grid-template-columns: 20px auto auto 20px;
-    grid-template-rows: 70px auto 70px;
+    grid-template-rows: 40px auto 40px;
   }
 }
 
@@ -2369,6 +2360,29 @@ a.pill-button {
 }
 
 :is(.dark .offerings-grid div) {
+  --tw-border-opacity: 1;
+  border-color: rgb(55 65 81 / var(--tw-border-opacity));
+}
+
+.contact-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 20px auto 20px;
+    grid-template-rows: 30px auto 30px;
+  }
+}
+
+.contact-grid > * {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+}
+
+:is(.dark .contact-grid > *) {
   --tw-border-opacity: 1;
   border-color: rgb(55 65 81 / var(--tw-border-opacity));
 }
@@ -3015,7 +3029,7 @@ a.pill-button {
   .card .offerings-grid {
     max-width: 56rem;
     grid-template-columns: 20px auto auto 20px;
-    grid-template-rows: 70px auto 70px;
+    grid-template-rows: 40px auto 40px;
   }
 }
 
@@ -3147,31 +3161,18 @@ a.pill-button {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-gray-800:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
-}
-
-.hover\:fill-blue-800:hover {
-  fill: #1e40af;
-}
-
 .hover\:fill-yellow-300:hover {
   fill: #fde047;
 }
 
-.hover\:stroke-red-600:hover {
-  stroke: #dc2626;
+.hover\:text-red-400:hover {
+  --tw-text-opacity: 1;
+  color: rgb(248 113 113 / var(--tw-text-opacity));
 }
 
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.hover\:text-red-500:hover {
-  --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover {
@@ -3187,29 +3188,14 @@ a.pill-button {
   border-color: rgb(96 165 250 / var(--tw-border-opacity));
 }
 
-:is(.dark .dark\:border-blue-950) {
+:is(.dark .dark\:border-gray-800) {
   --tw-border-opacity: 1;
-  border-color: rgb(23 37 84 / var(--tw-border-opacity));
-}
-
-:is(.dark .dark\:border-gray-900) {
-  --tw-border-opacity: 1;
-  border-color: rgb(17 24 39 / var(--tw-border-opacity));
+  border-color: rgb(31 41 55 / var(--tw-border-opacity));
 }
 
 :is(.dark .dark\:border-white) {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
-:is(.dark .dark\:border-gray-300) {
-  --tw-border-opacity: 1;
-  border-color: rgb(209 213 219 / var(--tw-border-opacity));
-}
-
-:is(.dark .dark\:border-gray-800) {
-  --tw-border-opacity: 1;
-  border-color: rgb(31 41 55 / var(--tw-border-opacity));
 }
 
 :is(.dark .dark\:bg-gray-900) {
@@ -3231,27 +3217,14 @@ a.pill-button {
   fill: #fde047;
 }
 
-:is(.dark .dark\:stroke-white) {
-  stroke: #fff;
-}
-
 :is(.dark .dark\:text-white) {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-:is(.dark .dark\:hover\:bg-blue-950:hover) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(23 37 84 / var(--tw-bg-opacity));
-}
-
 :is(.dark .dark\:hover\:bg-gray-800:hover) {
   --tw-bg-opacity: 1;
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
-}
-
-:is(.dark .dark\:hover\:fill-white:hover) {
-  fill: #fff;
 }
 
 @media not all and (min-width: 768px) {
@@ -3379,6 +3352,10 @@ a.pill-button {
     border-right-width: 1px;
   }
 
+  .md\:p-4 {
+    padding: 1rem;
+  }
+
   .md\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -3410,6 +3387,16 @@ a.pill-button {
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .md\:first-line\:text-4xl::first-line {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 

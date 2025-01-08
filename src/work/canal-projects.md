@@ -5,7 +5,6 @@ tags:
     - work
     - everything
     - arts
-    - featured
 image: /assets/images/canalprojects/image-1.jpg
 dir: canalprojects
 images:

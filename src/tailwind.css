@@ -263,7 +263,7 @@ figcaption {
   } */
 
   .dot {
-    @apply rounded-full w-8 h-8 border border-red-500 dark:border-red-500;
+    @apply rounded-full w-4 h-4 border border-red-500 dark:border-red-500;
   }
 
   .dot.active {
@@ -332,12 +332,27 @@ a.pill-button {
     .prose .offerings-grid {
         @apply max-w-4xl;
         grid-template-columns: 20px auto auto 20px;    
-        grid-template-rows: 70px auto 70px;
+        grid-template-rows: 40px auto 40px;
     }
 }  
 
 .offerings-grid div {
     @apply border-gray-200 dark:border-gray-700;
+}
+
+.contact-grid {
+    @apply flex flex-col md:grid
+}
+
+@media (min-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 20px auto 20px;    
+        grid-template-rows: 30px auto 30px;
+    }
+}  
+
+.contact-grid > * {
+    @apply border-gray-200 dark:border-gray-700;    
 }
 
 .top-fade {
