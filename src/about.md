@@ -80,7 +80,7 @@ title: About
     </div>                         
 </div>
 
-An average project might cost anywhere from $2000 to $25,000 depending on the particulars of what is needed, and takes 6-16 weeks. Check out this [case study](/blog/cckw) to get an in-depth sense of how I think through solving client needs during a project
+An average project might cost anywhere from $2000 to $25,000 depending on the particulars of what is needed, and take 6-16 weeks. Check out this [case study](/blog/cckw) to get an in-depth sense of how I think through solving client needs during a project
 
 
 <h2 class="instrument-serif" >About Me</h2>
