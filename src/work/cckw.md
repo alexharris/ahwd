@@ -21,12 +21,13 @@ url: https://cckw.us
 roles:
     - Web Development
     - E-commerce
+    - Ongoing Maintenance    
 partners:
     - <a href="https://riaroberts.net/">Ria Roberts</a>
-summary: A New York design studio rooted in curiosity and innovation, redefining the possibilities of material and form.
+summary: A wordpress site with a flexible content model and integrated Shopify e-commerce.
 ---
 
-Chen Chen & Kai Williams is a wordpress site that implements a flexible content model that allows for the owners to easily implement their content in a wide variety of configurations.
+Chen Chen & Kai Williams is a wordpress site with a flexible content model so that content can be easily display across a variety of site sections. Shopify is integrated into the site to allow for the store to be managed in Wordpress with products pulled in from a Shopify backend.
 
 
 Read more about the process in this [in-depth case study](/blog/cckw).

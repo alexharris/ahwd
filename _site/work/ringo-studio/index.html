@@ -59,7 +59,7 @@
         <a class="hover:underline hover:underline-offset-4" href="/about">About</a>
         <a class="hover:underline hover:underline-offset-4" href="/work/everything">Work</a>
         <a class="hover:underline hover:underline-offset-4" href="/contact">Contact</a>
-        <svg id="moon" class="stroke-black stroke-1 fill-none hover:fill-yellow-300 dark:fill-yellow-300" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="arcs"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>      
+        <svg id="moon" class="stroke-black stroke-1 fill-none hover:fill-yellow-300 dark:fill-yellow-300 cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="arcs"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>      
       </nav>
   </header>
   <main id="main" class="relative grow">
@@ -98,8 +98,10 @@
     <div class="w-full">
         
         <div class="slideshow-container flex flex-col items-center gap-6">
-            <div class="slideshow-main flex flex-row gap-4 justify-between items-start">
-                <span class="left md:first-line:text-4xl hover:text-red-400 cursor-pointer"><-</span>
+            <div class="slideshow-main flex flex-row gap-4 justify-between items-center">
+                <svg class="left w-1/12 stroke-blue-800 fill-transparent dark:stroke-white hover:fill-blue-800 dark:hover:fill-white" width="48" height="44" viewBox="0 0 48 44"  xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.944 18.5352L46.9412 18.5352V25.5352L15.9436 25.5352H14.7365L15.59 26.3887L26.793 37.5917L21.8433 42.5414L1.33717 22.0353L21.8433 1.52926L26.793 6.479L15.5904 17.6816L14.7369 18.5352H15.944Z" />
+                </svg>          
                 
         <div class="mySlides fade w-10/12">
             <img class="max-h-[80vh] rounded-lg" src="/assets/images/ringo/image-2.jpg" />
@@ -125,7 +127,9 @@
             <img class="max-h-[80vh] rounded-lg" src="/assets/images/ringo/image-7.jpg" />
         </div>
     
-                <span class="right md:text-4xl hover:text-red-400 cursor-pointer whitespace-nowrap">-></span>   
+                <svg class="right w-1/12 stroke-blue-800 fill-transparent dark:stroke-white hover:fill-blue-800 dark:hover:fill-white" width="48" height="44" viewBox="0 0 48 44" f xmlns="http://www.w3.org/2000/svg">
+                <path d="M32.1272 25.5356H1.13V18.5356H32.1276H33.3347L32.4811 17.6821L21.2782 6.47912L26.2279 1.52937L46.734 22.0355L26.2279 42.5415L21.2782 37.5918L32.4808 26.3892L33.3343 25.5356H32.1272Z""/>
+                </svg>    
             </div>
             <div class="dots-container flex gap-2">                         
         </div>
@@ -166,13 +170,13 @@
         <div>
             
             <div class="text-sm">PREVIOUS</div>
-            <a href="/work/uc-water-portal/">UC Berkeley Water Portal</a>
+            <a href="/work/kessenick-gamma/">Kessenick Gamma</a>
             
         </div>
         <div>
             
                 <div class="text-sm">NEXT</div>
-                <a class="text-right" href="/work/picoyune/">Picoyune</a>
+                <a class="text-right" href="/work/canal-projects/">Canal Projects</a>
             
         </div>
 

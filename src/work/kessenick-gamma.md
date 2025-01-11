@@ -5,7 +5,6 @@ tags:
     - work
     - business
     - everything
-    - featured
 image: /assets/images/kg/image-1.jpg
 dir: kg
 images:
