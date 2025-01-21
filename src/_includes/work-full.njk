@@ -11,6 +11,37 @@ layout: layout.njk
     <div class="text-xl full-width prose dark:prose-dark">
         <div class="full-width px-4">
         {{ content | safe }}
+
+        <div class="offerings-grid block mt-32 mb-16 relative max-md:border-0">
+            <div class="border-r top-fade max-sm:hidden"></div>
+            <div class="w-full border-r-0 md:border-r pl-4 p-2 text-2xl top-fade relative max-md:hidden">
+                <div class="md:absolute left-4 bottom-2 instrument-serif">❋ Roles</div>      
+            </div>
+            <div class="w-full border-r-0 md:border-r pr-4 p-2 text-2xl top-fade relative max-md:hidden">
+                <div class="md:absolute left-4 bottom-2 instrument-serif">❋ Technology</div>  
+            </div>
+            <div class="top-fade max-sm:hidden max-md:border-0"></div>
+            <div class="border-t md:border-y border-r max-md:border-0"></div>
+            <div class="border-t md:border-y border-r max-md:border-0">
+                <div class="instrument-serif md:hidden">❋ Roles</div>   
+                <ul class="pl-10 leading-snug">
+                    {% for role in roles %}<li>{{role}}</li>{% endfor %}   
+                </ul>
+            </div>
+            <div class="md:border-y md:border-r max-md:border-0">
+                <div class="instrument-serif md:hidden">❋ Technology</div>   
+                <ul class="pl-10 leading-snug">
+                    {% for tech in techlist %}<li>{{tech}}</li>{% endfor %}     
+                </ul>        
+            </div>
+            <div class="border-t md:border-y max-md:hidden"></div>
+            <div class="border-r bottom-fade max-md:hidden"></div>
+            <div class="border-r bottom-fade max-md:hidden"></div>
+            <div class="border-r bottom-fade max-md:hidden"></div>
+            <div class="bottom-fade max-sm:hidden"></div>        
+        </div>
+
+
         {% twocolumn %}
         {% if partners and partners.length > 0 %} With: 
         {% for partner in partners %}   
