@@ -70,7 +70,7 @@
     <div class="text-4xl lg:text-5xl/tight">An in-depth look at the decision making process that went into making cckw.us.</div>
 <p><figure class="full-width">
 <img class="shadow-md rounded-lg" src="/assets/images/cckw/image-1.jpg" alt="A screenshot of a website homepage">
-<figcaption>The CCKW homepage</figcaption>
+<figcaption class="text-neutral-400">The CCKW homepage</figcaption>
 </figure></p>
 <p>In early 2024, I was hired to build a new site for New York design studio <a href="https://cckw.us">Chen Chen and Kai Williams</a>. They were launching a new line of furniture and lighting and wanted a new site to go along with the launch. Their current site was old and slightly convoluted in how it listed and organized the various categories of CCKW’s work. Designer Ria Roberts had a site design pretty much finished and a clear vision of how the site would function.</p>
 <p>This article includes a run down of the decisions made in a variety of aspects that made this project a success:</p>
@@ -84,7 +84,7 @@
 </ul>
 <p><figure class="full-width">
 <img class="shadow-md rounded-lg" src="/assets/images/cckw/figma-grid.jpg" alt="An image of the CCKW website design with a grid overlay">
-<figcaption>An initial cckw.us design</figcaption>
+<figcaption class="text-neutral-400">An initial cckw.us design</figcaption>
 </figure></p>
 <p><span id="project-req" class="scroll-mt-32"></span></p>
 <h2>Project Requirements</h2>
@@ -109,14 +109,14 @@
 <h2>The Front End: Tailwind or Not</h2>
 <p><figure class="full-width">
 <img class="shadow-md rounded-lg" src="/assets/images/cckw/image-7.jpg" alt="Screenshot of McMaster Carr homepage">
-<figcaption>The McMaster Carr homepage</figcaption>
+<figcaption class="text-neutral-400">The McMaster Carr homepage</figcaption>
 </figure></p>
 <p>Visually, the new design was fairly simple, inspired by both the CCKW wiki and the holy grail of functional websites, McMaster Carr. For some sites with more “UI elements” I like to use Tailwind, which makes it easy to build a wide variety of components, but for a frontend where most of the complexity is just structural, I find that simple SCSS works well, especially with the advent of “new” css features like grids, flexbox, container queries, etc.</p>
 <p><span id="backend" class="scroll-mt-32"></span></p>
 <h2>The Back End: A Flexible Content Model</h2>
 <p><figure class="full-width">
 <img class="shadow-md rounded-lg" src="/assets/images/cckw/content-fields.jpg" alt="Wordpress Admin screenshot">
-<figcaption>The content fields on each object</figcaption>
+<figcaption class="text-neutral-400">The content fields on each object</figcaption>
 </figure></p>
 <p>The initial designs were pretty clear about the what the content model of the site would be: four main sections (Furniture, Lighting, Index, Shop) which contain variations of the same single object type. If I were to directly map this model into the Wordpress backend it might consist of four custom post types, one for each section, and include only the fields that are relevant to that post type in the editing page. However, the brief calls for flexibility and indicates that objects might sometimes move between sections (for instance old furniture and lighting are periodically moved to the Index).</p>
 <p>A more flexible way to do it than just 4 custom content types is to have a single custom post type for all of objects (which are 90% the same anyways) and let categories dictate where they show up on the front end. It is easy now to move an item between sections, and who knows maybe someday there will be an object that belongs in two sections at once!</p>

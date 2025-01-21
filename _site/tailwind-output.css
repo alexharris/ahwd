@@ -1409,6 +1409,14 @@ select {
   margin-top: 1rem;
 }
 
+.mt-28 {
+  margin-top: 7rem;
+}
+
+.mt-32 {
+  margin-top: 8rem;
+}
+
 .block {
   display: block;
 }
@@ -1483,6 +1491,10 @@ select {
 
 .w-full {
   width: 100%;
+}
+
+.w-4\/5 {
+  width: 80%;
 }
 
 .grow {
@@ -1626,6 +1638,11 @@ select {
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
+.bg-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
 .bg-neutral-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(250 250 250 / var(--tw-bg-opacity));
@@ -1639,6 +1656,11 @@ select {
 .bg-yellow-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(254 249 195 / var(--tw-bg-opacity));
+}
+
+.bg-neutral-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 245 / var(--tw-bg-opacity));
 }
 
 .fill-none {
@@ -1655,6 +1677,10 @@ select {
 
 .stroke-1 {
   stroke-width: 1;
+}
+
+.p-16 {
+  padding: 4rem;
 }
 
 .p-2 {
@@ -1768,6 +1794,10 @@ select {
   padding-top: 1rem;
 }
 
+.pt-32 {
+  padding-top: 8rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1865,6 +1895,11 @@ select {
 .text-gray-900 {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.text-neutral-400 {
+  --tw-text-opacity: 1;
+  color: rgb(163 163 163 / var(--tw-text-opacity));
 }
 
 .text-red-500 {
@@ -3033,6 +3068,12 @@ a.pill-button {
   }
 }
 
+.work-full .card h2 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+}
+
 :is(.dark .card) {
   font-size: 20px;
   font-weight: 400;
@@ -3099,6 +3140,12 @@ a.pill-button {
   margin-bottom: 1rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.work-full .prose h2 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
 }
 
 :is(.dark .dark\:prose-dark) {
@@ -3170,14 +3217,14 @@ a.pill-button {
   color: rgb(248 113 113 / var(--tw-text-opacity));
 }
 
-.hover\:text-white:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .hover\:text-red-500:hover {
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover {
@@ -3253,6 +3300,10 @@ a.pill-button {
 }
 
 @media (min-width: 640px) {
+  .sm\:w-4\/5 {
+    width: 80%;
+  }
+
   .sm\:flex-row {
     flex-direction: row;
   }
@@ -3361,6 +3412,10 @@ a.pill-button {
     padding: 1rem;
   }
 
+  .md\:p-16 {
+    padding: 4rem;
+  }
+
   .md\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -3389,14 +3444,14 @@ a.pill-button {
     line-height: 2.25rem;
   }
 
-  .md\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 
   .md\:first-line\:text-4xl::first-line {

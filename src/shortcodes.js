@@ -25,12 +25,11 @@ module.exports = function(eleventyConfig) {
         return `<div class="text-4xl lg:text-5xl/tight">${content}</div>`;
     });
   
-
     eleventyConfig.addShortcode('bigImage', function(image, alt, caption) {
         return `
         <figure class="full-width">
             <img class="shadow-md rounded-lg" src="${image}" alt="${alt}">
-            <figcaption>${caption}</figcaption>
+            <figcaption class="text-neutral-400">${caption}</figcaption>
         </figure>
         `;
     });
@@ -64,5 +63,19 @@ module.exports = function(eleventyConfig) {
         </div>
     `;
     });
+
+
+    eleventyConfig.addPairedShortcode('twocolumn', function(content) {
+        const columns = content.split('<!-- split -->');
+        return `<div class="flex flex-col md:flex-row gap-4">
+            <div class="md:w-1/2">
+                ${columns[0]}
+            </div>
+            <div class="md:w-1/2">
+                ${columns[1]}
+            </div>
+        </div>`;
+    });
+
 
 }

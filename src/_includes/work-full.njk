@@ -1,0 +1,57 @@
+---
+layout: layout.njk
+---
+
+
+<div class="flex flex-col gap-8 my-16 work-full full-width">
+    <div class="my-4 px-4">
+        <h1 class="text-5xl font-extraligh mb-4 ">{{ title }}</h1>      
+    </div>
+    <img class="rounded p-4 bg-neutral-100" src="{{ image }}" />
+    <div class="text-xl full-width prose dark:prose-dark">
+        <div class="full-width px-4">
+        {{ content | safe }}
+        {% twocolumn %}
+        {% if partners and partners.length > 0 %} With: 
+        {% for partner in partners %}   
+            <span class="partner pl-2">{{partner | safe}}</span>
+        {% endfor %}
+        {% endif %}   
+        <br class="my-12"/>
+        {% pillbutton page, 'Visit Site', url %}           
+        <!-- split -->
+                
+        {% endtwocolumn %}        
+        </div>
+    </div>   
+
+</div>
+
+<div class="flex flex-row w-full border-t dark:border-white border-blue-900">
+    {% set currentIndex = collections.work | map('inputPath') | indexOf(page.inputPath) %}
+    {% set prevItem = collections.work[currentIndex - 1] %}
+    {% set nextItem = collections.work[currentIndex + 1] %}
+    
+    <div class="w-full py-8 flex flex-row justify-between">
+        <div>
+            {% if nextItem %}
+            <div class="text-sm">PREVIOUS</div>
+            <a href="{{ nextItem.url }}">{{ nextItem.data.title }}</a>
+            {% endif %}
+        </div>
+        <div>
+            {% if prevItem %}
+                <div class="text-sm">NEXT</div>
+                <a class="text-right" href="{{ prevItem.url }}">{{ prevItem.data.title }}</a>
+            {% endif %}
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+
+

@@ -431,3 +431,7 @@ a.pill-button {
     @apply pl-6 pr-6 mb-4;
 }
 
+.work-full .prose h2 {
+    @apply  text-base uppercase;
+}
+

@@ -3,7 +3,7 @@ layout: layout.njk
 title: Contact
 ---
 
-<div class="w-2/3 mx-auto mt-12 px-12 flex flex-col md:flex-row items-center gap-8">
+<div class="w-full sm:w-4/5 mx-auto mt-12 px-12 flex flex-col md:flex-row items-center gap-8">
     <!-- <span class="socko tracking-widest text-5xl pb-8 outline-text text-white link-white">get in touch</span>          -->
     <div class="w-full md:w-2/5 text-md lg:text-2xl prose dark:text-white">
     <h2 class="dark:text-white">Get in touch</h2>
