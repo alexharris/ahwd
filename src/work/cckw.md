@@ -33,23 +33,26 @@ summary: A wordpress site with a flexible content model and integrated Shopify e
 
 {% twocolumn %}
 ## Overview
-Chen Chen & Kai Williams is a wordpress site with a flexible content model so that content can be easily display across a variety of site sections. Shopify is integrated into the site to allow for the store to be managed in Wordpress with products pulled in from a Shopify backend.
-
-Read more about the process in this [in-depth case study](/blog/cckw).
+Chen Chen & Kai Williams is a New York design studio that wanted a new site to go along with the release of a line of furniture and lighting. They wanted a robust and modular CMS that was easy to reconfigure to incorporate new products and categories as they were released. They also wanted the ability to incorporate their existing Shopify e-commerce into the site.
 <!-- split -->
 {% endtwocolumn %}
 
-<div class="bg-blue-500 p-4 md:p-16">
+<div class="bg-blue-500 dark:bg-green-900 p-4 md:p-16">
 {% bigImage '/assets/images/cckw/image-2.jpg' 'A screenshot of the cckw homepage' '' %}
 </div>
 
 {% twocolumn %}
 <!-- split -->
 ## Solution
-This straight forward and functional website highlights the new product and provides a form to drive sales. The site, which is only a few pages, is built with simple, static HTML, with the form handled by Netlify's form functionality. This makes it dead simple to update and maintain for now, until the company grows into needing something more complex.
+Modern Wordpress with Advanced Custom Fields and custom post types provides the robustness and community of Wordpress with the flexibility and content modeling functionality of newer CMSes. Using this, we were able to provide a robust solution to their current content needs, and the flexibility to modify things as needed going forwarded. In addition, we built a custom shopping cart solution based on existing Shopify integration that provides easy and powerful e-commerce functionality.
+
+Take an in-depth look at the decision making process that went into each step of this site build out in this [CCKW case study](/blog/cckw).
 {% endtwocolumn %}
 
-{% bigImage '/assets/images/cckw/image-3.jpg' 'a screenshot of some energy industry workers wearing picoyune portable monitors' '' %}
+{% bigImage '/assets/images/cckw/image-3.jpg' 'The furniture section of the new CCKW site' '' %}
+
+{% bigImage '/assets/images/cckw/image-5.jpg' 'The online shop of the new CCKW site' '' %}
+
 
 <div class="offerings-grid block mt-32 mb-16 relative max-md:border-0">
     <div class="border-r top-fade max-sm:hidden"></div>
