@@ -275,9 +275,12 @@ figcaption {
 
 a.pill-button {
     @apply  
+    lg:p-2
     px-4 
+    lg:px-6
     text-center
     text-base
+    lg:text-lg
     rounded-full 
     border
     text-gray-600 
