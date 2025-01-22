@@ -23,6 +23,7 @@ roles:
     - E-commerce
 partners:
     - <a href="https://meehanspinat.com/">Meehan Spinat</a>
+importance: 3
 ---
 
 With a beautiful design by the fine folks at Meehan Spinat, the Ringo Studio site provided a number of interesting Javascript and CSS challenges with an end result of a site that really highlights the rich and immersive interior design work of principal Madelynn Ringo and breaks out of the box of standard site design and functionality. A custom Wordpress “project” content type makes the site content easy to manage and update. 

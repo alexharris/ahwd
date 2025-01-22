@@ -16,6 +16,7 @@ roles:
 tech: React (Next), Netlify
 year: 2024  
 url: https://bikexfit.com
+importance: 2
 ---
 
 BIKE X FIT is a new bike fitting operation that opened in Berkeley in 2024. As a new business, they needed a new everything. We worked with the owner to craft an identity that reflected their commitment to precision, and developed a simple website that focuses on their primary goal of serving customers.

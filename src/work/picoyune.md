@@ -26,6 +26,7 @@ roles:
     - Ongoing Maintenance
 url: https://picoyune.com
 summary: A simple hand-crafted static site has helped to drive sales of Picoyune's next generation handheld mercury monitor.
+importance: 1
 ---
 {% twocolumn %}
 ## Overview

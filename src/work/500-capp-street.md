@@ -28,6 +28,7 @@ roles:
     - Training
     - Ongoing Maintenance
 summary: A San Francisco artsnon-profit whose mission is to encourage artistic experimentation, support new modes of living, and build community.
+importance: 1
 ---
 
 {% twocolumn %}

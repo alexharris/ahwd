@@ -22,6 +22,7 @@ roles:
     - Web Development
 partners:
     - <a href="https://meehanspinat.com/">Meehan Spinat</a>
+importance: 4
 ---
 
 With a unique "half and half" design this site utilizes complex CSS and Javascript to implement an exacting design smoothly across various browsers and devices. The site is built mostly from scratch, without utilizing many wordpress plugins, providing for a clean and bloat-free administrative experience that should perform well for many years.
