@@ -5,6 +5,7 @@ tags:
     - work
     - business
     - everything
+    - sciencetech
 image: /assets/images/distributional/image-1.jpg
 dir: distributional
 images:

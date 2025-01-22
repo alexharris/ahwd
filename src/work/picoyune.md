@@ -7,6 +7,7 @@ tags:
     - environment
     - everything
     - featured
+    - sciencetech
 image: /assets/images/picoyune/image-1.jpg
 dir: picoyune
 images:

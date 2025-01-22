@@ -6,6 +6,7 @@ tags:
     - everything
     - business
     - featured
+    - design
 image: /assets/images/cckw/image-1.jpg
 dir: cckw
 images:

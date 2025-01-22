@@ -24,6 +24,10 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPairedShortcode('bigtext', function(content) {
         return `<div class="text-4xl lg:text-5xl/tight">${content}</div>`;
     });
+
+    eleventyConfig.addPairedShortcode('mediumtext', function(content) {
+        return `<div class="text-xl lg:text-2xl/tight">${content}</div>`;
+    });    
   
     eleventyConfig.addShortcode('bigImage', function(image, alt, caption) {
         return `

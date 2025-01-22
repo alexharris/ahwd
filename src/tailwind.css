@@ -159,7 +159,7 @@ a.link-white, .link-white > a {
 }
 
 [aria-current="page"].pill-button {
-    @apply  bg-gray-300 dark:bg-gray-800
+    @apply  bg-gray-300 dark:bg-gray-800 dark:text-white
 }
 
 
@@ -274,11 +274,10 @@ figcaption {
 
 
 a.pill-button {
-    @apply 
-    p-1 
-    md:px-4 
+    @apply  
+    px-4 
     text-center
-    text-lg
+    text-base
     rounded-full 
     border
     text-gray-600 

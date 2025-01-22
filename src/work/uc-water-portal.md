@@ -6,6 +6,7 @@ tags:
     - environment
     - education
     - everything
+    - sciencetech
 image: /assets/images/ucwaterportal/image-1.jpg
 dir: ucwaterportal
 images:
