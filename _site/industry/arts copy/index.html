@@ -5,20 +5,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Grab title from the page data and dump it here -->
-  <title>Alex Harris Web Development - {{ title }}</title>
+  <title>Alex Harris Web Development - The Arts</title>
   <link rel="stylesheet" href="/tailwind-output.css">  
+  <!-- Fathom -->
+  <script src="https://cdn.usefathom.com/script.js" data-site="PITQEEMC" defer></script>
+  <!-- / Fathom -->
   <!-- META TAGS -->
     <meta name="description" content="Web development and Wordpress in Oakland, California">
 
     <!-- Google / Search Engine Tags -->
-    <meta itemprop="name" content="Alex Harris Web Development - {{ title }}">
+    <meta itemprop="name" content="Alex Harris Web Development - The Arts">
     <meta itemprop="description" content="Web development and Wordpress in Oakland, California">
     <meta itemprop="image" content="/assets/images/social-image.png">
 
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://alexharris.online">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Alex Harris Web Development - {{ title }}">
+    <meta property="og:title" content="Alex Harris Web Development - The Arts">
     <meta property="og:description" content="Web development and Wordpress in Oakland, California">
     <meta property="og:image" content="/assets/images/social-image.png">
 
@@ -62,13 +65,26 @@
   <main id="main" class="relative grow">
     <!-- Grab the content from the page data and dump it here, and mark it as safe -->
     <!-- Safe docs: https://mozilla.github.io/nunjucks/templating.html#safe -->    
-    {{ content | safe }}
+    
+
+<div class="flex flex-col gap-8 my-16">
+    <div class="my-4">
+        <h1 class="text-5xl font-extraligh mb-4 ">The Arts</h1>      
+        
+
+    </div>
+
+</div>
+
+
+
+
+
   </main>
   <footer id="footer" class="z-0 w-full bg-neutral-50 dark:bg-gray-950 dark:text-white p-4 justify-self-end justify-between flex flex-row">
     <a href="/contact">Contact</a>
     <span>😀</span>
   </footer>
   <script src="/script.js"></script>
-  <script async data-id="101480330" src="//static.getclicky.com/js"></script>
 </body>
 </html>

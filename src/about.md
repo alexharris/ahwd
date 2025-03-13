@@ -64,7 +64,7 @@ title: About
     </div>
     <div class="card">
         <h3 class="">3. Build</h3>
-        <p>I use modern development practices to turn the designs into a performant, accessible site. I emphasize solutions that are robust and keep things simple and maintainable for the long term.</p>
+        <p>I use modern development practices and technologies to turn the designs into a performant, accessible site. I emphasize solutions that keep things simple and maintainable for the long term.</p>
     </div>
     <div class="card">
         <h3 class="">4. Launch</h3>
@@ -73,14 +73,12 @@ title: About
     <div class="card">
         <h3 class="">5. Post-Launch</h3>
         <p>I am committed to your project's long-term success and am happy to provide post-launch maintenance, support, training, and bug fixes.</p>
-    </div>    
-    <div class="card">
-        <h3 class="">6. A la carte</h3>
-        <p>Any of the above stages can be de-coupled from the rest of the process. I have been brought in on many projects just to do the "build" phase, and am a willing and communicative collaborator.</p>
-    </div>                         
+    </div>                            
 </div>
 
-An average project might cost anywhere from $2000 to $25,000 depending on the particulars of what is needed, and take 6-16 weeks. Check out this [case study](/blog/cckw) to get an in-depth sense of how I think through solving client needs during a project
+An average project might cost anywhere from $2000 to $25,000 depending on the particulars of what is needed, and take 6-16 weeks. Check out this [case study](/blog/cckw) to get an in-depth sense of how I think through solving client needs during a project.
+
+Any of the above stages can be de-coupled from the rest of the process. I have been brought in on many projects just to do the "build" phase, and am a willing and communicative collaborator as part of a larger team.
 
 
 <h2 class="instrument-serif" >About Me</h2>
