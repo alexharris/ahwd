@@ -71,7 +71,7 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addPairedShortcode('twocolumn', function(content) {
         const columns = content.split('<!-- split -->');
-        return `<div class="flex flex-col md:flex-row gap-4">
+        return `<div class="flex flex-col md:flex-row gap-8">
             <div class="md:w-1/2">
                 ${columns[0]}
             </div>
