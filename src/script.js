@@ -181,6 +181,28 @@ showFeaturedWork(featuredIndex);
 // END FEATURED WORK SLIDER
 
 
+// ROTATING HERO TEXT STUFF
+const rotatingText = document.querySelector('#rotating-text');
+const textArray = ["arts organizations", "architects and designers", "small businesses and startups", "scientists and educators"];
+let currentIndex = 0;
+let currentText = textArray[currentIndex];
+let currentCharIndex = 0;
+function updateRotatingText() {
+  rotatingText.textContent = currentText;
+  rotatingText.classList.add('fade-in-up'); // Add animation class for sliding up and in
 
+  setTimeout(() => {
+    rotatingText.classList.remove('fade-in-up');
+    rotatingText.classList.add('fade-out-up'); // Add animation class for sliding up and out
 
+    setTimeout(() => {
+      rotatingText.classList.remove('fade-out-up');
+      currentIndex = (currentIndex + 1) % textArray.length; // Move to the next text
+      currentText = textArray[currentIndex];
+      updateRotatingText(); // Recursively call to update the text
+    }, 500); // Duration of fade-out-up animation
+  }, 4000); // Wait 5 seconds before fading out
+}
 
+// Start the rotating text animation
+updateRotatingText();

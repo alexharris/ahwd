@@ -121,7 +121,8 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-    font-family: "instrument-sans", sans;
+    /* font-family: "instrument-sans", sans; */
+    font-family: arial;
     font-size: 20px;
     font-style: normal;
     font-weight: 200;
@@ -422,18 +423,49 @@ a.pill-button {
 }
 
 .card {
-    @apply border border-gray-300 dark:border-white p-4 rounded-xl prose dark:prose-dark dark:border-gray-700;
+    /* @apply border border-gray-300 dark:border-white p-4 rounded-xl prose dark:prose-dark dark:border-gray-700; */
 }
 
 .card h3 {
-    @apply mt-0 instrument-serif leading-tight;
+    /* @apply mt-0 instrument-serif leading-tight; */
+    @apply text-xl font-normal
 }
 
 .card p {
-    @apply pl-6 pr-6 mb-4;
+    /* @apply pl-6 pr-6 mb-4; */
 }
 
 .work-full .prose h2 {
     @apply  text-base uppercase;
 }
 
+@keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fade-out-up {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  }
+
+  /* Define the fade-in-up and fade-out-up classes */
+.fade-in-up {
+    animation: fade-in-up 0.5s ease-out forwards;
+  }
+  
+  .fade-out-up {
+    animation: fade-out-up 0.5s ease-in forwards;
+  }
