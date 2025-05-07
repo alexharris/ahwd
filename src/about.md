@@ -84,7 +84,7 @@ title: About
 
     <p>While no two jobs are alike, a typical process might go something like this:</p>
 
-    <div class="full-width grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mx-auto my-8">
+    <div class="full-width grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mx-auto mt-8">
         <div class="card">
             <h3 class="">1. Discovery</h3>
             <p>Many projects benefit from a robust phase in which we can work together to articulate your goals, discuss strategy, and create a plan.</p>
@@ -115,13 +115,11 @@ title: About
 
 <h2 class="instrument-serif text-2xl">❋ Let's Talk</h2>
 
-If you think we might be able to help you out, please don’t hesitate to get in touch. We are happy to answer any questions and have an initial chat to help determine if we are a good fit for your project.
+If you think we might be able to help you out, please don’t hesitate to <a href="/contact">get in touch</a>. We are happy to answer any questions and have an initial chat to help determine if we are a good fit for your project.
 
 
 <h2 class="instrument-serif text-2xl">❋ About</h2>
 
 AHWD is a small web development studio run by Alex Harris. In my career I have experienced many aspects of communicating on the web. As a developer at Cast Iron Coding in Portland, OR, I helped build sites for clients, then trained and supported them in their ongoing use. As the Web Editor and Electronic Communications Manager at UC Berkeley’s BAMPFA I hired and worked with contractors to achieve BAMPFA'S strategic and technical communications goals. These dual experiences helped me understand how to make compelling websites come to life and effectively serve my clients.
 
-<h2 class="instrument-serif" >About This Site</h2>
-
-This site was built using the <a href="https://www.11ty.dev/">Eleventy</a> static site generator and also uses <a href="https://tailwindcss.com/">Tailwind CSS</a>. The logo uses the <a href="https://store.overlaptype.com/fonts/socko">Socko</a> font. Body copy is <a href="https://fonts.google.com/specimen/Instrument+Sans">Instrument</a>.
+This site was built using the <a href="https://www.11ty.dev/">Eleventy</a> static site generator. The logo uses the <a href="https://store.overlaptype.com/fonts/socko">Socko</a> font. Header font is <a href="https://fonts.google.com/specimen/Instrument+Sans">Instrument</a>.
