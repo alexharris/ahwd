@@ -152,7 +152,7 @@ body {
 
 
 a, a:visited {
-    @apply text-blue-600 dark:text-green-400 hover:text-red-500 dark:hover:text-red-400
+    @apply text-stone-600 dark:text-green-400 hover:text-red-500 dark:hover:text-red-400
 }
 
 a.link-white, .link-white > a {
