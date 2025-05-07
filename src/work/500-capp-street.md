@@ -27,7 +27,7 @@ roles:
     - Content Modeling
     - Training
     - Ongoing Maintenance
-summary: A San Francisco arts non-profit whose mission is to encourage artistic experimentation, support new modes of living, and build community.
+summary: Site build, migration and long term support for a San Francisco arts non-profit whose mission is to encourage artistic experimentation, support new modes of living, and build community.
 importance: 1
 ---
 

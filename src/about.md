@@ -5,8 +5,8 @@ title: About
 
 <div class="full-width flex flex-col md:flex-row gap-8 mt-12">
     <div class="w-full md:w-1/2">
-        {% bigtext %}Alexharris.online is the freelance web development practice of Alex Harris.{% endbigtext %}
-        <p>With over a decade of experience, I offer a range of services including web development, e-commerce solutions, CMS implementation, and ongoing support.</p>   
+        {% bigtext %}A reliable technical partner focused on helping you communicate online.{% endbigtext %}
+        <p>With over a decade of experience, we offer services for the full range of how we talk to each other online. We provide thoughtful, high quality work with an eye towards simplicity and longevity.</p>   
     </div>        
 </div>
 
@@ -78,7 +78,7 @@ title: About
     <div class="border-r bottom-fade max-md:hidden"></div>
     <div class="bottom-fade max-sm:hidden"></div>        
 </div> -->
-<div class="full-width px-4 mb-24">
+<div class="full-width mb-24">
     
     <h2 class="instrument-serif text-2xl mb-12 text-center">❋ Process</h2>
 
@@ -113,11 +113,14 @@ title: About
 </div>
 
 
+<h2 class="instrument-serif text-2xl">❋ Let's Talk</h2>
+
+If you think we might be able to help you out, please don’t hesitate to get in touch. We are happy to answer any questions and have an initial chat to help determine if we are a good fit for your project.
 
 
-<h2 class="instrument-serif" >About Me</h2>
+<h2 class="instrument-serif text-2xl">❋ About</h2>
 
-I have been making websites professionally for over 10 years, and have been working exclusively as a freelancer and consultant for the past 4. Before setting out on my own, I experienced both sides of the client/contractor relationship. As a developer at Cast Iron Coding in Portland, OR, I helped build sites for clients, then trained and supported them in their ongoing use. As the Web Editor and Electronic Communications Manager at UC Berkeley’s BAMPFA I hired and worked with contractors to achieve BAMPFA'S strategic and technical communications goals. These dual experiences helped me understand how to make compelling websites come to life and effectively serve my clients.
+AHWD is a small web development studio run by Alex Harris. In my career I have experienced many aspects of communicating on the web. As a developer at Cast Iron Coding in Portland, OR, I helped build sites for clients, then trained and supported them in their ongoing use. As the Web Editor and Electronic Communications Manager at UC Berkeley’s BAMPFA I hired and worked with contractors to achieve BAMPFA'S strategic and technical communications goals. These dual experiences helped me understand how to make compelling websites come to life and effectively serve my clients.
 
 <h2 class="instrument-serif" >About This Site</h2>
 

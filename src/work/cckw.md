@@ -29,7 +29,7 @@ roles:
     - Ongoing Maintenance    
 partners:
     - <a href="https://riaroberts.net/">Ria Roberts</a>
-summary: A wordpress site with a flexible content model and integrated Shopify e-commerce. <br /><br /><a class="underline" href="/blog/cckw">Read the case study.</a>
+summary: A fully custom wordpress site with a smart, flexible content model and integrated Shopify e-commerce. <br /><br /><a class="underline" href="/blog/cckw">Read the case study.</a>
 importance: 1
 ---
 

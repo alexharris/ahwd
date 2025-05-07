@@ -1252,6 +1252,10 @@ select {
   float: left;
 }
 
+.m-4 {
+  margin: 1rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -1336,6 +1340,10 @@ select {
   margin-top: 1rem;
 }
 
+.ml-4 {
+  margin-left: 1rem;
+}
+
 .block {
   display: block;
 }
@@ -1370,6 +1378,10 @@ select {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-16 {
+  height: 4rem;
 }
 
 .max-h-\[80vh\] {
@@ -1712,6 +1724,10 @@ select {
 
 .pt-24 {
   padding-top: 6rem;
+}
+
+.pb-12 {
+  padding-bottom: 3rem;
 }
 
 .text-left {
@@ -2454,7 +2470,7 @@ a.pill-button {
 }
 
 .card p {
-  /* @apply pl-6 pr-6 mb-4; */
+  margin-bottom: 0px;
 }
 
 .work-full .prose h2 {
@@ -2696,6 +2712,10 @@ a.pill-button {
 
   .md\:h-24 {
     height: 6rem;
+  }
+
+  .md\:h-36 {
+    height: 9rem;
   }
 
   .md\:w-1\/12 {
