@@ -6,7 +6,7 @@ title: About
 <div class="full-width flex flex-col md:flex-row gap-8 mt-12">
     <div class="w-full md:w-1/2">
         {% bigtext %}A reliable technical partner focused on helping you communicate online.{% endbigtext %}
-        <p>With over a decade of experience, we offer services for the full range of how we talk to each other online. We provide thoughtful, high quality work with an eye towards simplicity and longevity.</p>   
+        <p>With over a decade of experience, we offer a full range of services to help you get your message out on the web. We provide thoughtful, high quality work with an eye towards simplicity and longevity.</p>   
     </div>        
 </div>
 
@@ -87,11 +87,11 @@ title: About
     <div class="full-width grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mx-auto mt-8">
         <div class="card">
             <h3 class="">1. Discovery</h3>
-            <p>Many projects benefit from a robust phase in which we can work together to articulate your goals, discuss strategy, and create a plan.</p>
+            <p>Many projects benefit from a robust phase in which we can work together to articulate your goals, discuss strategy, research options and create a plan.</p>
         </div>
         <div class="card">
             <h3 class="">2. Design</h3>
-            <p>For simple projects, I can often do the design myself. For more involved projects or those requiring a rebrand, I will bring on a designer to work with us to make your site beautiful.</p>
+            <p>For some projects, I can do the design myself. For more involved projects or those requiring a rebrand, I will bring on a designer to work with us to make your site beautiful.</p>
         </div>
         <div class="card">
             <h3 class="">3. Build</h3>
@@ -103,7 +103,7 @@ title: About
         </div>
         <div class="card">
             <h3 class="">5. Post-Launch</h3>
-            <p>I am committed to your project's long-term success and am happy to provide post-launch maintenance, support, training, and bug fixes.</p>
+            <p>I am committed to your project's long-term success and am happy to provide post-launch maintenance, upgrades, support, training, documentation and bug fixes.</p>
         </div>
         <div class="card">
             <h3 class="instrument-serif">❋</h3>
@@ -120,6 +120,6 @@ If you think we might be able to help you out, please don’t hesitate to <a hre
 
 <h2 class="instrument-serif text-2xl">❋ About</h2>
 
-AHWD is a small web development studio run by Alex Harris. In my career I have experienced many aspects of communicating on the web. As a developer at Cast Iron Coding in Portland, OR, I helped build sites for clients, then trained and supported them in their ongoing use. As the Web Editor and Electronic Communications Manager at UC Berkeley’s BAMPFA I hired and worked with contractors to achieve BAMPFA'S strategic and technical communications goals. These dual experiences helped me understand how to make compelling websites come to life and effectively serve my clients.
+AHWD is a small web development studio run by Alex Harris. My career experience has helped me understand how to make compelling websites come to life. As a developer at [Cast Iron Coding](https://castironcoding.com) I helped build sites for clients and then train and support them in their ongoing use. As the Web Editor and Electronic Communications Manager at UC Berkeley’s BAMPFA I hired and worked with contractors, as well as the museum's many departments, to achieve BAMPFA'S strategic and technical communications goals. As a freelancer over the past 5 years, I have brought these experiences together to inform an effective and results oriented process.
 
 This site was built using the <a href="https://www.11ty.dev/">Eleventy</a> static site generator. The logo uses the <a href="https://store.overlaptype.com/fonts/socko">Socko</a> font. Header font is <a href="https://fonts.google.com/specimen/Instrument+Sans">Instrument</a>.

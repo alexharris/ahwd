@@ -13,7 +13,7 @@ permalink: /work/{{ tag }}/
         {% pillbutton page, 'Everything', '/work/everything/' %} 
         {% pillbutton page, 'The Arts', '/work/arts/' %}
         {% pillbutton page, 'Design and Architecture', '/work/design/' %}
-        {% pillbutton page, 'Science and Technology', '/work/sciencetech/' %} 
+        <!-- {% pillbutton page, 'Science and Technology', '/work/sciencetech/' %}  -->
 </div>
 <div class="p-8">
 
@@ -44,11 +44,21 @@ permalink: /work/{{ tag }}/
     {% endif %}  
     {% set taglist = collections[ tag ] | sort(attribute='data.importance') %}
     {% for post in taglist %}
-        <div class="mb-12 md:mb-24">
-            <div class="featured-image mb-4">                
+        {% if post.data.status != 'draft' %}
+        <div class="mb-12 md:mb-24 flex flex-col md:flex-row gap-4">
+            <div class="w-full md:w-2/5 flex flex-row md:flex-col justify-between md:justify-start">
+                <div><h2 class="font-semibold pb-2 md:pb-4"><a href="{{post.url}}">{{ post.data.title }}</a></h2>
+                <p class="pb-4">{{ post.data.tech }}</p>
+                </div>
+                <a href="{{post.url}}" class="text-blue-500 hover:text-blue-700">→ </a>
+                
+            </div>            
+            <div class="featured-image mb-4 w-full md:w-3/5">                
                 <a href="{{post.url}}"><img class="w-full" src="{{ post.data.image }}" alt="{{post.data.title}}"></a>
             </div>
-            <h2 class="font-semibold"><a href="{{post.url}}">{{ post.data.title }} -></a></h2>
+
         </div>
+        {% endif %}
+        
     {% endfor %}
 </div>
