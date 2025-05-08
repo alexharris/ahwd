@@ -2,13 +2,13 @@
 
 // https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/#os-level
 
-const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+// const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
-if (prefersDarkScheme.matches) {
-  document.documentElement.classList.add("dark");
-} else {
-  document.documentElement.classList.remove("dark");
-}
+// if (prefersDarkScheme.matches) {
+//   document.documentElement.classList.add("dark");
+// } else {
+//   document.documentElement.classList.remove("dark");
+// }
 
 // Check if the #moon element exists
 const btn = document.getElementById('moon');
