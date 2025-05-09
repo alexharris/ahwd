@@ -51,17 +51,17 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addShortcode('slideshow', function(images, directory) {
     var dir = directory || '';
     let slideshowImages = images.map((image, index) => `
-        <div class="mySlides fade w-10/12">
-            <img class="max-h-[80vh] rounded-lg" src="/assets/images/${dir}/${image}" />
+        <div class="mySlides fade w-11/12">
+            <img class="max-h-[80vh] rounded-lg mx-auto" src="/assets/images/${dir}/${image}" />
         </div>
     `).join('');
 
     return `
         <div class="slideshow-container flex flex-col items-center gap-6">
-            <div class="slideshow-main flex flex-row gap-4 justify-between items-start">
-                <span class="left md:first-line:text-4xl hover:text-red-400 cursor-pointer"><-</span>
+            <div class="slideshow-main w-full flex flex-row gap-4 justify-between items-center">
+                <span class="left md:first-line:text-4xl hover:text-red-400 cursor-pointer">←</span>
                 ${slideshowImages}
-                <span class="right md:text-4xl hover:text-red-400 cursor-pointer whitespace-nowrap">-></span>   
+                <span class="right md:text-4xl hover:text-red-400 cursor-pointer whitespace-nowrap">→</span>   
             </div>
             <div class="dots-container flex gap-2">                         
         </div>
@@ -80,6 +80,57 @@ module.exports = function(eleventyConfig) {
             </div>
         </div>`;
     });
+
+
+    // eleventyConfig.addShortcode('workrolestech', function(roles, tech) {
+    //     console.log(roles)
+    //     const rolesList = roles.map(role => `<li>${role}</li>`).join('');
+    //     console.log('rolesList', rolesList);
+    //     // const techList = techlist.map(tech => `<li>${tech}</li>`).join('');
+    //     return `<div class="full-width mb-24">
+    //         <div class="flex flex-col md:flex-row gap-12 items-start w-full">  
+    //             <div class="w-full md:w-1/2">
+    //                 <h2 class="instrument-serif text-2xl">❋ Roles</h2>                    
+    //                 <ul class="leading-snug">
+    //                     ${rolesList}   
+    //                 </ul>                    
+    //             </div>
+    //             <div class="w-full md:w-1/2">
+    //                 <h2 class="instrument-serif text-2xl">❋ Technology</h2>
+    //                 <ul class="leading-snug">
+    //                     ${tech}   
+    //                 </ul> 
+    //             </div>
+    //         </div>
+    //     </div>`;
+    // });
+
+    eleventyConfig.addShortcode('workrolestech', function() {
+        
+    const rolesList = this.ctx.environments.roles.map(role => `<li>${role}</li>`).join('');
+    const techList = this.ctx.environments.techlist.map(tech => `<li>${tech}</li>`).join('');
+
+
+    return `<div class="full-width mb-16">
+    <div class="flex flex-col md:flex-row gap-12 items-start w-full">  
+        <div class="w-full md:w-1/2">
+            <h2 class="instrument-serif text-2xl">❋ Roles</h2>                    
+            <ul class="leading-snug">
+                ${rolesList}   
+            </ul>                    
+        </div>
+        <div class="w-full md:w-1/2">
+            <h2 class="instrument-serif text-2xl">❋ Technology</h2>
+            <ul class="leading-snug">
+                ${techList}   
+            </ul> 
+        </div>
+    </div>
+</div>`;
+});
+
+
+
 
 
 }

@@ -436,7 +436,7 @@ a.pill-button {
 }
 
 .work-full .prose h2 {
-    @apply  text-base uppercase;
+    @apply  text-xl;
 }
 
 @keyframes fade-in-up {

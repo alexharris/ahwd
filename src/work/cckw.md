@@ -43,6 +43,7 @@ Chen Chen & Kai Williams is a New York design studio that wanted a new site to g
 {% bigImage '/assets/images/cckw/image-2.jpg' 'A screenshot of the cckw homepage' '' %}
 </div>
 
+
 {% twocolumn %}
 <!-- split -->
 ## Solution
@@ -52,5 +53,7 @@ Take an in-depth look at the decision making process that went into each step of
 {% endtwocolumn %}
 
 {% bigImage '/assets/images/cckw/image-3.jpg' 'The furniture section of the new CCKW site' '' %}
+
+{% workrolestech %}
 
 {% bigImage '/assets/images/cckw/image-5.jpg' 'The online shop of the new CCKW site' '' %}

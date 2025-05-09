@@ -37,7 +37,7 @@ We have been working with 500 Capp Street on a regular basis since 2018 to keep 
 <!-- split -->
 {% endtwocolumn %}
 
-<div class="bg-blue-500 dark:bg-green-900 p-4 md:p-16">
+<div class="bg-lime-900 p-4 md:p-16">
 {% bigImage '/assets/images/500cappstreet/image-1.jpg' "A screenshot of 500 Capp Street's homepage" '' %}
 </div>
 
@@ -50,5 +50,8 @@ Check out [The Cabinet](https://500cappstreet.org/the-cabinet/).
 {% endtwocolumn %}
 
 {% bigImage '/assets/images/500cappstreet/image-4.jpg' 'An image of the 500 Capp Street homepage news' '' %}
+
+{% workrolestech %}
+
 {% bigImage '/assets/images/500cappstreet/image-5.jpg' 'Screenshot of The Cabinet homepage' '' %}
 

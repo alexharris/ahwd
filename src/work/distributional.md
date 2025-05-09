@@ -2,7 +2,7 @@
 layout: job.njk
 title: Distributional
 tags: 
-    - work
+    - draft-work
     - business
     - everything
     - sciencetech
