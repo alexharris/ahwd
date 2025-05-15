@@ -35,7 +35,7 @@ layout: layout.njk
         {% twocolumn %}
         {% if partners and partners.length > 0 %} With: 
         {% for partner in partners %}   
-            <span class="partner pl-2">{{partner | safe}}</span>
+            <span class="partner">{{partner | safe}}</span>
         {% endfor %}
         {% endif %}   
         <br class="my-12"/>
