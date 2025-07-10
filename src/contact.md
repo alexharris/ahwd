@@ -3,7 +3,7 @@ layout: layout.njk
 title: Contact
 ---
 
-<div class="w-full sm:w-4/5 mt-12 flex flex-col md:flex-row items-center justify-between gap-8 border-b border-dashed pb-24">
+<div class="w-full sm:w-4/5 mt-12 flex flex-col md:flex-row items-center justify-between gap-8 mx-auto">
     <!-- <span class="socko tracking-widest text-5xl pb-8 outline-text text-white link-white">get in touch</span>          -->
     <div class="w-full md:w-2/5 text-md lg:text-2xl prose dark:text-white">
         <!-- <h2 class="dark:text-white">Get in touch</h2> -->
@@ -31,28 +31,3 @@ title: Contact
     </div>
 </div>  
 
-<div class="w-full sm:w-4/5 mt-12 flex flex-col md:flex-row items-center justify-between gap-8">
-<div class="w-full md:w-2/5 text-md lg:text-2xl prose dark:text-white">
-    Prefer a quick chat?
-</div>
-<div class="w-full md:w-3/5">
-    <!-- Google Calendar Appointment Scheduling begin -->
-    <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
-    <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
-    <script>
-    (function() {
-    var target = document.currentScript;
-    window.addEventListener('load', function() {
-        calendar.schedulingButton.load({
-        url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3AzEjqhaMeToVstudmwDLxKvvspbnSCYUc5yZp_0C-CO-XDH1PGc01SAomUgIj8jsSdyezAz1e?gv=true',
-        color: '#4d7c0f',
-        label: "Book a time",
-        target,
-        });
-    });
-    })();
-    </script>
-    <!-- end Google Calendar Appointment Scheduling -->
-</div>
-
-</div>
