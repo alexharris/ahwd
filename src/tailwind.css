@@ -192,6 +192,10 @@ figcaption {
     @apply text-sm text-gray-500 dark:text-gray-400;
 }
 
+#header {
+    justify-content: center;
+}
+
 #logo:hover .logo-fill {
     @apply fill-red-500 dark:fill-red-500;
 }
