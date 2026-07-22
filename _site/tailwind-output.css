@@ -1244,10 +1244,6 @@ select {
   right: 1rem;
 }
 
-.z-0 {
-  z-index: 0;
-}
-
 .float-left {
   float: left;
 }
@@ -1321,6 +1317,10 @@ select {
 
 .mt-16 {
   margin-top: 4rem;
+}
+
+.mt-24 {
+  margin-top: 6rem;
 }
 
 .mt-4 {
@@ -1399,6 +1399,10 @@ select {
   width: 7rem;
 }
 
+.w-3\/4 {
+  width: 75%;
+}
+
 .w-32 {
   width: 8rem;
 }
@@ -1415,8 +1419,20 @@ select {
   width: 100%;
 }
 
+.w-2\/5 {
+  width: 40%;
+}
+
+.w-3\/5 {
+  width: 60%;
+}
+
 .grow {
   flex-grow: 1;
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .cursor-pointer {
@@ -1463,6 +1479,10 @@ select {
   align-items: center;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
 }
@@ -1493,10 +1513,6 @@ select {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.justify-self-end {
-  justify-self: end;
 }
 
 .whitespace-nowrap {
@@ -1589,11 +1605,6 @@ select {
   background-color: rgb(245 245 245 / var(--tw-bg-opacity));
 }
 
-.bg-neutral-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(250 250 250 / var(--tw-bg-opacity));
-}
-
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1604,20 +1615,8 @@ select {
   background-color: rgb(254 249 195 / var(--tw-bg-opacity));
 }
 
-.fill-none {
-  fill: none;
-}
-
 .fill-white {
   fill: #fff;
-}
-
-.stroke-black {
-  stroke: #000;
-}
-
-.stroke-1 {
-  stroke-width: 1;
 }
 
 .p-2 {
@@ -1644,6 +1643,16 @@ select {
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .py-2 {
@@ -1730,6 +1739,10 @@ select {
   text-align: right;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 .text-end {
   text-align: end;
 }
@@ -1799,6 +1812,10 @@ select {
   font-style: italic;
 }
 
+.leading-relaxed {
+  line-height: 1.625;
+}
+
 .leading-snug {
   line-height: 1.375;
 }
@@ -1810,6 +1827,11 @@ select {
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
+.text-blue-600 {
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 
 .text-gray-800 {
@@ -1843,6 +1865,10 @@ select {
 
 .no-underline {
   text-decoration-line: none;
+}
+
+.underline-offset-4 {
+  text-underline-offset: 4px;
 }
 
 .opacity-50 {
@@ -2125,6 +2151,10 @@ figcaption {
 :is(.dark figcaption) {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+#header {
+  justify-content: center;
 }
 
 #logo:hover .logo-fill {
@@ -2552,10 +2582,6 @@ a.pill-button {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
-.hover\:fill-yellow-300:hover {
-  fill: #fde047;
-}
-
 .hover\:text-blue-700:hover {
   --tw-text-opacity: 1;
   color: rgb(29 78 216 / var(--tw-text-opacity));
@@ -2574,14 +2600,6 @@ a.pill-button {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.hover\:underline:hover {
-  text-decoration-line: underline;
-}
-
-.hover\:underline-offset-4:hover {
-  text-underline-offset: 4px;
 }
 
 :is(.dark .dark\:border-gray-600) {
@@ -2604,11 +2622,6 @@ a.pill-button {
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
-:is(.dark .dark\:bg-gray-950) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(3 7 18 / var(--tw-bg-opacity));
-}
-
 :is(.dark .dark\:bg-green-900) {
   --tw-bg-opacity: 1;
   background-color: rgb(20 83 45 / var(--tw-bg-opacity));
@@ -2619,8 +2632,9 @@ a.pill-button {
   background-color: rgb(133 77 14 / var(--tw-bg-opacity));
 }
 
-:is(.dark .dark\:fill-yellow-300) {
-  fill: #fde047;
+:is(.dark .dark\:text-blue-400) {
+  --tw-text-opacity: 1;
+  color: rgb(96 165 250 / var(--tw-text-opacity));
 }
 
 :is(.dark .dark\:text-lime-300) {
@@ -2639,10 +2653,6 @@ a.pill-button {
 }
 
 @media not all and (min-width: 768px) {
-  .max-md\:mt-2 {
-    margin-top: 0.5rem;
-  }
-
   .max-md\:hidden {
     display: none;
   }
@@ -2752,10 +2762,6 @@ a.pill-button {
 
   .md\:flex-col {
     flex-direction: column;
-  }
-
-  .md\:items-center {
-    align-items: center;
   }
 
   .md\:justify-start {

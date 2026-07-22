@@ -23,10 +23,14 @@
     <meta property="og:image" content="/assets/images/social-image.png">
 
   <!-- / META TAGS -->
+
+  <!-- Fathom - beautiful, simple website analytics -->
+  <script src="https://cdn.usefathom.com/script.js" data-site="ISKMEZQG" defer></script>
+  <!-- / Fathom -->
 </head>
 <body class="text-gray-800 dark:text-white bg-white dark:bg-gray-900 flex flex-col h-screen">
-  <header id="header" class="w-full p-4 flex flex-col md:flex-row justify-between items-start md:items-center">
-      <a href="/" id="logo" class="socko outline-text link-white text-4xl">
+  <header id="header" class="w-full p-4 flex justify-center">
+      <span id="logo" class="socko outline-text link-white text-4xl">
         <svg class="w-12" viewBox="0 0 91 62" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_682_3)">
           <mask id="path-1-outside-1_682_3" maskUnits="userSpaceOnUse" x="65" y="37" width="23" height="24" fill="black">
@@ -50,14 +54,8 @@
           <rect width="91" height="62" class="logo-fill"/>
           </clipPath>
           </defs>
-          </svg>          
-      </a>
-      <nav class="flex flex-wrap justify-between items-center gap-8 max-md:mt-2">  
-        <a class="hover:underline hover:underline-offset-4" href="/work/everything">Work</a>
-        <a class="hover:underline hover:underline-offset-4" href="/about">About</a>
-        <a class="hover:underline hover:underline-offset-4" href="/contact">Contact</a>
-        <!-- <svg id="moon" class="stroke-black stroke-1 fill-none hover:fill-yellow-300 dark:fill-yellow-300 cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="arcs"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>       -->
-      </nav>
+          </svg>
+      </span>
   </header>
   <main id="main" class="relative grow">
     <!-- Grab the content from the page data and dump it here, and mark it as safe -->
@@ -136,6 +134,9 @@
         
     
         
+        
+    
+        
         <div class="mb-12 md:mb-24 flex flex-col md:flex-row gap-4">
             <div class="w-full md:w-2/5 flex flex-row md:flex-col justify-between md:justify-start">
                 <div><h2 class="font-semibold pb-2 md:pb-4"><a href="/test/">Test Page</a></h2>
@@ -172,14 +173,14 @@
         
         <div class="mb-12 md:mb-24 flex flex-col md:flex-row gap-4">
             <div class="w-full md:w-2/5 flex flex-row md:flex-col justify-between md:justify-start">
-                <div><h2 class="font-semibold pb-2 md:pb-4"><a href="/work-old/all/">Work</a></h2>
+                <div><h2 class="font-semibold pb-2 md:pb-4"><a href="/blog/cckw/">The making of cckw.us</a></h2>
                 <p class="pb-4"></p>
                 </div>
-                <a href="/work-old/all/" class="text-blue-500 hover:text-blue-700">→ </a>
+                <a href="/blog/cckw/" class="text-blue-500 hover:text-blue-700">→ </a>
                 
             </div>            
             <div class="featured-image mb-4 w-full md:w-3/5">                
-                <a href="/work-old/all/"><img class="w-full" src="" alt="Work"></a>
+                <a href="/blog/cckw/"><img class="w-full" src="/assets/images/cckw/image-1.jpg" alt="The making of cckw.us"></a>
             </div>
 
         </div>
@@ -197,26 +198,6 @@
             </div>            
             <div class="featured-image mb-4 w-full md:w-3/5">                
                 <a href="/blog/"><img class="w-full" src="" alt="Blog"></a>
-            </div>
-
-        </div>
-        
-        
-    
-        
-        
-    
-        
-        <div class="mb-12 md:mb-24 flex flex-col md:flex-row gap-4">
-            <div class="w-full md:w-2/5 flex flex-row md:flex-col justify-between md:justify-start">
-                <div><h2 class="font-semibold pb-2 md:pb-4"><a href="/blog/cckw/">The making of cckw.us</a></h2>
-                <p class="pb-4"></p>
-                </div>
-                <a href="/blog/cckw/" class="text-blue-500 hover:text-blue-700">→ </a>
-                
-            </div>            
-            <div class="featured-image mb-4 w-full md:w-3/5">                
-                <a href="/blog/cckw/"><img class="w-full" src="/assets/images/cckw/image-1.jpg" alt="The making of cckw.us"></a>
             </div>
 
         </div>
@@ -260,6 +241,23 @@
         
         <div class="mb-12 md:mb-24 flex flex-col md:flex-row gap-4">
             <div class="w-full md:w-2/5 flex flex-row md:flex-col justify-between md:justify-start">
+                <div><h2 class="font-semibold pb-2 md:pb-4"><a href="/about/">About</a></h2>
+                <p class="pb-4"></p>
+                </div>
+                <a href="/about/" class="text-blue-500 hover:text-blue-700">→ </a>
+                
+            </div>            
+            <div class="featured-image mb-4 w-full md:w-3/5">                
+                <a href="/about/"><img class="w-full" src="" alt="About"></a>
+            </div>
+
+        </div>
+        
+        
+    
+        
+        <div class="mb-12 md:mb-24 flex flex-col md:flex-row gap-4">
+            <div class="w-full md:w-2/5 flex flex-row md:flex-col justify-between md:justify-start">
                 <div><h2 class="font-semibold pb-2 md:pb-4"><a href="/industry/arts/">The Arts</a></h2>
                 <p class="pb-4"></p>
                 </div>
@@ -294,48 +292,14 @@
         
         <div class="mb-12 md:mb-24 flex flex-col md:flex-row gap-4">
             <div class="w-full md:w-2/5 flex flex-row md:flex-col justify-between md:justify-start">
-                <div><h2 class="font-semibold pb-2 md:pb-4"><a href="/about/">About</a></h2>
+                <div><h2 class="font-semibold pb-2 md:pb-4"><a href="/work-old/all/">Work</a></h2>
                 <p class="pb-4"></p>
                 </div>
-                <a href="/about/" class="text-blue-500 hover:text-blue-700">→ </a>
+                <a href="/work-old/all/" class="text-blue-500 hover:text-blue-700">→ </a>
                 
             </div>            
             <div class="featured-image mb-4 w-full md:w-3/5">                
-                <a href="/about/"><img class="w-full" src="" alt="About"></a>
-            </div>
-
-        </div>
-        
-        
-    
-        
-        <div class="mb-12 md:mb-24 flex flex-col md:flex-row gap-4">
-            <div class="w-full md:w-2/5 flex flex-row md:flex-col justify-between md:justify-start">
-                <div><h2 class="font-semibold pb-2 md:pb-4"><a href="/contact/">Contact</a></h2>
-                <p class="pb-4"></p>
-                </div>
-                <a href="/contact/" class="text-blue-500 hover:text-blue-700">→ </a>
-                
-            </div>            
-            <div class="featured-image mb-4 w-full md:w-3/5">                
-                <a href="/contact/"><img class="w-full" src="" alt="Contact"></a>
-            </div>
-
-        </div>
-        
-        
-    
-        
-        <div class="mb-12 md:mb-24 flex flex-col md:flex-row gap-4">
-            <div class="w-full md:w-2/5 flex flex-row md:flex-col justify-between md:justify-start">
-                <div><h2 class="font-semibold pb-2 md:pb-4"><a href="/">Home</a></h2>
-                <p class="pb-4"></p>
-                </div>
-                <a href="/" class="text-blue-500 hover:text-blue-700">→ </a>
-                
-            </div>            
-            <div class="featured-image mb-4 w-full md:w-3/5">                
-                <a href="/"><img class="w-full" src="" alt="Home"></a>
+                <a href="/work-old/all/"><img class="w-full" src="" alt="Work"></a>
             </div>
 
         </div>
@@ -566,14 +530,61 @@
         
         
     
+        
+        <div class="mb-12 md:mb-24 flex flex-col md:flex-row gap-4">
+            <div class="w-full md:w-2/5 flex flex-row md:flex-col justify-between md:justify-start">
+                <div><h2 class="font-semibold pb-2 md:pb-4"><a href="/contact/">Contact</a></h2>
+                <p class="pb-4"></p>
+                </div>
+                <a href="/contact/" class="text-blue-500 hover:text-blue-700">→ </a>
+                
+            </div>            
+            <div class="featured-image mb-4 w-full md:w-3/5">                
+                <a href="/contact/"><img class="w-full" src="" alt="Contact"></a>
+            </div>
+
+        </div>
+        
+        
+    
+        
+        <div class="mb-12 md:mb-24 flex flex-col md:flex-row gap-4">
+            <div class="w-full md:w-2/5 flex flex-row md:flex-col justify-between md:justify-start">
+                <div><h2 class="font-semibold pb-2 md:pb-4"><a href="/index-old/">Home</a></h2>
+                <p class="pb-4"></p>
+                </div>
+                <a href="/index-old/" class="text-blue-500 hover:text-blue-700">→ </a>
+                
+            </div>            
+            <div class="featured-image mb-4 w-full md:w-3/5">                
+                <a href="/index-old/"><img class="w-full" src="" alt="Home"></a>
+            </div>
+
+        </div>
+        
+        
+    
+        
+        <div class="mb-12 md:mb-24 flex flex-col md:flex-row gap-4">
+            <div class="w-full md:w-2/5 flex flex-row md:flex-col justify-between md:justify-start">
+                <div><h2 class="font-semibold pb-2 md:pb-4"><a href="/">Home</a></h2>
+                <p class="pb-4"></p>
+                </div>
+                <a href="/" class="text-blue-500 hover:text-blue-700">→ </a>
+                
+            </div>            
+            <div class="featured-image mb-4 w-full md:w-3/5">                
+                <a href="/"><img class="w-full" src="" alt="Home"></a>
+            </div>
+
+        </div>
+        
+        
+    
 </div>
 
   </main>
-  <footer id="footer" class="z-0 w-full bg-neutral-50 dark:bg-gray-950 dark:text-white p-4 justify-self-end justify-between flex flex-row">
-    <a href="/contact">Contact</a>
-    <span>😀</span>
-  </footer>
+
   <script src="/script.js"></script>
-  <script async data-id="101480330" src="//static.getclicky.com/js"></script>
 </body>
 </html>
